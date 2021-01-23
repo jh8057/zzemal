@@ -1,6 +1,7 @@
 # zzemal_web
 Start make public website!😀
-
+## reference site
+[MDN web](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
 ## script tag
 - script tag로 감싸서 자바스크립트를 작성할 수 있다.
 - 자바스크립트는 기본적으로 html 위에서 동작하는 코드다.
@@ -16,3 +17,9 @@ Start make public website!😀
 - 브라우저를 키고 오른쪽 클릭 > 검사를 누르면 console 창을 볼 수 있다. Elements 에서 esc눌르면 밑에 나오기도 함.
 - 콘솔창에서 자바스크립트를 실행할 수 있다.
 - 띄어 있는 웹 페이지를 기반으로 실행이 된다.
+
+## Free note
+- em : Effective Micro-organisms 기울기 효과
+- ctrl + t : 새 탭 열기 / ctrl + n : 새 창 열기
+- ctrl + L : console창 지우기
+- console 에서 shift + enter 하면 여러줄 타입 가능
