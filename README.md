@@ -25,6 +25,15 @@ Start make public website!😀
 - span (div) > class > id 순으로 넓은 영역이다.
 - 따라서 좁은 영역일수록 우선순위가 높다!
 - 하나의 문서에 고유한 id 하나만 사용 가능하다.
+- padding : the space around the content.
+- border : the solid line that is just outside the padding
+- margin : the space around the outside of the border
+- style.css 파일을 따로 만들고, 각 html 에서 link를 통해 참조를 하니까 일괄 적용이 된다.
+- style을 본문에 사용하고, head에 link를 사용해서 외부 css를 불러오면, 본문 내 style만 적용된다. / 충돌난다.
+- 지금은 width를 %로 설정해서 창 크기에 따라 변화하는데, 이게 잘하는건진 모르겠다.
+- img 에 margin 같은 속성으로 조절하고 싶으면, display : block 를 해줘야된다.
+- 왜냐. img는 inline요소인데, margin 같은 것은 body 같은 block요소에만 추가할 수 있는 속성이기 때문이다.
+
 ## Free note
 - em : Effective Micro-organisms 기울기 효과
 - ctrl + t : 새 탭 열기 / ctrl + n : 새 창 열기

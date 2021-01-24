@@ -1,3 +1,19 @@
 h1{
  text-align: center;
+/* padding: 20px 0; /*top left*/
+ text-shadow: 1px 0px 30px rgb(255, 126, 5);
+}
+
+body{
+    width: 65%;
+    background-color: rgb(255, 248, 228);
+    margin : 0 auto;
+    padding : 0 100px 20px 100px; /*top right bottom left*/
+    border : 5px ridge rgb(201, 114, 0);
+
+}
+
+img{
+    display:block;
+    margin: 0 auto;
 }
