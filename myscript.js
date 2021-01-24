@@ -25,11 +25,22 @@ function change_color(color_Value){
 function change_title(){
     let myHeading = document.querySelector('h1');
 myHeading.onclick = function(){
-    if (myHeading.textContent === 'Study about Web'){
-        myHeading.textContent = 'Auch🔥 Be careful!😒';
-        } else {
+    if (myHeading.textContent === 'Auch🔥 Be careful!😒'){
         myHeading.textContent = 'Study about Web';
+        } else {
+        myHeading.textContent = 'Auch🔥 Be careful!😒';
         }
+    }
+}
+
+function addUserNameonTitle(){
+    let myHeading = document.querySelector('h1');
+    let myName = prompt('please enter your name🙆‍♂️');
+    if(!myName){
+        addUserNameonTitle();
+    } else{
+        localStorage.setItem('name',myName);
+        myHeading.textContent = `Welcome ${myName.toUpperCase()}!`;
     }
 }
 
