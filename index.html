@@ -6,16 +6,21 @@
 <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <h1><a href ="index.html">Study about Web</a></h1>
-    <img src="./img/banner_img_art.jpg", width = "60%"  height="60%"><br>
-    <input type="button" value="Dark Mode" onclick="
-    document.querySelector('body').style.backgroundColor='black';
-    document.querySelector('body').style.color='white';
-    ">
-    <input type="button" value="White Mode" onclick="
-    document.querySelector('body').style.backgroundColor='white';
-    document.querySelector('body').style.color='black';
-    ">
+    <span onclick="change_title()"><h1>Study about Web</h1></span>
+    <img src="./img/banner_img_art.jpg" width = "60%" ><br>
+
+    <p>
+        <input type="button" value="BG Mode" onclick="bg_mode()">
+    </p>
+    <p>
+        <strong>Select Font Color🖍</strong><br>
+        <input type="radio" name ="color" onclick="change_color('red')"> Red
+        <input type="radio" name ="color" onclick="change_color('yellow')"> Yellow
+        <input type="radio" name ="color" onclick="change_color('green')"> Green<br>
+        <input type="radio" name ="color" onclick="change_color('blue')"> Blue
+        <input type="radio" name ="color" onclick="change_color('white')"> White
+        <input type="radio" name ="color" onclick="change_color('black')"> Black
+    </p>
 <ol>
     <li><a href ="1.html"> HTML </a></li>
     <li><a href="2.html"> Script Tag!🦄 </a></li>
@@ -44,7 +49,10 @@ Hypertext Markup Language (HTML) is the standard
 markup language for <strong><u>creating web pages</strong></u>
 and web applications.
 </p>
-<img src="./img/domain_img.jpg", width="60%">
+<p>
+    Click this image 👇👇👇
+</p>
+<span onclick="change_img()"><img id = "P1" src="./img/domain_img.jpg", width="80%"></span>
 
 <h2>Free note</h2>
 줄바꿈<br>줄바꿈은 닫힌 태그가 없다.
@@ -65,5 +73,10 @@ and web applications.
     <a href="http://www.google.com" target="_blank" title="Global ocean"> Go Google</a>
     
 </p>
+<p>
+    <button onclick="alert_button('hello, This is alert')">안녕하세요!</button>
+    <button onclick="prompt_button('hello, This is prompt')">눌러보세요!</button>
+</p>
+    <script src="myscript.js"></script>
 </body>
 </html>

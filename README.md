@@ -34,8 +34,14 @@ Start make public website!😀
 - img 에 margin 같은 속성으로 조절하고 싶으면, display : block 를 해줘야된다.
 - 왜냐. img는 inline요소인데, margin 같은 것은 body 같은 block요소에만 추가할 수 있는 속성이기 때문이다.
 
+## javascript
+- 예전에는 브라우저가 자바스크립트인지 잘 인식 못하는 경우가 있어서 script type="text/javascript" 를 써줬는데, html5부터는 default가 되어서 안써줘도 된다.
+- 적용하고 싶은 body 맨 아래에 스크립트를 넣어주면 적용이 된다.
+- 맨 아래 놓는거는 컴파일 순서 때문이다.
+- function으로 묶어서 전부 myscript.js에 넣어주고 불러오는식으로 구성해놓았다. 이게 맞는지는 모르겠다.
 ## Free note
 - em : Effective Micro-organisms 기울기 효과
 - ctrl + t : 새 탭 열기 / ctrl + n : 새 창 열기
 - ctrl + L : console창 지우기
 - console 에서 shift + enter 하면 여러줄 타입 가능
+- Ctrl + Shift + L : 동일 단어 동시 수정
