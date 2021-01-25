@@ -39,6 +39,15 @@ Start make public website!😀
 - 적용하고 싶은 body 맨 아래에 스크립트를 넣어주면 적용이 된다.
 - 맨 아래 놓는거는 컴파일 순서 때문이다.
 - function으로 묶어서 전부 myscript.js에 넣어주고 불러오는식으로 구성해놓았다. 이게 맞는지는 모르겠다.
+- 몇일 안됐지만.. 본인 자신을 가르키는 기능이 있을텐데라는 생각 자체를 안한 내가 한심해졋다.. 뭔가..뭔가 이상했어.. 굳이 id를 부여해서 나를 찾아야했던게..
+- this를 하면 내가 실행되고 있는 이 부분을 이야기 하는것이다.
+- ex) 버튼에서 this 를 사용하면 지금 이 버튼을 이야기하는 것이다.
+- 띠용쓰..? 자바스크립 function으로 감싼데에서는 this가 잘 안되는 것 같다..?🤑
+- 객체 지향적으로 사용해야된다. new를 곁들어 사용해야되는듯하다.
+- 결론 : 직접적으로 쓰일때에만 호출한 것 자체를 this라 한다.
+- 내가 하려는건 function으로 감싸서 모든걸 구현하려했으니 this는 호출된 function일 것이다.
+- for ,do while, while, label, break,continue,for in, for of
+- 반복문 많기도 하다.
 ## Free note
 - em : Effective Micro-organisms 기울기 효과
 - ctrl + t : 새 탭 열기 / ctrl + n : 새 창 열기

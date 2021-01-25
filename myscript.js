@@ -1,3 +1,13 @@
+//change title
+let myHeading = document.querySelector('h1');
+myHeading.onclick = function(){
+    if (myHeading.textContent === 'Auch🔥 Be careful!😒'){
+        myHeading.textContent = 'Study about Web';
+        } else {
+        myHeading.textContent = 'Auch🔥 Be careful!😒';
+        }
+}
+
 function alert_button(str){
     alert(str)
 }
@@ -7,31 +17,27 @@ function prompt_button(str){
 }
 
 function bg_mode(){
+    let mybutton = document.querySelector('#B1');
     let mybodystyle =  document.querySelector('body').style;
-    if (mybodystyle.backgroundColor==='black'){
-            mybodystyle.backgroundColor='rgb(255, 248, 228)';
-            mybodystyle.color='black';
-    } else{
+    if (mybutton.value==='night'){
             mybodystyle.backgroundColor='black';
             mybodystyle.color='white';
+            mybutton.value = 'day';
+    } else{
+            mybodystyle.backgroundColor='rgb(255, 248, 228)';
+            mybodystyle.color='black';
+            mybutton.value = 'night';
     }
 }
 
-//color
 function change_color(color_Value){
     document.querySelector('body').style.color=color_Value;
-}
-
-function change_title(){
-    let myHeading = document.querySelector('h1');
-myHeading.onclick = function(){
-    if (myHeading.textContent === 'Auch🔥 Be careful!😒'){
-        myHeading.textContent = 'Study about Web';
-        } else {
-        myHeading.textContent = 'Auch🔥 Be careful!😒';
-        }
+    let link_list = document.querySelectorAll('a')
+    for( let i in link_list){
+        link_list[i].style.color=color_Value;
     }
 }
+
 
 function addUserNameonTitle(){
     let myHeading = document.querySelector('h1');
