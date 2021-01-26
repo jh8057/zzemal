@@ -48,6 +48,14 @@ Start make public website!😀
 - 내가 하려는건 function으로 감싸서 모든걸 구현하려했으니 this는 호출된 function일 것이다.
 - for ,do while, while, label, break,continue,for in, for of
 - 반복문 많기도 하다.
+- let, var, const
+- textarea 때문에 개삽질을 했다.🔥🔥🔥
+- 결과물을 냈는데도 아직도 왜 안됐는지 모르겠다. 답을 찾고 나니 괜히 오타로 돌고 돌지 않았나 싶은데...
+- 결론은 getElementById 로 얻은 값을 한번 저장하고, 그 값을 불러서 value값을 참조해야 제대로 참조가 된다.
+- get id할때는 #을 안 붙인다.
+- innerHTML로 내용을 변경하는게 줄바꿈이 적용이 된다.
+- 역시나 , if else if 문은 동일하게 존재했다.
+- Math.random 으로 랜덤 숫자 뽑기 기능 구현 !🐬
 ## Free note
 - em : Effective Micro-organisms 기울기 효과
 - ctrl + t : 새 탭 열기 / ctrl + n : 새 창 열기

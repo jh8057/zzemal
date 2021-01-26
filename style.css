@@ -16,4 +16,13 @@ body{
 img{
     display:block;
     margin: 0 auto;
+    padding-right: 3%;
+}
+
+#special1{
+    font-size: 20pt;
+}
+
+h2{
+    padding: 10px 0 10px 0 ;
 }

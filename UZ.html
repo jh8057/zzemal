@@ -8,12 +8,33 @@
         <link href="style.css" rel="stylesheet">
     </head>
     <body>
-        <ol>
-            <li>Who is UZ?</li>
-        </ol>
         <h1>Who is UZ?</h1>
-        <p style="font-family: 'Hachi Maru Pop', cursive;" >
+        <ol>
+            <li>Profile!?✅</li>
+            <li>What U want?</li>
+        </ol>
+        <img src="./img/고양이강아지.jpg" style="float: left;" width="50%" height="20%">
+    <ul> <h2>Profile!?✅</h2>
+        <li>name : UZ</li>
+        <li>age : secret😜</li>
+        <li>bodyfriend : 🙆‍♂️</li>
+        <li>job : Marketer</li>
+        <li>company : <a href="https://www.wingeat.com">Wingeat!🍗</a></li>
+        <li>hobby : Play, Eat, Sleep🌟</li>
+    </ul>
+        <p id="special1" style="font-family: 'Hachi Maru Pop', cursive;">
             She is pretty😘
         </p>
+        <h2>UP,DOWN!</h2>
+        <p>1~10까지 숫자가 랜덤으로 나온다! <br>
+            <span style="font-size: xx-large;"  id="updown1"></span> Up or Down!</p>
+        <div><button onclick="random_num()">꼬우~🌟</button></div>
+        <div id="updown2" style="font-size: 50pt;"></div>
+        <h2 >What U want?</h2>
+        <div id="output1"></div>
+        <textarea id=text1 name="textarea" rows="5" cols="35">추가하고 싶은 내용을 적고 버튼 클릭! 👇👇</textarea>
+        <div><button onclick="submitbutton()">내용 추가</button></div>
+        <div><button onclick="removebutton()">전부 제거</button></div>
+    <script src="myaddcontents.js"></script>
     </body>
 </html>
