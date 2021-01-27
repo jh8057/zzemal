@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
 h1{
  text-align: center;
 /* padding: 20px 0; /*top left*/
@@ -23,6 +24,16 @@ img{
     font-size: 20pt;
 }
 
-h2{
-    padding: 10px 0 10px 0 ;
+.comment-row{
+    padding: 5px 0 5px 0 ;
+    border: 2px ridge rgb(255, 150, 89);
+    border-radius: 10px;
+    margin-top: 10px; 
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: x-large;
+}
+
+.orangebg{
+    background-color: orange;
+    font-weight: bold;
 }
