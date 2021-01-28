@@ -16,17 +16,16 @@ function prompt_button(str){
     prompt(str)
 }
 
-function bg_mode(){
-    let mybutton = document.querySelector('#B1');
+function bg_mode(self){
     let mybodystyle =  document.querySelector('body').style;
-    if (mybutton.value==='night'){
+    if (self.value==='night'){
             mybodystyle.backgroundColor='black';
             mybodystyle.color='white';
-            mybutton.value = 'day';
+            self.value = 'day';
     } else{
             mybodystyle.backgroundColor='rgb(255, 248, 228)';
             mybodystyle.color='black';
-            mybutton.value = 'night';
+            self.value = 'night';
     }
 }
 
@@ -50,12 +49,11 @@ function addUserNameonTitle(){
     }
 }
 
-function change_img(){
-    let myImage = document.querySelector('#P1');
-    let mySrc = myImage.getAttribute('src');
+function change_img(self){
+    let mySrc = self.getAttribute('src');
     if(mySrc === './img/domain_img.jpg') {
-      myImage.setAttribute('src','./img/art1.jpg');
+      self.setAttribute('src','./img/art1.jpg');
     } else {
-      myImage.setAttribute('src','./img/domain_img.jpg');
+      self.setAttribute('src','./img/domain_img.jpg');
     }
 }

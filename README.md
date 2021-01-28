@@ -1,9 +1,10 @@
 # zzemal_web
 Start make public website!😀
 ## reference site
+[My Site](https://jh8057.github.io/zzemal/)
 [MDN web](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started)  
 [Google Font](https://fonts.google.com/specimen/Hachi+Maru+Pop?selection.family=Hachi+Maru+Pop&sidebar.open=true#standard-styles)
-
+[html 데이터저장](https://www.zerocho.com/category/HTML&DOM/post/5a76d1eaabd090001b981ba6)
 ## script tag
 - script tag로 감싸서 자바스크립트를 작성할 수 있다.
 - 자바스크립트는 기본적으로 html 위에서 동작하는 코드다.
@@ -61,6 +62,12 @@ Start make public website!😀
 - Math.random 으로 랜덤 숫자 뽑기 기능 구현 !🐬
 - 열심히 댓글기능 만들어서 올려놨는데 저장이 되지 않고 있었다. ㅎ..🎈
 - parserInt : String -> int
+- self 라는 용어가 나와서 this와 헷갈리기 시작했는데, 내가 이해한대로 적어본다면 self는 그냥 this를 넘기기 위해 사용된 매개변수 이름일 뿐이라 생각된다.
+- 따라서 중복문이나, js으로 this값을 넘길때 사용될 듯 하다.(뇌피셜🤔)
+- 여튼 this 값을 넘길 수 있다는 걸 알게 되어서 편해졌다.😁
+- 객체라는 것을 배우게 될것이다.
+- 폴더라 생각하면 편한데, 그동안 이름중복을 피해 써왔던 것들을 객체를 통해 구분짓고, 편리하게 가져다 쓸수 있게 된다.
+- 객체에 있는 함수를 '메소드'라 부른다. 객체 > 메소드
 
 ## Free note
 - em : Effective Micro-organisms 기울기 효과
