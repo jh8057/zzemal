@@ -68,10 +68,26 @@ Start make public website!😀
 - 객체라는 것을 배우게 될것이다.
 - 폴더라 생각하면 편한데, 그동안 이름중복을 피해 써왔던 것들을 객체를 통해 구분짓고, 편리하게 가져다 쓸수 있게 된다.
 - 객체에 있는 함수를 '메소드'라 부른다. 객체 > 메소드
+- 객체 : 이름이 있는 정리정돈 상자
+- 아 .. 객체가 특별한건줄 알았는데, 그냥 딕셔너리 개념이랑 같다고 보면 될것같다.
+- 객체에 함수를 담을수 있다.😲
+- 객체 내 함수 있는가? > 없으면 prototype 이 있는가 확인
+- prototype을 통해 메모리 사용을 줄일 수 있다.
 
+## React
+제일 처음 내가 하고 싶었던, React에 대해 배우려고 한다.
+- 개발 환경부터 세팅하고 해야지..😐
 ## Free note
 - em : Effective Micro-organisms 기울기 효과
 - ctrl + t : 새 탭 열기 / ctrl + n : 새 창 열기
 - ctrl + L : console창 지우기
 - console 에서 shift + enter 하면 여러줄 타입 가능
 - Ctrl + Shift + L : 동일 단어 동시 수정
+
+## 지금까지 생활 코딩에서 수강한 탭
+- WEB 1 HTML
+- WEB 2 CSS
+- WEB 2 Javascript
+- WEB 2 Home server
+- WEB 2 HTTP
+- javascript 객체 지향 프로그래밍

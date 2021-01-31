@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Object</title>
+        <link href="style.css" rel = "stylesheet">
+    </head>
+    <body>
+        <h1>Object</h1>
+        <h2>Creat</h2>
+        <script>
+            var cowerkers ={
+                "programmer" : "egoing",
+                "designer" : "leezche"
+            }
+            document.write("1 : "+ cowerkers.programmer+"<br>");
+            document.write("2 : "+ cowerkers.designer+"<br>");
+            cowerkers.student = "JHK"
+            document.write("3 : "+ cowerkers.student+"<br>");
+            cowerkers["count"] = "4"
+            document.write("3 : "+ cowerkers.count+"<br>");
+        </script>
+        <h2>Iterate</h2>
+        <script>
+            for(var key in cowerkers){
+                document.write(key+"<br>");
+                document.write(cowerkers[key]+"<br>");
+            }
+            </script>
+            <h2>function in object = method</h2>
+            <h2>variable(변수) in object = property</h2>
+            <script>
+            cowerkers.Showall = function(){
+            for(var key in this){
+            if ( key !== 'Showall'){
+                document.write(key+":"+this[key]+"<br>");                        
+                    }
+                }
+            }
+        cowerkers.Showall();
+        </script>
+    </body>
+</html>
