@@ -1,3 +1,4 @@
+'use strict';
 function submitbutton(){
     const textarea = document.getElementById("text1");
     const textarea2 = textarea.value;

@@ -1,3 +1,4 @@
+'use strict';
 //change title
 let myHeading = document.querySelector('h1');
 myHeading.onclick = function(){

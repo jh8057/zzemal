@@ -8,3 +8,6 @@ let UZ = {
     }
 }
 console.log("sum : ", UZ.sum())
+for ( let i in UZ){
+    console.log(i, UZ[i]);
+} 

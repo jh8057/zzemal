@@ -55,7 +55,7 @@ Start make public website!😀
 - let, var, const
 - textarea 때문에 개삽질을 했다.🔥🔥🔥
 - 결과물을 냈는데도 아직도 왜 안됐는지 모르겠다. 답을 찾고 나니 괜히 오타로 돌고 돌지 않았나 싶은데...
-- 결론은 getElementById 로 얻은 값을 한번 저장하고, 그 값을 불러서 value값을 참조해야 제대로 참조가 된다.
+- 결론은 getElementById 로 얻은 값을 한번 저장하고, 그 값을 불러서 value값을 참조해야 제대로 참조가 된다. (자동완성때문에 value가 안쳐저서.. esc 누르면 바로 해결되는걸.. 못쓰는줄..알았네..)
 - get id할때는 #을 안 붙인다.
 - innerHTML로 내용을 변경하는게 줄바꿈이 적용이 된다.
 - 역시나 , if else if 문은 동일하게 존재했다.
@@ -73,7 +73,17 @@ Start make public website!😀
 - 객체에 함수를 담을수 있다.😲
 - 객체 내 함수 있는가? > 없으면 prototype 이 있는가 확인
 - prototype을 통해 메모리 사용을 줄일 수 있다.
-
+- 그 동안 왜 js 링크를 body 끝쪽에 놓으면 좋은지에 대한 걸 그냥 그렇구나 하고 넘어갔었는데, 알게 되었다.
+- 웹 페이지를 불러오는데 parsing HTML, fetching js, execute js가 있는데, 이때 순서나 방법에 따라, 장단점이 존재하기 때문이다.
+- 자세한건 [요기](https://www.youtube.com/watch?v=tJieVCgGzhs&t=445s)
+- 제일 좋은 순서 head + defer > header + asyn > body end > head
+- 'use strict'; 을 선언해주면 좋다(쉘 스크립트 #!/bin/bash 같은거)
+- 왜? 유연성이 좋은 js에 안전장치역할, 선언되지 않은 것 있으면 막아줌.
+- 객체를 양산하는 공장 : `constructor`
+- class 함수에서 제일 먼저 실행되는 함수 이름 = constructor
+- class 에서 상속 : extends
+- call,bind를 통해 상속을 이용할 수 있다.
+- 그래도 그냥 class로 짜는게 더 깔끔하고 편해보인다(현재로는🤔)
 ## React
 제일 처음 내가 하고 싶었던, React에 대해 배우려고 한다.
 - 개발 환경부터 세팅하고 해야지..😐
