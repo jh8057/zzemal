@@ -84,6 +84,9 @@ Start make public website!😀
 - class 에서 상속 : extends
 - call,bind를 통해 상속을 이용할 수 있다.
 - 그래도 그냥 class로 짜는게 더 깔끔하고 편해보인다(현재로는🤔)
+
+## semantic tag
+조금 더 명확한 설명을 위한 태그
 ## React
 제일 처음 내가 하고 싶었던, React에 대해 배우려고 한다.
 - 개발 환경부터 세팅하고 해야지..😐
@@ -98,6 +101,16 @@ npm install -g create-react-app
 - npm run start : 리액트 앱 실행
 - npm run build : 배포용 빌드
 > npm install -g serve : 서버 설치 (npx 1회용)
+- 우리는 js가 아닌 JSX을 이용한 코딩을 하는거다.
+- 이를 reate가 자바스크립트로 변환해주는거다.
+- component : react 구동하면 구동되는 하나의 블럭
+- props : attribute 값 , component를 외부 제어할때 필요
+- state : component 에 들어가있는 가려져있는 블럭들 , 실제 구동에 필요한 부분들
+- key : state 지정해서 여러 값을 불러올때 앞에 key값을 넣어줘야된다.(react가 필요로 함)
+## p5.js
+- 회사에서 three.js를 보게되어서 갑분 p5를 해보았다.
+- 홈페이지에서 자바 파일은 받은 후, script에 추가해주고, p5에서 정해진대로 코딩을 하면 화면에 구현이 된다.
+
 ## Free note
 - em : Effective Micro-organisms 기울기 효과
 - ctrl + t : 새 탭 열기 / ctrl + n : 새 창 열기
