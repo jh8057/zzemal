@@ -5,6 +5,7 @@ Start make public website!😀
 [MDN web](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started)  
 [Google Font](https://fonts.google.com/specimen/Hachi+Maru+Pop?selection.family=Hachi+Maru+Pop&sidebar.open=true#standard-styles)
 [html 데이터저장](https://www.zerocho.com/category/HTML&DOM/post/5a76d1eaabd090001b981ba6)
+[시각적 Youtube](https://www.youtube.com/watch?v=LLfhY4eVwDY)
 ## script tag
 - script tag로 감싸서 자바스크립트를 작성할 수 있다.
 - 자바스크립트는 기본적으로 html 위에서 동작하는 코드다.
@@ -84,6 +85,10 @@ Start make public website!😀
 - class 에서 상속 : extends
 - call,bind를 통해 상속을 이용할 수 있다.
 - 그래도 그냥 class로 짜는게 더 깔끔하고 편해보인다(현재로는🤔)
+
+## graphic
+언제나 에러는 짜증난다..
+그래픽작업을 한번 해볼라했는데.🔥🔥🔥🔥🔥🔥
 
 ## semantic tag
 조금 더 명확한 설명을 위한 태그
