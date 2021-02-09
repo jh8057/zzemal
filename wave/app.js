@@ -1,33 +1,38 @@
-import {Wave} from './make'
+import {Wave} from './wave.js';
 class App{
     constructor(){
-        this.canvas = document.createElement('canvas')
-        this.ctx = this.canvas.getContext('2d') 
-        document.body.appendChild(this.canvas)
+        this.canvas = document.createElement('canvas');
+        this.ctx = this.canvas.getContext('2d') ;
+        document.body.appendChild(this.canvas);
 
-        //this.wave = new Wave()
+        window.addEventListener('resize',this.resize.bind(this),
+        {
+            once : false,
+            passive : false,
+            capture : false,
+        });
 
-        window.addEventListener('resize',this.resize.bind(this),false)
+        this.wave = new Wave();
         this.resize()
 
         requestAnimationFrame(this.animate.bind(this))
     }
     resize(){
-        this.stageWidth = document.body.clientWidth
-        this.stageHeight = document.body.clientHeight
+        this.stageWidth = document.body.clientWidth;
+        this.stageHeight = document.body.clientHeight;
 
-        this.canvas.width = this.stageWidth *2
-        this.canvas.height = this.stageHeight *2
-        this.ctx.scale(2,2)
+        this.canvas.width = this.stageWidth *2;
+        this.canvas.height = this.stageHeight *2;
+        this.ctx.scale(2,2);
 
-        this.wave.resize(this.stageWidth,this.stageHeight)
+        this.wave.resize(this.stageWidth,this.stageHeight);
     }
     
 
     animate(t){
-        this.ctx.clearRect(0,0,this.stageWidth,this.stageHeight)
-        this.wave.draw(this.ctx)
-        requestAnimationFrame(this.animate.bind(this))
+        this.ctx.clearRect(0,0,this.stageWidth,this.stageHeight);
+        this.wave.draw(this.ctx);
+        requestAnimationFrame(this.animate.bind(this));
     }
 
 }

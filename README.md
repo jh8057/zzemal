@@ -87,9 +87,8 @@ Start make public website!😀
 - 그래도 그냥 class로 짜는게 더 깔끔하고 편해보인다(현재로는🤔)
 
 ## graphic
-언제나 에러는 짜증난다..
-그래픽작업을 한번 해볼라했는데.🔥🔥🔥🔥🔥🔥
-
+-언제나 에러는 짜증난다.. 그래픽작업을 한번 해볼라했는데.🔥🔥🔥🔥🔥🔥
+- [도형그리기](https://developer.mozilla.org/ko/docs/Web/HTML/Canvas/Tutorial/Drawing_shapes)
 ## semantic tag
 조금 더 명확한 설명을 위한 태그
 ## React
