@@ -39,7 +39,13 @@ Start make public website!😀
 - class를 이용해서 꾸미는것이 은근 꿀이란걸 깨달았다.
 - span이나 div로 원하는 구역 정해주고 class 부여하면 끝!
 - css가 그냥 대충 크기만 맞춰주는 건줄 알았는데 animation 기능도 css에서 부여가능하다는걸 알게되었다.
-- 오랜만에 창작욕이 불타올라.. 시간이 많이 걸렷지만, 이쁘게 꾸며봤다.
+- 오랜만에 창작욕이 불타올라.. 디테일을 살리겠다고 시간은 많이 걸렸지만, 디자이너가 아니기에 엄청 이쁘진 않는 창작물을 만들어버렸다.😉
+- @keyframe : from to 로 animation을 조절할수있다.
+- animate : infinite alternate => 왔다 갔다 반복
+- position : absolute를 해줘야 animation이 생각한대로 된다.(위치값을 전체를 보고 애니메이션을 줄 경우)
+- 사진도 url으로 불러올수있고, 이미지 크기도 cover,cotain등을 통해 조절할 수있다.
+
+
 
 
 ## javascript
