@@ -1,0 +1,29 @@
+@keyframes compare{
+    from{
+      left:100px;
+    }
+    to{
+      left:300px;
+    }
+  }
+
+
+div{
+    position:absolute;
+    left:100px;
+    width:100px;
+    height:50px;
+    margin-left:-100px;
+    background-color:#000;
+    color:#fff;
+    animation: compare 2s infinite alternate;
+  }
+.ease{
+   top : 30%;
+   animation-timing-function:ease;
+}
+.ease_in_out{
+    top:40%;
+    animation-timing-function:ease-in-out;
+  }
+  

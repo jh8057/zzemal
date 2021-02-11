@@ -17,7 +17,7 @@ function random_num(){
     let output1 = document.querySelector("#updown1");
     let output2 = document.querySelector("#updown2");
     if (output1.innerHTML && output2.innerHTML){
-        output1.innerHTML = "";
+        output1.innerHTML = ""; 
         output2.innerHTML = "";
     } else if (!output1.innerHTML){
         output1.innerHTML = random_number;

@@ -100,6 +100,7 @@ Start make public website!😀
 
 ## error
 -github에 커밋햇는데 page는 업데이트 되지 않는 에러가 발생했다.
+- 한번 더 커밋하니까 됐다.. 뭐지..
 ## semantic tag
 조금 더 명확한 설명을 위한 태그
 ## React
