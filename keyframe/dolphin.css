@@ -7,6 +7,16 @@
     }
   }
 
+  @keyframes dolphin-ani{
+    to{
+      background-position: -2160px 0;
+    }
+  }
+  @keyframes rainbow-ani{
+    to{
+      background-position: -2880px 0;
+    }
+  }
 
 div{
     position:absolute;
@@ -25,5 +35,19 @@ div{
 .ease_in_out{
     top:40%;
     animation-timing-function:ease-in-out;
+  }
+
+.dolphin{
+    width: 720px;
+    height: 720px;
+    background: url('../img/dolphin.jpg');
+    animation: dolphin-ani 4s infinite steps(3);
+  }
+
+.rainbow{
+    width: 720px;
+    height: 720px;
+    background: url('../img/color.jpg');
+    animation: rainbow-ani 3s infinite alternate;
   }
   
