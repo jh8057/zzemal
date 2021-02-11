@@ -38,6 +38,9 @@ Start make public website!😀
 - 이제 좀 css에 익숙해진 것 같다.(21.1.28)
 - class를 이용해서 꾸미는것이 은근 꿀이란걸 깨달았다.
 - span이나 div로 원하는 구역 정해주고 class 부여하면 끝!
+- css가 그냥 대충 크기만 맞춰주는 건줄 알았는데 animation 기능도 css에서 부여가능하다는걸 알게되었다.
+- 오랜만에 창작욕이 불타올라.. 시간이 많이 걸렷지만, 이쁘게 꾸며봤다.
+
 
 ## javascript
 - 예전에는 브라우저가 자바스크립트인지 잘 인식 못하는 경우가 있어서 script type="text/javascript" 를 써줬는데, html5부터는 default가 되어서 안써줘도 된다.
