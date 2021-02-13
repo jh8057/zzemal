@@ -15,6 +15,7 @@ body{
 }
 
 img{
+    cursor: pointer;
     display:block;
     margin: 0 auto;
     padding-right: 3%;
@@ -36,4 +37,10 @@ img{
 .orangebg{
     background-color: orange;
     font-weight: bold;
+}
+
+.scroll{
+    position : absolute;
+    right: 10%;
+    bottom: 10%;
 }

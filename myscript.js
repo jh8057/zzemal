@@ -58,3 +58,17 @@ function change_img(self){
       self.setAttribute('src','./img/domain_img.jpg');
     }
 }
+
+function scroll_button(){
+    let last_known_scroll_position = 0;
+    last_known_scroll_position = window.scrollY;
+    window.scrollTo({
+        top: scrollY+100,
+        behavior: 'smooth'
+      });
+}
+
+function bounce_ani(self){
+    self.setAttribute('class',"animate__animated animate__bounce");
+    setTimeout(function(){self.setAttribute('class',"test")},1000);
+}

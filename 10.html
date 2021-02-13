@@ -20,24 +20,24 @@
             cowerkers["count"] = "4"
             document.write("3 : "+ cowerkers.count+"<br>");
         </script>
-        <h2>Iterate</h2>
+        <h2>Iterate by using "for" </h2>
         <script>
             for(var key in cowerkers){
                 document.write(key+"<br>");
                 document.write(cowerkers[key]+"<br>");
             }
             </script>
-            <h2>function in object = method</h2>
-            <h2>variable(변수) in object = property</h2>
+        <h2>function in object called <span class="orangebg">method</span></h2>
+        <h2>variable(변수) in object = property</h2>
             <script>
             cowerkers.Showall = function(){
             for(var key in this){
             if ( key !== 'Showall'){
-                document.write(key+":"+this[key]+"<br>");                        
+                document.write(key+" : "+this[key]+"<br>");
                     }
                 }
             }
-        cowerkers.Showall();
+            cowerkers.Showall();
         </script>
     </body>
 </html>

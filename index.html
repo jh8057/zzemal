@@ -4,11 +4,16 @@
 <title>Study Web- zzemal</title>
 <meta charset="utf-8">
 <link href="style.css" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/><!-- animation link-->
 <script defer src="myscript.js"></script>
+<script defer src="scrollevent.js"></script>
 </head>
 <body>
-    <h1 >Study about Web</h1>
-    <img src="./img/banner_img_art.jpg" width = "60%" ><br>
+    <h1 class="animate__animated animate__flash animate__repeat-1 animate__slow" >Study about Web</h1>
+    <img src="./img/banner_img_art.jpg" width = "60%" class="test" onclick="bounce_ani(this)"><br>
 
     <p>
         <input id =B1 type="button" value="night" onclick="bg_mode(this)">
@@ -24,9 +29,10 @@
         <input type="radio" name ="color" onclick="change_color('black')"> Black
     </p>
 <ol>
+    <h2 onclick="bounce_ani(this)">Lists I learned</h2>
     <li><a href ="1.html"> HTML </a></li>
     <li><a href="2.html"> Script Tag!🦄 </a></li>
-    <li><a href="3.html"> Event😁 </a></li>
+    <li><a href="3.html"> Event about alert & input text😁 </a></li>
     <li><a href="4.html"> Span vs Div😣 </a></li>
     <li><a href="5.html"> toUpperCase by js😉 </a></li>
     <li><a href="6.html"> Comparison opserators & Boolean 👀</a></li>
@@ -58,34 +64,40 @@ Hypertext Markup Language (HTML) is the standard
 markup language for <strong><u>creating web pages</strong></u>
 and web applications.
 </p>
-<p>
+<div id="no1" class="test" style="opacity: 0;">
+    <p>
     Click this image 👇👇👇
-</p>
-<img id=P1 src="./img/domain_img.jpg", width="80%" onclick="change_img(this)">
+    </p>
+    <img id=P1 src="./img/domain_img.jpg", width="80%" onclick="change_img(this)">
+</div>
+<div id="no2" class="test" style="opacity: 0;">
+    <h2>Free note</h2>
+    줄바꿈<br>줄바꿈은 닫힌 태그가 없다.
+    <p>문단1</p>
+    <p style="margin-top:30px;">요건 css 문단2</p>
 
-<h2>Free note</h2>
-줄바꿈<br>줄바꿈은 닫힌 태그가 없다.
-<p>문단1</p>
-<p style="margin-top:30px;">요건 css 문단2</p>
+    <pre>요것은 
+        알아서
+        줄바꿈 
+        적용되는 구간
+    </pre>
+    <p>
+        이모지🤣는 잘✔ 적용될까?🐱‍👤<br>
+        🔥🔥🔥🔥🔥😂😂😂끝!
+    </p>
+    <p>
+        <a href="http://www.naver.com" title="Green house"> Go NAVER</a>
+        <a href="http://www.google.com" target="_blank" title="Global ocean"> Go Google</a>
 
-<pre>요것은 
-    알아서
-    줄바꿈 
-    적용되는 구간
-</pre>
-<p>
-    이모지🤣는 잘✔ 적용될까?🐱‍👤<br>
-    🔥🔥🔥🔥🔥😂😂😂끝!
-</p>
-<p>
-    <a href="http://www.naver.com" title="Green house"> Go NAVER</a>
-    <a href="http://www.google.com" target="_blank" title="Global ocean"> Go Google</a>
-    
-</p>
-<p>
-    <button onclick="alert_button('hello, This is alert')">안녕하세요!</button>
-    <button onclick="prompt_button('hello, This is prompt')">눌러보세요!</button>
-</p>
+    </p>
+    <p>
+        <button onclick="alert_button('hello, This is alert')">안녕하세요!</button>
+        <button onclick="prompt_button('hello, This is prompt')">눌러보세요!</button>
+    </p>
+</div>
+<P>
+    <button class="scroll" onclick="scroll_button()">scroll button</button>
+</P>
 
 </body>
 </html>
