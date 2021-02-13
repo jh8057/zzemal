@@ -1,15 +1,20 @@
 # zzemal_web
 Start make public website!😀
 ## reference site
-[My Site](https://jh8057.github.io/zzemal/)
+[My Site](https://jh8057.github.io/zzemal/)   
 [MDN web](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started)  
-[Google Font](https://fonts.google.com/specimen/Hachi+Maru+Pop?selection.family=Hachi+Maru+Pop&sidebar.open=true#standard-styles)
-[html 데이터저장](https://www.zerocho.com/category/HTML&DOM/post/5a76d1eaabd090001b981ba6)
-[웨이브만들기 Youtube](https://www.youtube.com/watch?v=LLfhY4eVwDY)
+[Google Font](https://fonts.google.com/specimen/Hachi+Maru+Pop?selection.family=Hachi+Maru+Pop&sidebar.open=true#standard-styles)  
+[html 데이터저장](https://www.zerocho.com/category/HTML&DOM/post/5a76d1eaabd090001b981ba6)  
+[웨이브만들기 Youtube](https://www.youtube.com/watch?v=LLfhY4eVwDY)  
+[애니메이션 넣어주는 라이브러리 animate.css](https://animate.style/)  
 ## script tag
 - script tag로 감싸서 자바스크립트를 작성할 수 있다.
 - 자바스크립트는 기본적으로 html 위에서 동작하는 코드다.
 - 자바스크립트는 '동적'이다.
+- 이후 semantic tag라는 것도 있다. 의미적인 뜻을 나타내는 태그이다.
+## semantic tag
+조금 더 명확한 설명을 위한 태그이다.  
+상세 내용 : [요기](https://kutar37.tistory.com/entry/%EC%8B%9C%EB%A9%98%ED%8B%B1-%ED%83%9C%EA%B7%B8-Semantic-Tag)
 ## event
 - input 으로 버튼을 만들었다.
 - value 에 이름, onclick으로 alert()-경고창을 띄웠다.
@@ -21,8 +26,9 @@ Start make public website!😀
 - 브라우저를 키고 오른쪽 클릭 > 검사를 누르면 console 창을 볼 수 있다. Elements 에서 esc눌르면 밑에 나오기도 함.
 - 콘솔창에서 자바스크립트를 실행할 수 있다.
 - 띄어 있는 웹 페이지를 기반으로 실행이 된다.
+- 코드 속에 `debbug`라는 것을 넣으면 디버깅도 가능하다.
 ## CSS
-- 속성이라는게 있고, 그것에 맞는 문법을 써넣어주면 된다.
+- 속성(attribute)이라는게 있고, 그것에 맞는 문법을 써넣어주면 된다.
 - span 과 div를 이용해서 적용하면 편하다.
 - span (div) > class > id 순으로 넓은 영역이다.
 - 따라서 좁은 영역일수록 우선순위가 높다!
@@ -43,10 +49,8 @@ Start make public website!😀
 - @keyframe : from to 로 animation을 조절할수있다.
 - animate : infinite alternate => 왔다 갔다 반복
 - position : absolute를 해줘야 animation이 생각한대로 된다.(위치값을 전체를 보고 애니메이션을 줄 경우)
-- 사진도 url으로 불러올수있고, 이미지 크기도 cover,cotain등을 통해 조절할 수있다.
-
-
-
+- 사진도 url으로 불러올수있고, 이미지 크기도 cover,contain등을 통해 조절할 수있다.
+- [자주 사용되는 요소](https://velog.io/@bungouk6829/CSS-%EC%9E%90%EC%A3%BC-%EC%82%AC%EC%9A%A9%EB%90%98%EB%8A%94-%EC%86%8D%EC%84%B1)
 
 ## javascript
 - 예전에는 브라우저가 자바스크립트인지 잘 인식 못하는 경우가 있어서 script type="text/javascript" 를 써줬는데, html5부터는 default가 되어서 안써줘도 된다.
@@ -94,6 +98,7 @@ Start make public website!😀
 - class 에서 상속 : extends
 - call,bind를 통해 상속을 이용할 수 있다.
 - 그래도 그냥 class로 짜는게 더 깔끔하고 편해보인다(현재로는🤔)
+- setattribute,getattribute 라는 함수도 있어서, 이를 통해 속성값을 바꿔줄수 있다.
 
 ## graphic
 -언제나 에러는 짜증난다.. 그래픽작업을 한번 해볼라했는데.🔥🔥🔥🔥🔥🔥
@@ -110,8 +115,6 @@ Start make public website!😀
 ## error
 -github에 커밋햇는데 page는 업데이트 되지 않는 에러가 발생했다.
 - 한번 더 커밋하니까 됐다.. 뭐지..
-## semantic tag
-조금 더 명확한 설명을 위한 태그
 ## React
 제일 처음 내가 하고 싶었던, React에 대해 배우려고 한다.
 - 개발 환경부터 세팅하고 해야지..😐
@@ -142,6 +145,7 @@ npm install -g create-react-app
 - ctrl + L : console창 지우기
 - console 에서 shift + enter 하면 여러줄 타입 가능
 - Ctrl + Shift + L : 동일 단어 동시 수정
+- CRUD : Creat, Read, Update, Delete
 
 ## 지금까지 생활 코딩에서 수강한 탭
 - WEB 1 HTML
