@@ -4,16 +4,18 @@ h1{
 /* padding: 20px 0; /*top left*/
  text-shadow: 1px 0px 30px rgb(255, 126, 5);
 }
-
+html{
+    cursor: url(./img/smilecursor.gif), auto;
+}
 body{
-    width: 65%;
+    cursor: url(./img/smilecursor.gif), auto;
     background-color: rgb(255, 248, 228);
+    width: 65%;
     margin : 0 auto;
     padding : 0 100px 20px 100px; /*top right bottom left*/
     border : 5px ridge rgb(201, 114, 0);
 
 }
-
 img{
     cursor: pointer;
     display:block;

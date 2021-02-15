@@ -51,7 +51,10 @@ Start make public website!😀
 - position : absolute를 해줘야 animation이 생각한대로 된다.(위치값을 전체를 보고 애니메이션을 줄 경우)
 - 사진도 url으로 불러올수있고, 이미지 크기도 cover,contain등을 통해 조절할 수있다.
 - [자주 사용되는 요소](https://velog.io/@bungouk6829/CSS-%EC%9E%90%EC%A3%BC-%EC%82%AC%EC%9A%A9%EB%90%98%EB%8A%94-%EC%86%8D%EC%84%B1)
-
+- css 커버 모양도 이미지로 바꿀수 있다.(권장 32x32pixel) 재밋네😁
+- [이것](https://myriad.video/)의 첫부분을 따라하고 싶어서 고민하던 중 div로 겹쳐서 놓을 수 있는걸 보고 기존 페이지 위에 검은색 배경으로 덮고 나중에 자연스럽게 내용이 나오도록 해보려했다.
+> 가능은 했으나, 만족스럽진 못해서 따로 빼놨더니, 오히려 독립적이니까 더 이쁜것 같기도 하다. 컬러바는 다음에..ㅎ
+- div로 전체 화면을 가리고 싶으면 html,body의 margin이나 padding이 없어야 되고, width,height도 100% 해야 상속된다.
 ## javascript
 - 예전에는 브라우저가 자바스크립트인지 잘 인식 못하는 경우가 있어서 script type="text/javascript" 를 써줬는데, html5부터는 default가 되어서 안써줘도 된다.
 - 적용하고 싶은 body 맨 아래에 스크립트를 넣어주면 적용이 된다.

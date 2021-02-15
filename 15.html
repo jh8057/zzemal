@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>init page animation</title>
+        <script style="display: hidden;">
+            const load = () => {
+            let mydiv = document.getElementById('initpage');
+            let output1 = document.querySelector("#initpage");
+
+            output1.innerHTML = "This"
+            mydiv.className= "animate__animated animate__fadeOutRight";
+            
+            setTimeout(function(){mydiv.className ="test";},500);
+            setTimeout(function(){mydiv.className ="animate__animated animate__fadeOutRight";},600);
+            setTimeout(function(){output1.innerHTML = "is";},500);
+        
+            setTimeout(function(){mydiv.className ="test";},1100);
+            setTimeout(function(){mydiv.className ="animate__animated animate__fadeOutRight";},1200);
+            setTimeout(function(){output1.innerHTML = "Me";},1100);
+
+            setTimeout(function(){mydiv.className ="test";},1700);
+            setTimeout(function(){output1.innerHTML = "DONE";},1700);
+        }
+            window.onload = load;
+          </script>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <style>
+        html,body{
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            color: white;
+        }
+        #initpage{
+            display: hidden;
+            background-color: #000;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            color : white;
+            font-size: 60vh;
+          }
+        </style>
+    </head>
+    <body>
+        <div id="initpage" class="test" style="opacity: 1; text-align: center;">
+            
+        </div>
+        <p>
+            One more? <span onclick=load() style="cursor: pointer;">CLICK</span>
+        </p>
+        <p>
+            I just wanna be like <a href="https://myriad.video/" target="_blank" title="wow">this</a>
+        </p>
+
+        <p>
+            awesome
+        </p>
+        
+
+    </body>
+</html>
