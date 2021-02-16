@@ -55,6 +55,11 @@ Start make public website!😀
 - [이것](https://myriad.video/)의 첫부분을 따라하고 싶어서 고민하던 중 div로 겹쳐서 놓을 수 있는걸 보고 기존 페이지 위에 검은색 배경으로 덮고 나중에 자연스럽게 내용이 나오도록 해보려했다.
 > 가능은 했으나, 만족스럽진 못해서 따로 빼놨더니, 오히려 독립적이니까 더 이쁜것 같기도 하다. 컬러바는 다음에..ㅎ
 - div로 전체 화면을 가리고 싶으면 html,body의 margin이나 padding이 없어야 되고, width,height도 100% 해야 상속된다.
+- padding 과 margin을 배웠지만.. 직접 써봐야 뇌리에 박히는게 진짜 맞는것 같다. 이제야 padding을 제대로 이용했다.padding을 이용해서 일정 간격을 내부에서 띄어주고 왼쪽 정렬해주었다.
+- list-style:none 하면 리스트 앞에 붙은 것들이 안나온다!
+- float:left 바로 이어서 붙어서 나오게해주는 것
+- 대대적인 디자인 변화를 줄까해서 일단 body에 걸려있던 margin이며 padding이며 border며 다 없애주고 100%로 해놨다.
+
 ## javascript
 - 예전에는 브라우저가 자바스크립트인지 잘 인식 못하는 경우가 있어서 script type="text/javascript" 를 써줬는데, html5부터는 default가 되어서 안써줘도 된다.
 - 적용하고 싶은 body 맨 아래에 스크립트를 넣어주면 적용이 된다.
@@ -102,6 +107,9 @@ Start make public website!😀
 - call,bind를 통해 상속을 이용할 수 있다.
 - 그래도 그냥 class로 짜는게 더 깔끔하고 편해보인다(현재로는🤔)
 - setattribute,getattribute 라는 함수도 있어서, 이를 통해 속성값을 바꿔줄수 있다.
+- 오늘은 footer를 제대로 만들어 봐야지에서 시작했던게, table도 만들어보고, div로도 쪼개서 꾸며봤다.(난 div가 좋은 것 같다.)
+- float 기능을 할게되었다. 
+- 날짜 계산하는 함수도 만들어봤다. 웃긴게 Date()에 입력한 날짜보다 한달이 추가되서 나오는게 웃겼다.
 
 ## graphic
 -언제나 에러는 짜증난다.. 그래픽작업을 한번 해볼라했는데.🔥🔥🔥🔥🔥🔥

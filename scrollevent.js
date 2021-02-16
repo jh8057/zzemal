@@ -16,7 +16,18 @@ if ((scroll_pos)<700){
 } else if((scroll_pos)>740) {
     document.getElementById("no2").className="animate__animated animate__fadeInUp";
     document.getElementById("no2").style.opacity = "1";
+    countdays();
     }
+}
+function countdays(){
+  const date1 = new Date(2020,12,22);
+  let date2 = new Date();
+
+  const difftime= date2.getTime()-date1.getTime();
+  const diffday = Math.trunc(difftime/1000/60/60/24);
+
+  let countday= document.getElementById("countday");
+  countday.innerHTML = diffday;
 }
 
 window.addEventListener('scroll', function(e) {
@@ -31,3 +42,4 @@ window.addEventListener('scroll', function(e) {
     ticking = true;
   }
 });
+

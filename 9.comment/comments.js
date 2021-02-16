@@ -1,4 +1,3 @@
-atestr = dateToString(new Date());
 'use strict';
 function warnEmpty(){
     alert("뭘 추가해달라는 거죠..?😮")

@@ -6,15 +6,16 @@ h1{
 }
 html{
     cursor: url(./img/smilecursor.gif), auto;
+    width: 100%;
+    height: 100%;
+    margin : 0 ;
 }
 body{
     cursor: url(./img/smilecursor.gif), auto;
-    background-color: rgb(255, 248, 228);
-    width: 65%;
-    margin : 0 auto;
-    padding : 0 100px 20px 100px; /*top right bottom left*/
-    border : 5px ridge rgb(201, 114, 0);
-
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    margin : 0 ;
 }
 img{
     cursor: pointer;
@@ -40,9 +41,21 @@ img{
     background-color: orange;
     font-weight: bold;
 }
-
+.border{
+    border : 5px ridge rgb(201, 114, 0);
+}
 .scroll{
     position : absolute;
     right: 10%;
     bottom: 10%;
+}
+
+footer{
+    color: black;
+    margin: 0;
+}
+
+#footerimg{
+    width: 40%;
+    height: 70%;
 }
