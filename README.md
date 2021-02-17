@@ -59,7 +59,12 @@ Start make public website!😀
 - list-style:none 하면 리스트 앞에 붙은 것들이 안나온다!
 - float:left 바로 이어서 붙어서 나오게해주는 것
 - 대대적인 디자인 변화를 줄까해서 일단 body에 걸려있던 margin이며 padding이며 border며 다 없애주고 100%로 해놨다.
-
+- em : 지금 객체 기준 한간격
+- rem : html의 한간격
+- ::after 가 라이브러리 사용한줄 알았는데, 그냥 css에서 추가로 사용하는 요소였다.
+- :hover도 css 기능이였다.😅 마우스 커서를 가져다 대면 동작하는거였다.
+-CSS는 같은 속성을 여러 번 정의했을 때, 나중에 설정한 값이 적용됩니다. 만약 나중에 설정한 값이 적용되지 않게 하려면 속성값 뒤에 !important를 붙입니다.
+-div를 이용한 cursor를 만들어봤는데, 뭔가 이상해서 다음기회에 하는걸로 했다. js에서 커서 위치를 제대로 못잡는 현상이 일어났다.
 ## javascript
 - 예전에는 브라우저가 자바스크립트인지 잘 인식 못하는 경우가 있어서 script type="text/javascript" 를 써줬는데, html5부터는 default가 되어서 안써줘도 된다.
 - 적용하고 싶은 body 맨 아래에 스크립트를 넣어주면 적용이 된다.
