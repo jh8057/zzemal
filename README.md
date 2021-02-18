@@ -65,6 +65,9 @@ Start make public website!😀
 - :hover도 css 기능이였다.😅 마우스 커서를 가져다 대면 동작하는거였다.
 -CSS는 같은 속성을 여러 번 정의했을 때, 나중에 설정한 값이 적용됩니다. 만약 나중에 설정한 값이 적용되지 않게 하려면 속성값 뒤에 !important를 붙입니다.
 -div를 이용한 cursor를 만들어봤는데, 뭔가 이상해서 다음기회에 하는걸로 했다. js에서 커서 위치를 제대로 못잡는 현상이 일어났다.
+- transform만으로는 요소의 변형을 일으킬 뿐 움직이는 동적인 효과를 줄 수 없습니다.
+- transition을 사용하여 동적인 효과를 줍니다.[여기](https://codingbroker.tistory.com/54)
+
 ## javascript
 - 예전에는 브라우저가 자바스크립트인지 잘 인식 못하는 경우가 있어서 script type="text/javascript" 를 써줬는데, html5부터는 default가 되어서 안써줘도 된다.
 - 적용하고 싶은 body 맨 아래에 스크립트를 넣어주면 적용이 된다.

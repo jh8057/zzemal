@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    min-height: 100vh;
+    position: relative;
+    overflow : hidden;
+}
+
+.hero img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    object-fit: fill;
+    mix-blend-mode:lighten;
+    animation : reveal 2s ease forwards, zooming 3s ease-in-out infinite alternate-reverse;
+    opacity: 0;
+}
+.hero video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    object-fit: fill;
+    animation : reveal 2s ease forwards;
+    opacity: 0;
+}
+
+@keyframes reveal{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+@keyframes zooming{
+    from{
+        transform : scale(1)
+    }
+    to{
+        transform : scale(1.02)
+    }
+}
