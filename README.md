@@ -7,6 +7,7 @@ Start make public website!😀
 [html 데이터저장](https://www.zerocho.com/category/HTML&DOM/post/5a76d1eaabd090001b981ba6)  
 [웨이브만들기 Youtube](https://www.youtube.com/watch?v=LLfhY4eVwDY)  
 [애니메이션 넣어주는 라이브러리 animate.css](https://animate.style/)  
+[Thanks Dev Ed!](https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q)  
 ## script tag
 - script tag로 감싸서 자바스크립트를 작성할 수 있다.
 - 자바스크립트는 기본적으로 html 위에서 동작하는 코드다.
@@ -67,6 +68,11 @@ Start make public website!😀
 -div를 이용한 cursor를 만들어봤는데, 뭔가 이상해서 다음기회에 하는걸로 했다. js에서 커서 위치를 제대로 못잡는 현상이 일어났다.
 - transform만으로는 요소의 변형을 일으킬 뿐 움직이는 동적인 효과를 줄 수 없습니다.
 - transition을 사용하여 동적인 효과를 줍니다.[여기](https://codingbroker.tistory.com/54)
+- 매번 놀라는데, 사실 간단하지만 생각지 못한것들을 많이 알게 되었다.
+- Y축으로 100% 올려주고,overflow:hidden을 줘서 안보이게 끔해주고, 나중에 다시 0%로 돌려와서 안보이다 보이게끔 한다는게, 참 간단하면서도 생각지 못했던 거였다.
+- span은 inline 요소이기에 block처럼 활용하려면 inline-block화를 해줘야 된다.
+- 다음과 같이 flex 속성을 부여하고 align center를 해서 원하는 위치에 놓는걸 말이 쓰더라
+> display: flex; align-items: center;
 
 ## javascript
 - 예전에는 브라우저가 자바스크립트인지 잘 인식 못하는 경우가 있어서 script type="text/javascript" 를 써줬는데, html5부터는 default가 되어서 안써줘도 된다.
@@ -118,7 +124,8 @@ Start make public website!😀
 - 오늘은 footer를 제대로 만들어 봐야지에서 시작했던게, table도 만들어보고, div로도 쪼개서 꾸며봤다.(난 div가 좋은 것 같다.)
 - float 기능을 할게되었다. 
 - 날짜 계산하는 함수도 만들어봤다. 웃긴게 Date()에 입력한 날짜보다 한달이 추가되서 나오는게 웃겼다.
-
+- gsap 이라는걸 이용해서 transition 효과를 주어보았다. 이게 라이브러리를 쓰는거다라는걸 알게되었다.
+>script에 gsap관련된거 한줄 넣어주면 끝이다. 다만, 형식을 알아야 쓸 수 있다.
 ## graphic
 -언제나 에러는 짜증난다.. 그래픽작업을 한번 해볼라했는데.🔥🔥🔥🔥🔥🔥
 - [CORS error](https://velog.io/@takeknowledge/%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C-CORS-policy-%EA%B4%80%EB%A0%A8-%EC%97%90%EB%9F%AC%EA%B0%80-%EB%B0%9C%EC%83%9D%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0-3gk4gyhreu)
