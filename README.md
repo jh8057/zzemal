@@ -126,6 +126,8 @@ Start make public website!😀
 - 날짜 계산하는 함수도 만들어봤다. 웃긴게 Date()에 입력한 날짜보다 한달이 추가되서 나오는게 웃겼다.
 - gsap 이라는걸 이용해서 transition 효과를 주어보았다. 이게 라이브러리를 쓰는거다라는걸 알게되었다.
 >script에 gsap관련된거 한줄 넣어주면 끝이다. 다만, 형식을 알아야 쓸 수 있다.
+- c처럼 debug하지말자.. debugging은 웹페이지에서 검사누르면 바로나오는것을..
+- javascript도 순서가 존재한다는걸 알게되었다.. js끼리 서로 필요한 파일이 있으면, 라이브러리 script를 다 불르고 마지막에 내 script를 배치해야된다.
 ## graphic
 -언제나 에러는 짜증난다.. 그래픽작업을 한번 해볼라했는데.🔥🔥🔥🔥🔥🔥
 - [CORS error](https://velog.io/@takeknowledge/%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C-CORS-policy-%EA%B4%80%EB%A0%A8-%EC%97%90%EB%9F%AC%EA%B0%80-%EB%B0%9C%EC%83%9D%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0-3gk4gyhreu)
