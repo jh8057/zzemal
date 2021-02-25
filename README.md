@@ -73,7 +73,13 @@ Start make public website!😀
 - span은 inline 요소이기에 block처럼 활용하려면 inline-block화를 해줘야 된다.
 - 다음과 같이 flex 속성을 부여하고 align center를 해서 원하는 위치에 놓는걸 말이 쓰더라
 > display: flex; align-items: center;
-
+- fillter : drop-shadow 사진의 실제 이미지에 맞게끔 그림자를 넣을 수 있다.
+- background: linear-gradient(to right,"start color","end color") = 배경을 그라데이션으로 만들 수 있다.
+- -webkit-background-clip: text; 백그라운드를 text에 맞게 고정할 수 있다.
+- -webkit-text-fill-color: transparent; text에만 배경을 채울 수 있다.
+-justify-content: space-around; 공간에 맞게 정렬
+- flex : 1, 2 display:flex일 때, 공간에 맞게 크기 조절
+- @meida : 크기가 바뀌었을때 설정값으로 바뀌도록 함
 ## javascript
 - 예전에는 브라우저가 자바스크립트인지 잘 인식 못하는 경우가 있어서 script type="text/javascript" 를 써줬는데, html5부터는 default가 되어서 안써줘도 된다.
 - 적용하고 싶은 body 맨 아래에 스크립트를 넣어주면 적용이 된다.

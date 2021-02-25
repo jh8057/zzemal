@@ -1,0 +1,141 @@
+*{
+    margin: 0px;
+    padding : 0px;
+    box-sizing: border-box;
+    cursor: url(./img/smilecursor.gif), auto;
+}
+
+body {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+header{
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+
+.logo-containner, .nav-links, .cart{
+    
+    display: flex;
+}
+
+.logo-containner{
+    
+    flex : 1
+}
+.logo{
+    margin: 10px;
+    
+}
+
+nav{
+    flex : 2
+}
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-link{
+    color: gray;
+    font-size: 18px;
+    text-decoration: none;
+}
+.cart{
+    flex : 1;
+    justify-content: flex-end;
+}
+
+.presentaion{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+
+}
+.introduction{
+    flex :1;
+}
+.intro-text h1{
+    font-size: 44px;
+    font-weight: 800;
+    background: linear-gradient(to right,orange,#6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.intro-text p {
+    margin-top: 5px;
+    font-size: 22px;
+    color: #585772;
+}
+
+.cta{
+    padding: 50px 0px 80px 0px;
+    
+}
+
+.cta-select{
+    border: 2px solid orange;
+    background : transparent;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.cta-add{
+    border: 2px solid orange;
+    background : orange;
+    color : white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 30px 0px 0px 20px;
+}
+.cover{
+    flex : 1;
+    height: 60vh;
+}
+.cover img{
+    width:60vh;
+    height: 100%;
+    filter: drop-shadow(0px 10px 10px gray);
+    animation: drop 1.5s ease;
+}
+
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width : 1024px){
+    .presentaion{
+        flex-direction: column;
+    }
+    .introduction{
+        margin-top: 10vh;
+        text-align: center;
+    }
+    .intro-text h1 {
+        font-size: 30px;
+    }
+    .intro-text p {
+        font-size: 18px;
+    }
+    .cta{
+        padding: 10px 0px 50px 0px;
+    }
+    .cover img{
+        height: 90%;
+        width : auto;
+        padding-left: 50px;
+    }
+}
