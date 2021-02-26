@@ -10,8 +10,11 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 /><!-- animation link-->
 <script defer src="myscript.js"></script>
 <script defer src="scrollevent.js"></script>
+
 </head>
 <body>
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
     <div id="no0" class="test" style="opacity: 1;">
     <h1 class="animate__animated animate__flash animate__repeat-1 animate__slow" >Study about Web</h1>
     <img src="./img/banner_img_art.jpg" width = "60%" class="test" onclick="bounce_ani(this)"><br>
@@ -106,6 +109,13 @@ and web applications.
    <button class="scroll" onclick="scroll_button()">scroll button</button>
 </p>
 <div><img id="bodyP3" src="./img/ball.png"></div>
+<script defer>
+    let progress = document.getElementById('progressbar');
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+        let progressHeight=(window.pageYOffset / totalHeight) *100;
+        progress.style.height = progressHeight + "%";
+    }</script>
 </body>
 <footer>
     <table style="width:100%;  text-align: center">

@@ -72,3 +72,10 @@ function bounce_ani(self){
     self.setAttribute('class',"animate__animated animate__bounce");
     setTimeout(function(){self.setAttribute('class',"test")},1000);
 }
+
+let progress = document.getElementById('progressbar');
+let totalHeight = document.body.scrollHeight - window.innerHeight;
+window.onscroll = function(){
+    let progressHeight=(window.pageYOffset / totalHeight) *100;
+    progress.style.height = progressHeight + "%";
+}
