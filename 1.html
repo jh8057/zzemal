@@ -3,12 +3,55 @@
     <head>
         <title>Welcome!</title>
         <meta charset= "utf-8">
-        <link href="style.css" rel="stylesheet">
+        <link href="basicform.css" rel="stylesheet">
     </head>
     <body>
         <h1>😁😂환영합니다!😝😜</h1>
         <p>
-            HTML을 클릭했군요!! 하지만.. 별 내용은 없답니다🤑
+            HTML을 클릭했군요!! 무슨 내용을 써야될지 모르겠네요🤑
         </p>
+        <p>
+            기존에 주제별로 다 나누어 놓았는데,
+            홈페이지 리뉴얼을 하면서 따로 페이지가 필요하지 않은 문법들은
+            이 페이지에 모아 두기로 했습니다!
+            재밌게 봐주세요~!
+        </p>
+        <h1>1.Use JavaScript in script tag!🦄</h1>
+        <p>Difference between using JavaScript in script tag and HTML</p>
+        <h2>JS</h2>
+        <script>
+            document.write('Using script tag!<br>');
+            document.write('hello world<br>');
+            document.write('hello world\n');
+            document.write("<br>show 1+1 = "+(1+1));
+        </script>
+        <h1>2. Span vs Div😣</h1>
+        <h2>HTML</h2>
+        <p>
+            Write on HTML directly!<br>
+            hello world<br>
+            hello world\n
+            show 1+1 = 1+1
+        </p>
+        <h2>Span</h2>
+        <p>HTML의 모든 요소는 해당 요소가 웹 브라우저에 어떻게 보이는가를 결정짓는 display 속성을 가집니다.</p>
+        <p><span class="orangebg">span 요소</span>는 텍스트(text)의 특정 부분을 묶는 데 자주 사용되는 <span class="orangebg">인라인(inline) 요소</span>입니다.</p>
+        <p> 띄어쓰기 x</p>
+        <p> div와 사실상 큰 차이는 없다.</p>
+
+
+        <h2> DIV </h2>
+        <div><p>div 요소는 다른 HTML 요소들을 하나로 묶는 데 자주 사용되는 <span class="orangebg">대표적인 블록(block) 요소</span>입니다.</p></div>
+        <p><strong>무색 무취의 요소</strong></p>
+        <p> js 나 css에서 참조하게 하기 위해 쓰는것</p>
+        <p> 띄어쓰기 x</p>
+        <h1>3. Boolean👀</h1>
+        <p>Judge by Comparison opserators</p><br>
+        <script>
+            document.write("1=1?\t"+(1===1) + "<br>");
+            document.write("1=2?\t"+(1===2) + "<br>");
+            document.write("1+1=2?\t"+(1+1===2)+ "<br>");
+            document.write("1+1<2?\t"+(1+1<2));
+        </script>
     </body>
 </html>

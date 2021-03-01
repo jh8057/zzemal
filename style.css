@@ -136,6 +136,7 @@ img{
     border: 2px ridge rgb(255, 150, 89);
     border-radius: 10px;
     margin-top: 10px; 
+    margin-right: 10px;
     font-family: 'Nanum Pen Script', cursive;
     font-size: x-large;
 }

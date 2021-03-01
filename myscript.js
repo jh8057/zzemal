@@ -19,14 +19,21 @@ function prompt_button(str){
 
 function bg_mode(self){
     let mybodystyle =  document.querySelector('body').style;
+    let link_list = document.querySelectorAll('a')
     if (self.value==='night'){
             mybodystyle.backgroundColor='black';
             mybodystyle.color='white';
             self.value = 'day';
+            for( let i in link_list){
+                link_list[i].style.color='white';
+            }
     } else{
             mybodystyle.backgroundColor='rgb(255, 248, 228)';
             mybodystyle.color='black';
             self.value = 'night';
+            for( let i in link_list){
+                link_list[i].style.color='black';
+            }
     }
 }
 

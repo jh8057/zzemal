@@ -2,31 +2,28 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title> Span vs Div😣</title>
+        <title>comments</title>
         <link href="style.css" rel="stylesheet">
+        <script defer src="./9.comment/comments.js"></script>
         <style>
-            .word { background-color: orange; font-style: italic; }
-            div {
-                background-color: orange;
-                font-style: italic;
+            body{
+                margin: 5vh;
             }
         </style>
     </head>
     <body>
-<h1>Span</h1>
-<p>HTML의 모든 요소는 해당 요소가 웹 브라우저에 어떻게 보이는가를 결정짓는 display 속성을 가집니다.</p>
-<p><span class="word">span 요소</span>는 텍스트(text)의 특정 부분을 묶는 데 자주 사용되는 <span class="word">인라인(inline) 요소</span>입니다.</p>
-<p> 띄어쓰기 x</p>
-<p> div와 사실상 큰 차이는 없다.</p>
-
-
-<h1> DIV </h1>
-<div><p>div 요소는 다른 HTML 요소들을 하나로 묶는 데 자주 사용되는 <strong>대표적인 블록(block)</strong> 요소입니다.</p></div>
-<p> 무색 무취의 요소</p>
-<p> js 나 css에서 참조하게 하기 위해 쓰는것</p>
-<p> 띄어쓰기 x</p>
-
-
-
+        <h1>Commnet!🎪</h1>
+        <div id="comment">
+            <div id="comment-head" class="comment-info">
+                <span id="comment-count">0</span> Comment(s)
+            </div>
+            <div class="comment-info">
+                <textarea id="new-comment" name="new_comment" rows=5 cols=40 placeholder="새로운 내용을 추가해보시요!😀"></textarea>
+                <button type="submit" onclick="submitcommit()">submit</button>
+            </div>
+            <div class="comment-info">
+                여기에 내용이 추가될거에요😀
+            </div>
+        </div>
     </body>
 </html>

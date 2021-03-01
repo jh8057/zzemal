@@ -2,24 +2,44 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Script Tag!🦄</title>
-        <link href="style.css" rel="stylesheet">
+        <meta name= viewport content= "width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>JavaScript🕶</title>
+        <link defer href="basicform.css" rel="stylesheet">
     </head>
     <body>
-        <h1>JavaScript</h1>
-        <p>Difference between using JavaScript and HTML</p>
+        <h1>😁😂환영합니다!😝😜</h1>
+        <p>
+           Javascript을 클릭했군요!! 🤑
+        </p>
+        <p>
+            홈페이지 리뉴얼을 하면서 JavaScript 관련 글이 정리가 안되는 느낌이 있어서,
+            한 공간에 모아두고, 보기도 편하게 하기 위해 작업했습니다!
+        </p>
+  
+        <h1>1. Upper, LowerCase by JS😉</h1>
+        <p>Using Javascript, make character upper and lower.</p><br>
         <script>
-            document.write('hello world<br>');
-            document.write('hello world\n');
-            document.write("<br>show 1+1 = "+(1+1));
+            let mystring = "Upper Lower<br/>";
+            UPstring = mystring.toUpperCase();
+            document.write(UPstring);
+
+            Lowstring = mystring.toLowerCase();
+            document.write(Lowstring);
         </script>
-        <h2>HTML</h2>
-        <p>
-            hello world<br>
-            hello world\n
-        </p>
-        <p>
-            1+1
-        </p>
+        <h1>2. IndexOf by JS😉</h1>
+        <script>
+            StringIndex = mystring.indexOf('o');
+            document.write("index of char 'o' : " ,StringIndex);
+        </script>
+        <h1>3. IF...🔥</h1>
+        If click this <button onclick="printhello()"> button </button>
+        <div class="hello"></div>
+        <script>
+            function printhello(){
+                let tmphello = document.querySelector(".hello")
+                tmphello.innerHTML = "Hello World~!";
+            }
+        </script>
     </body>
 </html>

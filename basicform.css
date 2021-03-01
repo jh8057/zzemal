@@ -1,0 +1,24 @@
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    text-shadow: 1px 0px 30px rgb(255, 126, 5);
+    margin-bottom: 2vh;
+    margin-top: 5vh;
+}
+h2{
+    margin-top: 5vh;
+}
+body{
+    margin: 5vh;
+}
+
+.orangebg{
+    background-color: orange;
+    font-weight: bold;
+    font-style: italic;
+}
