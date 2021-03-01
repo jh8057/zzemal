@@ -1,24 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Study Web- zzemal</title>
-<meta charset="utf-8">
-<link href="style.css" rel="stylesheet">
-<link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-/><!-- animation link-->
-<script defer src="myscript.js"></script>
-<script defer src="scrollevent.js"></script>
-
+    <title>Study Web- zzemal</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /><!-- animation link-->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <script defer src="myscript.js"></script>
+    <script defer src="scrollevent.js"></script>
+    <script defer src="rainbowscroll.js"></script>
+    <script defer src="navigator.js"></script>    
 </head>
 <body>
     <div id="progressbar"></div>
     <div id="scrollpath"></div>
-    <div id="no0" class="test" style="opacity: 1;">
-    <h1 class="animate__animated animate__flash animate__repeat-1 animate__slow" >Study about Web</h1>
-    <img src="./img/banner_img_art.jpg" width = "60%" class="test" onclick="bounce_ani(this)"><br>
-
+        <nav>
+            <div class="logo">
+                <h4>zzemal</h4>
+            </div>
+            <ul class="nav-links">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Project</a>
+                </li>
+                <li>
+                    <a href="#">Author</a>
+                </li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    <h1 class="animate__animated animate__flash animate__repeat-1 animate__slow" >
+            Study about Web</h1>
     <p>
         <input id =B1 type="button" value="night" onclick="bg_mode(this)">
         <input type="button" value="User Info" onclick="addUserNameonTitle()">
@@ -68,7 +89,7 @@ Hypertext Markup Language (HTML) is the standard
 markup language for <strong><u>creating web pages</strong></u>
 and web applications.
 </p>
-</div>
+
 <div id="no1" class="test" style="opacity: 0;">
     <p>
     Click this image 👇👇👇
@@ -105,17 +126,11 @@ and web applications.
         <button onclick="prompt_button('hello, This is prompt')">눌러보세요!</button>
     </span>
 </div>
-<p>
-   <button class="scroll" onclick="scroll_button()">scroll button</button>
-</p>
+
 <div><img id="bodyP3" src="./img/ball.png"></div>
-<script defer>
-    let progress = document.getElementById('progressbar');
-    let totalHeight = document.body.scrollHeight - window.innerHeight;
-    window.onscroll = function(){
-        let progressHeight=(window.pageYOffset / totalHeight) *100;
-        progress.style.height = progressHeight + "%";
-    }</script>
+
+<img src="./img/banner_img_art.jpg" width = "60%" class="test" onclick="bounce_ani(this)"><br>
+
 </body>
 <footer>
     <table style="width:100%;  text-align: center">

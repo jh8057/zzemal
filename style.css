@@ -2,21 +2,124 @@
 h1{
  text-align: center;
 /* padding: 20px 0; /*top left*/
+
  text-shadow: 1px 0px 30px rgb(255, 126, 5);
 }
-html{
+html,body{
     cursor: url(./img/smilecursor.gif), auto;
     width: 100%;
     height: 100%;
     margin : 0 ;
+    padding: 0px;
+    box-sizing: border-box;
 }
-body{
-    cursor: url(./img/smilecursor.gif), auto;
-    background-color: white;
-    width: 100%;
-    height: 100%;
-    margin : 0 ;
+nav{
+    display: flex;
+    background-color: wheat;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    font-family: 'Nanum Pen Script', cursive;
 }
+
+.logo{
+    font-family: 'Nanum Pen Script', cursive;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    padding: 0;
+
+}
+.nav-links li{
+    list-style: none;
+    
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 3px;
+    
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: aliceblue;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.togglebur .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.togglebur .line2{
+    transform: rotate(-45deg) translate(-5px,6px);
+    opacity: 0;
+}
+.togglebur .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 100vh;
+        margin: 0px;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        background-color: wheat;
+        align-items: center;
+        width: 30%;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
 img{
     cursor: pointer;
     display:block;
@@ -103,24 +206,10 @@ footer{
     }
 }
 
-#progressbar::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top,rgb(122, 122, 235),rgb(201, 237, 252));
-    filter: blur(15px);
+.landing{
+    min-height: 100vh;
+    background: url(./img/banner_img_art.jpg);
+    background-size: cover;
+    padding: 0rem 5rem;
 }
 
-#progressbar::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top,rgb(122, 122, 235),rgb(201, 237, 252));
-    filter: blur(15px);
-}
