@@ -233,14 +233,10 @@ footer{
     line-height:150px;
     }
 .circletext{
-    justify-content: center;
-    align-items: center;
     font-size: 100px;
 }
 
 .circletext2{
-    justify-content: center;
-    align-items: center;
     font-size: 40px;
     font-family: 'Permanent Marker', cursive;
 }
@@ -252,16 +248,15 @@ footer{
         transform: translateY(0px);
     }
 }
-
 @keyframes zooming{
     50%{
-        width: 90vh;
+        width: 85vh;
         height: 12px;
         opacity: 0.2;
     }
     100%{
-        width: 90vh;
-        height: 50vh;
+        width: 85vh;
+        height: 48vh;
         background : linear-gradient( to bottom, wheat, rgb(255, 179, 179) );
         filter: drop-shadow(0px 10px 5px gray);
     }
