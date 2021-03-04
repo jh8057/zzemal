@@ -210,7 +210,6 @@ footer{
 .landing{
     min-height: 100vh;
     min-width: 100%;
-    background: white;
 }
 .wrapcircle{
     display: flex;
@@ -274,4 +273,22 @@ footer{
     100%{
         opacity: 1;
     }
+}
+
+@keyframes bgblack{
+    100%{
+        background-color: rgb(245, 190, 179);
+    }
+}
+@keyframes bgwhite{
+    0%{
+        background-color: rgb(255, 190, 179);
+    }
+    100%{
+        background-color: white;
+    }
+}
+
+.pg_project{
+    min-height: 100vh;
 }
