@@ -2,26 +2,34 @@ let last_known_scroll_position = 0;
 let ticking = false;
 let mybodystyle =  document.querySelector('body').style;
 let myheadstyle =  document.querySelector('h1');
+let pink_flag = 0;
 
 function flash_ani(){
   myheadstyle.setAttribute('class',"animate__animated animate__flash animate__repeat-1 animate__slow");
 }
 
 function doSomething(scroll_pos) {
-if((scroll_pos)<600){
+if(pink_flag ===1 && scroll_pos<780){
   mybodystyle.animation = 'bgwhite 1.5s ease forwards'
   myheadstyle.style.color ="black";
+  pink_flag =0;
+  myheadstyle.setAttribute('class',"NOTAnI");
   //console.log(scroll_pos)
-  } else if (620<(scroll_pos)<1000){
+  } else if (800<scroll_pos){
   mybodystyle.animation = 'bgblack 1.5s ease forwards'
   myheadstyle.style.color ="white";
   flash_ani();
+  pink_flag = 1;
   //console.log(scroll_pos)mybodystyle.animation = 'bgwhite 1.5s ease forwards'
+  } else {
   }
-if((scroll_pos)>1010){
+if((scroll_pos)>1410){
   mybodystyle.animation = 'bgwhite 1.5s ease forwards'
   console.log(scroll_pos)
+  myheadstyle.setAttribute('class',"NOTAnI");
 }
+
+
 if((scroll_pos)<1500){
     document.getElementById("no1").className="NOTSTART";
     document.getElementById("no1").style.opacity = "0";

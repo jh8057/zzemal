@@ -276,6 +276,9 @@ footer{
 }
 
 @keyframes bgblack{
+    0%{
+        background-color: white;
+    }
     100%{
         background-color: rgb(245, 190, 179);
     }
