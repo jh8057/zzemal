@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin:0;
+    padding : 0;
+    box-sizing : border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #343f4f;
+    font-family: 'Bebas Neue', cursive;
+}
+.wrapper{
+    display : inline-flex;
+}
+.wrapper .static-txt{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.wrapper .dynamic-txt{
+    margin-left: 15px;
+    padding-right: 4px;
+    height: 70px;
+    line-height: 80px;
+    letter-spacing: 2px;
+    overflow: hidden;
+    
+}
+
+.dynamic-txt li{
+    color:  rgb(255, 118, 118);
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    animation: sliding 4s steps(2) infinite;
+}
+.dynamic-txt li span{
+    position: relative;
+}
+
+.dynamic-txt li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #343f4f;
+    border-left: 2px solid rgb(255, 118, 118);
+    animation: typing 2s steps(12) infinite,
+    blinking 0.5s steps(12) infinite;
+}
+@keyframes typing{
+    100%{
+        left: 120%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+@keyframes sliding{
+    100%{
+        transform: translateY(-160px);
+    }
+}
+
+@keyframes blinking{
+    0%,100%{
+        border-left-color: transparent;
+    }
+    50%{
+        border-left-color: rgb(255, 118, 118);
+    }
+}
