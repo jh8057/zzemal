@@ -51,8 +51,8 @@ body{
     width: 100%;
     background: #343f4f;
     border-left: 2px solid rgb(255, 118, 118);
-    animation: typing 2s steps(12) infinite,
-    blinking 0.5s steps(12) infinite;
+    animation: typing 2s steps(15) infinite,
+    blinking 0.5s steps(15) infinite;
 }
 @keyframes typing{
     100%{
