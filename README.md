@@ -173,6 +173,14 @@ npm install -g create-react-app
 - 회사에서 three.js를 보게되어서 갑분 p5를 해보았다.
 - 홈페이지에서 자바 파일은 받은 후, script에 추가해주고, p5에서 정해진대로 코딩을 하면 화면에 구현이 된다.
 
+## Mobile enviroment
+```html
+<meta name= viewport content= "width=device-width, initial-scale=1.0">
+```
+- 위 코드를 사용하면 웹 페이지를 여는 공간에 맞추어 사이즈가 적용된다. (반응형 웹)
+- 이때, 어떤것들을 주의해야되는지 적어보겠다.
+- 개발 기준은 iphon6s로, 414x736 기준으로 개발할거다.
+
 ## Free note
 - em : Effective Micro-organisms 기울기 효과
 - ctrl + t : 새 탭 열기 / ctrl + n : 새 창 열기

@@ -9,38 +9,38 @@ function flash_ani(){
 }
 
 function doSomething(scroll_pos) {
-if(pink_flag ===1 && scroll_pos<780){
+if(pink_flag ===1 && scroll_pos<670){
   mybodystyle.animation = 'bgwhite 1.5s ease forwards'
   myheadstyle.style.color ="black";
   pink_flag =0;
   myheadstyle.setAttribute('class',"NOTAnI");
-  //console.log(scroll_pos)
-  } else if (800<scroll_pos){
+  
+  } else if (680<scroll_pos){
   mybodystyle.animation = 'bgblack 1.5s ease forwards'
   myheadstyle.style.color ="white";
   flash_ani();
   pink_flag = 1;
-  //console.log(scroll_pos)mybodystyle.animation = 'bgwhite 1.5s ease forwards'
+  console.log(scroll_pos)
   } else {
   }
-if((scroll_pos)>1410){
+if((scroll_pos)>1150){
   mybodystyle.animation = 'bgwhite 1.5s ease forwards'
   console.log(scroll_pos)
   myheadstyle.setAttribute('class',"NOTAnI");
 }
 
 
-if((scroll_pos)<1500){
+if((scroll_pos)<1200){
     document.getElementById("no1").className="NOTSTART";
     document.getElementById("no1").style.opacity = "0";
-} else if ((scroll_pos)>1600){
+} else if ((scroll_pos)>1210){
     document.getElementById("no1").className="animate__animated animate__backInLeft";
     document.getElementById("no1").style.opacity = "1";
     }
-if ((scroll_pos)<2100){
+if ((scroll_pos)<1530){
     document.getElementById("no2").className="NOTSTART";
     document.getElementById("no2").style.opacity = "0";    
-} else if((scroll_pos)>2200) {
+} else if((scroll_pos)>1540) {
     document.getElementById("no2").className="animate__animated animate__fadeInUp";
     document.getElementById("no2").style.opacity = "1";
     countdays();
