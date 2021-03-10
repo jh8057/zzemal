@@ -80,3 +80,20 @@ function bounce_ani(self){
     setTimeout(function(){self.setAttribute('class',"test")},1000);
 }
 
+function mouseover_event(){
+    let wrapper = document.querySelector(".wrapper");
+    let wrapper2 = document.querySelector(".dynamic-txt");
+    document.body.style.animation = "bgdark 0.3s ease forwards";
+    wrapper.style.opacity = "1";
+    setTimeout(function(){
+    wrapper2.style.opacity = "1";
+    },300);
+}
+
+function mouseout_event(){
+    let wrapper = document.querySelector(".wrapper");
+    let wrapper2 = document.querySelector(".dynamic-txt");
+    document.body.style.animation = "bglight 0.3s ease forwards";
+    wrapper.style.opacity = "0";
+    wrapper2.style.opacity = "0";
+}

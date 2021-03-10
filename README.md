@@ -8,6 +8,7 @@ Start make public website!😀
 [웨이브만들기 Youtube](https://www.youtube.com/watch?v=LLfhY4eVwDY)  
 [애니메이션 넣어주는 라이브러리 animate.css](https://animate.style/)  
 [Thanks Dev Ed!](https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q)  
+[사진받는곳](https://www.freepik.com/vectors)  
 ## script tag
 - script tag로 감싸서 자바스크립트를 작성할 수 있다.
 - 자바스크립트는 기본적으로 html 위에서 동작하는 코드다.
