@@ -450,3 +450,20 @@ footer{
         border-left-color: rgb(255, 118, 118);
     }
 }
+
+hr{
+    color: wheat;
+    overflow: visible;
+    border: none;
+    border-top: 3px dotted wheat;
+    text-align: center;
+    height: 15px;
+}
+
+hr::after{
+    position: relative;
+    top: -18px;
+    background: white;
+    content: "§" ;
+    padding: 0 4px;
+}

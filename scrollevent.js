@@ -29,20 +29,13 @@ if((scroll_pos)>2300){
   myheadstyle.setAttribute('class',"NOTAnI");
 }
 
-
 if((scroll_pos)<2000){
     document.getElementById("no1").className="NOTSTART";
     document.getElementById("no1").style.opacity = "0";
 } else if ((scroll_pos)>2010){
     document.getElementById("no1").className="animate__animated animate__backInLeft";
     document.getElementById("no1").style.opacity = "1";
-    }
-if ((scroll_pos)<2400){
-    document.getElementById("no2").className="NOTSTART";
-    document.getElementById("no2").style.opacity = "0";    
-} else if((scroll_pos)>2410) {
-    document.getElementById("no2").className="animate__animated animate__fadeInUp";
-    document.getElementById("no2").style.opacity = "1";
+    //console.log(scroll_pos)
     countdays();
     }
 }
