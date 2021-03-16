@@ -467,3 +467,31 @@ hr::after{
     content: "§" ;
     padding: 0 4px;
 }
+
+ol h2{
+    background-color: rgb(255, 231, 152);
+    width: fit-content;
+    padding: 2px 20px 2px 20px;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px #343f4f;
+    cursor: pointer;
+}
+
+.listwrap{
+    width: 500px;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.listtext{
+    transform: translateY(-170px);
+}
+
+@keyframes listfadein {
+    0%{
+        transform: translateY(-170px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
