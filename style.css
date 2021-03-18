@@ -484,14 +484,18 @@ ol h2{
 }
 
 .listtext{
-    transform: translateY(-170px);
+    transform: translateY(-250px);
 }
 
 @keyframes listfadein {
     0%{
-        transform: translateY(-170px);
+        transform: translateY(-250px);
     }
     100%{
         transform: translateY(0px);
     }
+}
+
+.music{
+    cursor: pointer;
 }

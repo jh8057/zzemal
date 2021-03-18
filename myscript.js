@@ -97,3 +97,15 @@ function mouseout_event(){
     wrapper.style.opacity = "0";
     wrapper2.style.opacity = "0";
 }
+
+function playmusic(){
+    let song = document.getElementById("Theme_song");
+    let icon = document.getElementById("playicon");
+    if(song.paused){
+        song.play();
+        icon.src = "./img/pausebutton.png"
+    } else{
+        song.pause();
+        icon.src = "./img/playbutton.png"
+    }
+}
