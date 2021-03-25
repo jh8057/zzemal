@@ -186,3 +186,21 @@ nav .fa{
     border-radius: 8px;
     padding: 2px;
 }
+
+/* ---footer---- */
+hr{
+    color: black;
+    overflow: visible;
+    border: none;
+    border-top: 3px dotted black;
+    text-align: center;
+    height: 15px;
+}
+
+hr::after{
+    position: relative;
+    top: -18px;
+    background: white;
+    content: "§" ;
+    padding: 0 4px;
+}

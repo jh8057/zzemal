@@ -19,3 +19,15 @@ function hideMenu(){
     let navLinks= document.getElementById("navLinks");
     navLinks.style.right="-200px"
 }
+
+function countdays(){
+    const date1 = new Date(2020,12,22);
+    let date2 = new Date();
+  
+    const difftime= date2.getTime()-date1.getTime();
+    const diffday = Math.trunc(difftime/1000/60/60/24);
+  
+    let countday= document.getElementById("countday");
+    countday.innerHTML = diffday;
+  }
+countdays();  
