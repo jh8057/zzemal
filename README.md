@@ -9,6 +9,8 @@ Start make public website!😀
 [애니메이션 넣어주는 라이브러리 animate.css](https://animate.style/)  
 [Thanks Dev Ed!](https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q)  
 [사진받는곳](https://www.freepik.com/vectors)  
+[icon받는곳](https://fontawesome.com/icons/bars?style=solid) : <--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"--> 를 html에 첨부해줘야된다.   
+
 ## script tag
 - script tag로 감싸서 자바스크립트를 작성할 수 있다.
 - 자바스크립트는 기본적으로 html 위에서 동작하는 코드다.
@@ -181,6 +183,12 @@ npm install -g create-react-app
 - 위 코드를 사용하면 웹 페이지를 여는 공간에 맞추어 사이즈가 적용된다. (반응형 웹)
 - 이때, 어떤것들을 주의해야되는지 적어보겠다.
 - 개발 기준은 iphon6s로, 414x736 기준으로 개발할거다.
+- css에서 미디어 쿼리를 사용해서 만든다.
+```css
+@media screen and (max-width:700px){}
+```
+- 이러면 700px 이하의 디스플레이에서는 해당 단락에 정의된대로 화면에 나타난다.
+
 
 ## Free note
 - em : Effective Micro-organisms 기울기 효과
@@ -197,3 +205,9 @@ npm install -g create-react-app
 - WEB 2 Home server
 - WEB 2 HTTP
 - javascript 객체 지향 프로그래밍
+
+## 구독한 Youtuber
+- Dev Ed
+- Easy Tutorial
+- online Tutorial
+- Coding Nepal
