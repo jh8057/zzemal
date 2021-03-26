@@ -101,18 +101,19 @@ nav h4{
     font-size: 14px;
 }
 
-.contact-btn{
+.hero-btn{
     display: inline-block;
     text-decoration: none;
     color: #fff;
     border: 1px solid #fff;
     padding: 12px 34px;
+    margin-bottom: 30px;
     background: transparent;
     position: relative;
     cursor: pointer;
 }
 
-.contact-btn:hover{
+.hero-btn:hover{
     border: 1px solid orange;
     background: orange;
     transition: 0.3s;
@@ -172,7 +173,7 @@ nav .fa{
 }
 
 .course p{
-    margin: 10px 0 40px 0px;
+    margin: 10px 0 30px 0px;
     font-size: 14px;
     line-height: 22px;
     padding: 10px;
@@ -199,8 +200,29 @@ hr{
 
 hr::after{
     position: relative;
-    top: -18px;
-    background: white;
+    top: -13px;
+    background: rgb(255, 224, 156);
     content: "§" ;
-    padding: 0 4px;
+    padding: 0 3px;
+}
+
+footer{
+    background-color: rgb(255, 224, 156);
+    font-size: 14px;
+    padding-top: 0.5em;
+    line-height: 1.5em;
+    text-align: center;
+}
+footer ul{
+    list-style: none;
+    margin-top: 0;
+    line-height: 2em;
+    text-align: center;
+    font-size: 13px;
+}
+
+footer a{
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
 }
