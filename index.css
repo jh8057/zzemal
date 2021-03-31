@@ -97,12 +97,13 @@ nav h4{
     font-size: 62px;
 }
 .text-box p{
-    margin: 10px 0 40px 0px;
+    margin: 10px 0 20px 0px;
     font-size: 14px;
 }
 
 .hero-btn{
     display: inline-block;
+    margin-top: 20px;
     text-decoration: none;
     color: #fff;
     border: 1px solid #fff;
@@ -118,6 +119,26 @@ nav h4{
     background: orange;
     transition: 0.3s;
     color: black;
+}
+
+.herobody-btn{
+    display: inline-block;
+    margin-top: 40px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    margin-bottom: 30px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.herobody-btn:hover{
+    border: 1px solid wheat;
+    background: wheat;
+    transition: 0.3s;
+    color: white;
 }
 
 nav .fa{
@@ -157,6 +178,39 @@ nav .fa{
     }
 }
 
+/* --------personal------ */
+.personal{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.personal h1{
+    margin-bottom: 15px;
+}
+.personal-col{
+    flex-basis: 49%;
+    border-radius: 15px;
+    margin-bottom: 5%;
+    padding-left: 5%;
+    text-align: left;
+}
+
+.personal-col img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.personal-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    text-align: left;
+}
+.personal-col p{
+    font-size: 14px;
+    padding-top: 10px;
+}
 
 /* --------course------- */
 
@@ -177,6 +231,11 @@ nav .fa{
     font-size: 14px;
     line-height: 22px;
     padding: 10px;
+}
+.oldpagediv{
+    margin: 0;
+    font-size: 14px;
+    line-height: 22px;
 }
 
 .row{
@@ -256,41 +315,17 @@ h3{
     font-size: 35px;
 }
 
-/* --------facilities------ */
-.facilities{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-}
-
-.facilities-col{
-    flex-basis: 31%;
-    border-radius: 15px;
-    margin-bottom: 5%;
-    text-align: left;
-}
-
-.facilities-col img{
-    width: 100%;
-    border-radius: 15px;
-}
-
-.facilities-col h3{
-    margin-top: 16px;
-    margin-bottom: 15px;
-    text-align: left;
-}
-.facilities-col p{
-    padding: 0;
-}
-
 /* ------testomonials------ */
 .testmonials{
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
+}
+
+.testmonials h2{
+    font-weight: 400;
+    font-size: small;
 }
 
 .testmonials-col{
@@ -349,7 +384,7 @@ h3{
 
 .cta h1{
     color: white;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     padding: 0;
 }
 

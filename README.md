@@ -9,7 +9,8 @@ Start make public website!😀
 [애니메이션 넣어주는 라이브러리 animate.css](https://animate.style/)  
 [Thanks Dev Ed!](https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q)  
 [사진받는곳](https://www.freepik.com/vectors)  
-[icon받는곳](https://fontawesome.com/icons/bars?style=solid) : <--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"--> 를 html에 첨부해줘야된다.   
+[icon받는곳](https://fontawesome.com/icons/bars?style=solid) : html에 링크하나를 첨부해줘야된다.   
+
 
 ## script tag
 - script tag로 감싸서 자바스크립트를 작성할 수 있다.
