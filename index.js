@@ -30,4 +30,11 @@ function countdays(){
     let countday= document.getElementById("countday");
     countday.innerHTML = diffday;
   }
-countdays();  
+countdays();
+
+function scrollpage(){
+    window.scrollTo({
+        top: 1000,
+        behavior: 'smooth'
+      });
+}

@@ -191,9 +191,9 @@ npm install -g create-react-app
 - 이러면 700px 이하의 디스플레이에서는 해당 단락에 정의된대로 화면에 나타난다.
 
 ## Vue.js
-- 버전 : Vue 3 
-- 확장프로그램 
-    - vetur : 하이라이트(색) 
+- 버전 : Vue 3
+- 확장프로그램
+    - vetur : 하이라이트(색)
     - vue VSCode Snippets : 초기 구성을 자동 완성
     - html css support : css 내 클라스 자동완성
 - 설치 명령어: npm install -g @vue/cli

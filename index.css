@@ -118,7 +118,7 @@ nav h4{
     border: 1px solid orange;
     background: orange;
     transition: 0.3s;
-    color: black;
+    color: white;
 }
 
 .herobody-btn{
@@ -179,6 +179,7 @@ nav .fa{
 }
 
 /* --------personal------ */
+
 .personal{
     width: 80%;
     margin: auto;
