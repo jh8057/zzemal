@@ -190,7 +190,26 @@ npm install -g create-react-app
 ```
 - 이러면 700px 이하의 디스플레이에서는 해당 단락에 정의된대로 화면에 나타난다.
 
-
+## Vue.js
+- 버전 : Vue 3 
+- 확장프로그램 
+    - vetur : 하이라이트(색) 
+    - vue VSCode Snippets : 초기 구성을 자동 완성
+    - html css support : css 내 클라스 자동완성
+- 설치 명령어: npm install -g @vue/cli
+- PSSecurityException 에러 : [해결 참조 사이트](https://samsons.tistory.com/16)
+- 폴더 내에 내가 설정한 프로젝트명으로 폴더가 생성됐으면 끝.
+- app.vue 가 메인
+- app.vue를 인식하는게 아니라, app.vue에 코드를 짜면 public 폴더 내에 index.html로 그 내용을 옮겨서 올리는 것 이다.
+- template : html / script : js / style: css
+- npm run serve 하면 시작 (폴더 내에서)
+- npm : 각종 웹개발 라이브러리 설치 도우미
+- 폴더 설명
+    - node_modules : 프로젝트 라이브러리 모음
+    - src : 소스
+    - public : 공용 프로그램 보관,html 등
+    - package.json : 버전, 설정 기록
+- 여기까지.
 ## Free note
 - em : Effective Micro-organisms 기울기 효과
 - ctrl + t : 새 탭 열기 / ctrl + n : 새 창 열기
