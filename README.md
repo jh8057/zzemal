@@ -209,7 +209,18 @@ npm install -g create-react-app
     - src : 소스
     - public : 공용 프로그램 보관,html 등
     - package.json : 버전, 설정 기록
-- 여기까지.
+### [vue] 데이터 바인딩
+- {{ 데이터바인딩 }} : JS 데이터를 HTML에 꽂아넣는 문법
+- :속성="데이터이름" 으로도 가능
+- 데이터바인딩 쓰는 이유 : 1. 하드코딩하면 변경이 어려움, 2.실시간 자동 렌더링 쓰기위해 -> 변경사항에 따라 자동으로 재렌더링하기위해 -> 웹앱들
+
+### [vue] 반복문(v-for)
+- v-for을 이용해서 동일한 태그 여러개 생성가능.
+- 문법은 for문과 동일, :key를 통해 변수값 사용
+```
+ <a v-for="jh in menus" :key="jh" href="#">{{jh}}</a>
+ <a v-for="(jh,i) in menus" :key="i" href="#">{{jh}} , {{i}}</a>
+```
 ## Free note
 - em : Effective Micro-organisms 기울기 효과
 - ctrl + t : 새 탭 열기 / ctrl + n : 새 창 열기
@@ -217,6 +228,19 @@ npm install -g create-react-app
 - console 에서 shift + enter 하면 여러줄 타입 가능
 - Ctrl + Shift + L : 동일 단어 동시 수정
 - CRUD : Creat, Read, Update, Delete
+
+## VScode 설정
+- font
+- 오른쪽 스크롤 미리보기 창 : eiditor.minimap~
+- vue 빨간줄 안보이게
+```
+F1>Preferences:Open Settings (JSON)
+paste
+"vetur.validation.template": false,
+"vetur.validation.script": false,
+"vetur.validation.style": false,
+```
+
 
 ## 지금까지 생활 코딩에서 수강한 탭
 - WEB 1 HTML

@@ -28,7 +28,7 @@ function bg_mode(self){
                 link_list[i].style.color='white';
             }
     } else{
-            mybodystyle.backgroundColor='rgb(255, 248, 228)';
+            mybodystyle.backgroundColor='white';
             mybodystyle.color='black';
             self.value = 'night';
             for( let i in link_list){

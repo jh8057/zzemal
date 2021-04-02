@@ -315,6 +315,10 @@ h3{
     bottom: 42%;
     font-size: 35px;
 }
+.layer a{
+    text-decoration: none;
+    color: black;
+}
 
 /* ------testomonials------ */
 .testmonials{
