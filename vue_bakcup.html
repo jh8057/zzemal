@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name= viewport content= "width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>vue js html</title>
+        <style>
+            .red{
+                color: red;
+            }
+            .bold{
+                font-weight: bold;
+            }
+        </style>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <div :class="{red : isRed, bold: isBold}">{{person.name}}의 나이는 {{person.age}}입니다.<br></div>
+            <button @click="updatedred">red</button><br>
+            {{nextYear('안녕하세요')}}<br> <!--인자 -->
+            {{countdays()}}<br>
+            <input :type="type" :value="inputData"><br>
+            <a :href="getlink('zzemal')" target="_blank">zzemal home page</a><br>
+            {{year}}
+            <button @click="plus">더하기</button>
+            <button @click="minus">빼기</button>
+            <form v-on:submit.prevent="submit">
+                <!-- <input type="text" :value="text" @keyup="updateText"> -->
+                <input type="text" v-model="text">
+                <br>{{text}}
+                <button type="submit" >submit</button>
+            </form>
+            {{reverseMessage}}<br>
+            {{message}}<br>
+            <button @click="changemessage">change</button>
+            {{ updated }}
+            <!-- <template v-if="number === 2020">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+            </template>
+            <div v-else-if="number === 2022">HI</div>
+            <div v-else>No</div> -->
+            <div v-show="show">Yes</div>
+            <button @click="increasenumb">Click</button> {{number}}
+        </div>
+        <script>
+            let app = new Vue({
+                el:'#app',
+                data:{
+                    person:{
+                        name:'zzemal',
+                        age:28
+                    },
+                    updated : '아니요',
+                    text:'text!',
+                    inputData:'hello~!',
+                    type : 'text',
+                    link : 'https://jh8057.github.io/',
+                    year : 2021,
+                    message : '안녕하세요',
+                    isRed : false,
+                    isBold : false,
+                    show : false,
+                    number : 2020,
+                },
+                computed :{
+                    reverseMessage(){
+                        return this.message.split('').reverse().join('')
+                    }
+                },
+                watch:{
+                    message(newVal,oldVal){
+                        console.log(newVal,oldVal)
+                        this.updated = 'yes'
+                    }
+                },
+                
+
+                methods: {
+                    getlink(channel){
+                        return this.link + channel
+                    },
+                    nextYear(greeting){  //매개변수
+                        return greeting +'! '+ this.person.name + '는 내년에' + (this.person.age+1) + '살입니다.';
+                    },
+                    plus(){
+                        this.year ++;
+                    },
+                    minus(){
+                        this.year --;
+                    },
+                    submit(){
+                        alert('submitted!')
+                        console.log('hello')
+                    },
+                    changemessage(){
+                        this.message="Wowowowo"
+                    },
+                    updatedred(){
+                        this.isRed = !this.isRed
+                        this.isBold = !this.isBold
+                    },
+                    increasenumb(){
+                        this.number++;
+                    },
+                    countdays(){
+                        const date1 = new Date(2021,3,04);
+                        let date2 = new Date();
+                    
+                        const difftime= date2.getTime()-date1.getTime();
+                        const diffday = Math.trunc(difftime/1000/60/60/24);
+                        return 'vue를 시작한지' +diffday+'일!'
+                    }
+                    
+                },
+            })
+        </script>
+        
+    </body>
+</html>

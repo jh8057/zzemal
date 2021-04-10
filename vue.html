@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name= viewport content= "width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>vue js html</title>
+        <style>
+            .red{
+                color: red;
+            }
+            .bold{
+                font-weight: bold;
+            }
+        </style>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    <body>
+        <div id="app">
+            <hr>
+            <zzemal_button></zzemal_button>
+        </div>
+        <hr>
+        <script>
+            Vue.component('hello_world',{
+
+            });
+            const Helloo_world= {
+                template :`
+                <div>
+                helloㅁㄴㅇ world
+                </div>`
+            };
+            const zzemalbutton={
+                components:{
+                    'hello_world' : Helloo_world
+                },
+                template: `
+                <div>
+                    <hello_world></hello_world>
+                    {{name}}<br>
+                    <button @click="changetext">Click</button>
+                <div>`,
+                data(){
+                    return{
+                        name : 'zzemal'
+                    }
+                },
+                methods: {
+                    changetext(){
+                        this.name = 'zzemal updated'
+                    },
+                },
+            };
+            const app1 = new Vue({
+                el:'#app',
+                data:{
+                },
+                components:{
+                    'zzemal_button' : zzemalbutton
+                },
+                computed :{
+ 
+                },
+                watch:{
+ 
+                },
+                methods: {
+
+                },
+            });
+
+        </script>
+        
+    </body>
+</html>

@@ -20,6 +20,8 @@ Start make public website!😀
 ## semantic tag
 조금 더 명확한 설명을 위한 태그이다.  
 상세 내용 : [요기](https://kutar37.tistory.com/entry/%EC%8B%9C%EB%A9%98%ED%8B%B1-%ED%83%9C%EA%B7%B8-Semantic-Tag)
+- form tag : 사용자의 정보를 알기 위해 입력 틀을 만들때 사용 / 입력된 데이터를 한번에 서버에 전송 / 전송 후 페이지 리로드
+- HTML <--template--> 요소는 페이지를 불러온 순간 즉시 그려지지는 않지만, 이후 JavaScript를 사용해 인스턴스를 생성할 수 있는 HTML 코드를 담을 방법을 제공합니다.
 ## event
 - input 으로 버튼을 만들었다.
 - value 에 이름, onclick으로 alert()-경고창을 띄웠다.
@@ -210,17 +212,72 @@ npm install -g create-react-app
     - public : 공용 프로그램 보관,html 등
     - package.json : 버전, 설정 기록
 ### [vue] 데이터 바인딩
+- 데이터 바인딩이란 : 속성값과 데이터를 연결해주는 것.
 - {{ 데이터바인딩 }} : JS 데이터를 HTML에 꽂아넣는 문법
-- :속성="데이터이름" 으로도 가능
+- :속성="데이터이름" 으로도 가능 (v-bind를 앞에 붙여도 됨)
 - 데이터바인딩 쓰는 이유 : 1. 하드코딩하면 변경이 어려움, 2.실시간 자동 렌더링 쓰기위해 -> 변경사항에 따라 자동으로 재렌더링하기위해 -> 웹앱들
+- 함수 사용시 {{ }} 에서는 ()를 붙이고, 속성에서는 인자가 없으면 ()를 안붙여야된다.
 
 ### [vue] 반복문(v-for)
 - v-for을 이용해서 동일한 태그 여러개 생성가능.
 - 문법은 for문과 동일, :key를 통해 변수값 사용
+- key에는 고유한 값을 넣어준다. 보통 아이디 값 사용
+- 객체에도 사용할 수 있음.(잘 안한다)
 ```
  <a v-for="jh in menus" :key="jh" href="#">{{jh}}</a>
  <a v-for="(jh,i) in menus" :key="i" href="#">{{jh}} , {{i}}</a>
 ```
+### [vue] 양방향 바인딩(v-model)
+- input 값을 바로 다른곳에 적용하기 위해 사용
+
+### [vue] computed & watch
+- 연산이 필요한 부분을 따로 빼놓은 것.
+- ()를 생략하고 넣어줌
+- 메소드 대신 사용하는 이유는 , computed 값은 미리 저장되어서 불러와지는 반면, 메소드는 매번 계산을 하는 차이가 있다. (캐싱 차이) [공식문서](https://kr.vuejs.org/v2/guide/computed.html#computed-%EC%86%8D%EC%84%B1%EC%9D%98-%EC%BA%90%EC%8B%B1-vs-%EB%A9%94%EC%86%8C%EB%93%9C)
+- 최대한 computed 속성을 쓰고, watch가 필요할때만 watch 사용
+- watch는 변화를 보다가 변화가 발생하면 그에 따른 액션을 할 수 있게 해주는 것
+
+### [vue] style & style 바인딩
+- style은 기존처럼 헤드에 선언하면 된다.
+- 일반적인 class와 공존이 가능하다.
+- style에도 데이터바인딩을 하고 싶으면 {} 를 하고, 
+
+### [vue] v-if & v-show
+- v-if : false면 아예 랜더링을 안함
+- v-show : 처음에 랜더링을 하는데, 스타일 통해서 가려놓은거
+
+## [vue] 인스턴스 
+- 인스턴스 여러개 만드는것 : new Vue 앞에 객체처럼 이름 붙여준다.
+- this 대신 이름을 써주면 해당 인스턴스의 변수를 수정 가능하다.
+
+## [vue] 컴포넌트 (component)
+- 여러 인스턴트에서 사용될 만한 반복되는 부분을 따로 묶어서 만들어 놓는 곳.
+- 지역 등록과 전역등록이 있다.
+- 전역등록을 하면 최종빌드에 들어있어서 파일 양이 많아지기에 비효율적.
+- 이때 data는 data(){return} 을 써줘야된다.
+- 컴포넌트에서 만드는 것은 본문에서 태크 쓰듯이 쓰면 된다.
+- 여려줄로 나눠 쓸때는 `으로 써야된다.
+- 컴포넌트 안에서 다른 컴포넌트를 사용할 수 있다.
+- 전역 등록 할때는 Vue.component('이름',{ 내용 })
+- 지역 등록 할떄는 const 선언이름 = {내용} 으로 선언 후 app 인스턴트 내에서 components : { '태그이름 ' = 선언이름} 추가 해주면됨.
+- 지역 등록을 컴포넌트 내에서도 동일하게 수행하면 등록 가능
+
+### [vue] Vue CLI
+- CLI : Command line interface
+### [vue] Router
+- 설치할때 따로 해줘야된다.
+- 처음 프로젝트 생성될때 router 폴더가 생성된다.
+- path 경로 참조
+- SPA에서 페이지 이동
+- router-link , router-view 태그 사용
+- router-view부분이 component로 바뀌는 매커니즘
+- view 폴더에 페이지 작성 부분이 있고, component는 또 폴더가 따로 있다.
+
+### [vue] Single File component
+- vue를 CLI가 아니라 그냥 link로 가져왔을때는 component를 app 위에 전역으로 설정하던, const로 지역으로 등록하던 하였는데, CLI로 하면 이제 ~~.vue라는 파일로 만들수가 있다.
+- style 에 scoped를 선언해 줘야 해당 템플릿에만 적용된다.
+- 템플릿에는 먼저 전체를 감싸는 하나의 태그가 존재해야된다.
+
 ## Free note
 - em : Effective Micro-organisms 기울기 효과
 - ctrl + t : 새 탭 열기 / ctrl + n : 새 창 열기
