@@ -1,5 +1,6 @@
 <template>
   <div>
+      <h1>{{title}}</h1>
     <p> {{name}}</p>
     <button @click="updateName">Change</button>
   </div>
@@ -7,6 +8,13 @@
 
 <script>
 export default {
+    props: {
+        title:{
+            type: String,
+            required: false,
+            default : 'default title'
+        }
+    },
     data(){
         return {
             name : 'ZZEMALLLLLL',

@@ -264,6 +264,8 @@ npm install -g create-react-app
 
 ### [vue] Vue CLI
 - CLI : Command line interface
+- vue create 이름 : 프로젝트 생성
+- 프로젝트 폴더에 들어가서 npm run serve : 구동
 ### [vue] Router
 - 설치할때 따로 해줘야된다.
 - 처음 프로젝트 생성될때 router 폴더가 생성된다.
@@ -278,6 +280,11 @@ npm install -g create-react-app
 - style 에 scoped를 선언해 줘야 해당 템플릿에만 적용된다.
 - 템플릿에는 먼저 전체를 감싸는 하나의 태그가 존재해야된다.
 
+## [vue] props
+- 컴포넌트에서 사용되는 값을 각 페이지에서 전달 할 수 있게 해주는 기능
+- type도 정할수 있고, required 하면 무조건 값을 보내줘야만 한다.
+- default값을 정해줄 수 도 있다.
+- props는 받는쪽(자식)에서 바꿔주면 warning이 뜨니까, 직접적으로 바꾸지말고 event를 통해 바꿔주는게 좋다.
 ## Free note
 - em : Effective Micro-organisms 기울기 효과
 - ctrl + t : 새 탭 열기 / ctrl + n : 새 창 열기

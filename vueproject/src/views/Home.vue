@@ -2,7 +2,7 @@
   <div>
     <h1>This is Home Page</h1>
     <p> {{name}}</p>
-    <zzemalvue></zzemalvue>
+    <zzemalvue title="About title"></zzemalvue>
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
   },
   data(){
     return {
-      name : 'ZZEMAL'
+      name : 'ZZEMAL',
     }
   }
 }
