@@ -2,21 +2,32 @@
   <div>
     <h1>This is Home Page</h1>
     <p> {{name}}</p>
-    <zzemalvue title="About title"></zzemalvue>
+    <form action="">
+      <inputfield v-model="name"/>
+      <br><button>submit</button>
+    </form>
+    <zzemalvue title = "TITLE" />
   </div>
 </template>
 
 <script>
 import zzemalvue from '@/components/zzemalvue.vue';
+import inputfield from '@/components/inputfield.vue';
 export default {
   components :{
-    zzemalvue
+    zzemalvue,
+    inputfield
   },
   data(){
     return {
-      name : 'ZZEMAL',
+      name : '',
     }
-  }
+  },
+  // methods:{
+  //   updateName(name){
+  //     this.name=name
+  //   }
+  // }
 }
 </script>
 

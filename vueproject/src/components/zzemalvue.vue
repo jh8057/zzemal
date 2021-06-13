@@ -1,5 +1,8 @@
 <template>
   <div>
+      <br>
+      <hr>
+      From Here, zzemalvue components!
       <h1>{{title}}</h1>
     <p> {{name}}</p>
     <button @click="updateName">Change</button>
@@ -13,11 +16,16 @@ export default {
             type: String,
             required: false,
             default : 'default title'
+        },
+        name:{
+            type: String,
+            required: false,
+            default : 'default name'
         }
     },
     data(){
         return {
-            name : 'ZZEMALLLLLL',
+            // name : 'ZZEMALLLLLL',
         } 
     },
     methods: {
