@@ -211,14 +211,14 @@ npm install -g create-react-app
     - src : 소스
     - public : 공용 프로그램 보관,html 등
     - package.json : 버전, 설정 기록
-### [vue] 데이터 바인딩
+### vue - 데이터 바인딩
 - 데이터 바인딩이란 : 속성값과 데이터를 연결해주는 것.
 - {{ 데이터바인딩 }} : JS 데이터를 HTML에 꽂아넣는 문법
 - :속성="데이터이름" 으로도 가능 (v-bind를 앞에 붙여도 됨)
 - 데이터바인딩 쓰는 이유 : 1. 하드코딩하면 변경이 어려움, 2.실시간 자동 렌더링 쓰기위해 -> 변경사항에 따라 자동으로 재렌더링하기위해 -> 웹앱들
 - 함수 사용시 {{ }} 에서는 ()를 붙이고, 속성에서는 인자가 없으면 ()를 안붙여야된다.
 
-### [vue] 반복문(v-for)
+### vue - 반복문(v-for)
 - v-for을 이용해서 동일한 태그 여러개 생성가능.
 - 문법은 for문과 동일, :key를 통해 변수값 사용
 - key에는 고유한 값을 넣어준다. 보통 아이디 값 사용
@@ -227,30 +227,30 @@ npm install -g create-react-app
  <a v-for="jh in menus" :key="jh" href="#">{{jh}}</a>
  <a v-for="(jh,i) in menus" :key="i" href="#">{{jh}} , {{i}}</a>
 ```
-### [vue] 양방향 바인딩(v-model)
+### vue - 양방향 바인딩(v-model)
 - input 값을 바로 다른곳에 적용하기 위해 사용
 
-### [vue] computed & watch
+### vue - computed & watch
 - 연산이 필요한 부분을 따로 빼놓은 것.
 - ()를 생략하고 넣어줌
 - 메소드 대신 사용하는 이유는 , computed 값은 미리 저장되어서 불러와지는 반면, 메소드는 매번 계산을 하는 차이가 있다. (캐싱 차이) [공식문서](https://kr.vuejs.org/v2/guide/computed.html#computed-%EC%86%8D%EC%84%B1%EC%9D%98-%EC%BA%90%EC%8B%B1-vs-%EB%A9%94%EC%86%8C%EB%93%9C)
 - 최대한 computed 속성을 쓰고, watch가 필요할때만 watch 사용
 - watch는 변화를 보다가 변화가 발생하면 그에 따른 액션을 할 수 있게 해주는 것
 
-### [vue] style & style 바인딩
+### vue - style & style 바인딩
 - style은 기존처럼 헤드에 선언하면 된다.
 - 일반적인 class와 공존이 가능하다.
 - style에도 데이터바인딩을 하고 싶으면 {} 를 하고, 
 
-### [vue] v-if & v-show
+### vue - v-if & v-show
 - v-if : false면 아예 랜더링을 안함
 - v-show : 처음에 랜더링을 하는데, 스타일 통해서 가려놓은거
 
-## [vue] 인스턴스 
+## vue - 인스턴스 
 - 인스턴스 여러개 만드는것 : new Vue 앞에 객체처럼 이름 붙여준다.
 - this 대신 이름을 써주면 해당 인스턴스의 변수를 수정 가능하다.
 
-## [vue] 컴포넌트 (component)
+## vue - 컴포넌트 (component)
 - 여러 인스턴트에서 사용될 만한 반복되는 부분을 따로 묶어서 만들어 놓는 곳.
 - 지역 등록과 전역등록이 있다.
 - 전역등록을 하면 최종빌드에 들어있어서 파일 양이 많아지기에 비효율적.
@@ -262,11 +262,11 @@ npm install -g create-react-app
 - 지역 등록 할떄는 const 선언이름 = {내용} 으로 선언 후 app 인스턴트 내에서 components : { '태그이름 ' = 선언이름} 추가 해주면됨.
 - 지역 등록을 컴포넌트 내에서도 동일하게 수행하면 등록 가능
 
-### [vue] Vue CLI
+### vue - Vue CLI
 - CLI : Command line interface
 - vue create 이름 : 프로젝트 생성
 - 프로젝트 폴더에 들어가서 npm run serve : 구동
-### [vue] Router
+### vue - Router
 - 설치할때 따로 해줘야된다.
 - 처음 프로젝트 생성될때 router 폴더가 생성된다.
 - path 경로 참조
@@ -275,16 +275,22 @@ npm install -g create-react-app
 - router-view부분이 component로 바뀌는 매커니즘
 - view 폴더에 페이지 작성 부분이 있고, component는 또 폴더가 따로 있다.
 
-### [vue] Single File component
+### vue - Single File component
 - vue를 CLI가 아니라 그냥 link로 가져왔을때는 component를 app 위에 전역으로 설정하던, const로 지역으로 등록하던 하였는데, CLI로 하면 이제 ~~.vue라는 파일로 만들수가 있다.
 - style 에 scoped를 선언해 줘야 해당 템플릿에만 적용된다.
 - 템플릿에는 먼저 전체를 감싸는 하나의 태그가 존재해야된다.
 
-## [vue] props
+## vue- props
 - 컴포넌트에서 사용되는 값을 각 페이지에서 전달 할 수 있게 해주는 기능
 - type도 정할수 있고, required 하면 무조건 값을 보내줘야만 한다.
 - default값을 정해줄 수 도 있다.
 - props는 받는쪽(자식)에서 바꿔주면 warning이 뜨니까, 직접적으로 바꾸지말고 event를 통해 바꿔주는게 좋다.
+
+### vue - slot
+- components slot 태그를 쓰면 상위 폴더에서 html문법으로 작업을 한 것을 보여지게끔 할 수 있다.
+- 이름을 설정해줄 수 있다.
+- 이름을 #이름 을 통해 해당 이름 슬롯에 내용을 넣어줄 수 있다.
+- 데이터를 주고 받고 할 수 있다. :변수="변수이름" 이런식으로
 ## Free note
 - em : Effective Micro-organisms 기울기 효과
 - ctrl + t : 새 탭 열기 / ctrl + n : 새 창 열기

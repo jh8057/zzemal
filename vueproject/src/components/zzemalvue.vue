@@ -1,11 +1,17 @@
 <template>
   <div>
-      <br>
-      <hr>
-      From Here, zzemalvue components!
-      <h1>{{title}}</h1>
+    <br>
+    <hr>
+    From Here, zzemalvue components!
+    <h1>{{title}}</h1>
     <p> {{name}}</p>
     <button @click="updateName">Change</button>
+
+    <p>header</p>
+    <slot name ="header" :kossie="kossie"></slot>
+    <p>Body</p>
+    <slot name ="Body"></slot>
+    <p>Footer</p>
   </div>
 </template>
 
@@ -25,6 +31,7 @@ export default {
     },
     data(){
         return {
+            kossie : 'coder'
             // name : 'ZZEMALLLLLL',
         } 
     },
