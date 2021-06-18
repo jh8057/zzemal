@@ -291,6 +291,17 @@ npm install -g create-react-app
 - 이름을 설정해줄 수 있다.
 - 이름을 #이름 을 통해 해당 이름 슬롯에 내용을 넣어줄 수 있다.
 - 데이터를 주고 받고 할 수 있다. :변수="변수이름" 이런식으로
+
+## vue - life cycle
+- beforeCreate()
+- create()
+- beforeMount()
+- mounted()
+- beforeUpdate()
+- Updated()
+- beforeDestroy()
+- destroyed()
+- 위와 같이 vue가 동작하는 과정에서 작업을 수행할 수 있는 구역이 있다 생각하면 편할 듯하다.
 ## Free note
 - em : Effective Micro-organisms 기울기 효과
 - ctrl + t : 새 탭 열기 / ctrl + n : 새 창 열기
