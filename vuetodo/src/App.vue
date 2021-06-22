@@ -38,10 +38,10 @@ export default {
       });
       this.todos.splice(index,1);
     },
-    addTodo(e) {
+    addTodo(value) {
       this.todos.push({
         id: Math.random(),
-        text :e.target.value,
+        text :value,
         checked:false
       });
       this.todoText = '';
