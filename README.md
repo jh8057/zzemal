@@ -302,6 +302,15 @@ npm install -g create-react-app
 - beforeDestroy()
 - destroyed()
 - 위와 같이 vue가 동작하는 과정에서 작업을 수행할 수 있는 구역이 있다 생각하면 편할 듯하다.
+
+## vue - $emit
+- 이벤트 발생은 컴포넌트의 통신 방법 중 하위 컴포넌트에서 상위 컴포넌트로 통신하는 방식입니다.
+
+## vuex 
+- 여러 props 사용으로, 자식의 자식의 자식.. 등 여러 차례 이동이 되는 경우를 방지위해 등장.
+- 다이렉트로 데이터를 받을 수 있다.
+
+#이벤트
 ## Free note
 - em : Effective Micro-organisms 기울기 효과
 - ctrl + t : 새 탭 열기 / ctrl + n : 새 창 열기

@@ -44,4 +44,4 @@ export default {
 
 <style>
 
-</style>vue
+</style>
