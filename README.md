@@ -309,7 +309,10 @@ npm install -g create-react-app
 ## vuex 
 - 여러 props 사용으로, 자식의 자식의 자식.. 등 여러 차례 이동이 되는 경우를 방지위해 등장.
 - 다이렉트로 데이터를 받을 수 있다.
-
+- src 하위 >  store folder > index.js
+## vuex - state
+- computed 에서 접근할 수 있다.
+- 예시) return this.$store.state.todos;
 #이벤트
 ## Free note
 - em : Effective Micro-organisms 기울기 효과
