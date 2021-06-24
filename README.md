@@ -313,7 +313,12 @@ npm install -g create-react-app
 ## vuex - state
 - computed 에서 접근할 수 있다.
 - 예시) return this.$store.state.todos;
-#이벤트
+## vuex - mutation 
+- vuex state의 데이터를 변경하고 싶을때 사용
+- 예시) this.$store.commit('ADD_TODO',e.target.value);
+- 이를 통해 이제 Addtodo,todolist 등 하위 vue 페이지에서 데이터를 받아올 필요가 없어서 v-bind되어 있던걸 다 지워도 된다.
+- 최상위 App.vue에서 받아온 데이터를 처리하는 methods들도 지워도 된다.
+- debbugging을 쉽게 할 수 있다.
 ## Free note
 - em : Effective Micro-organisms 기울기 효과
 - ctrl + t : 새 탭 열기 / ctrl + n : 새 창 열기

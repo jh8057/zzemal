@@ -1,7 +1,6 @@
 <template>
   <div>
       Completed Todo : {{ numberOfCompletedTodo}}
-      {{todos}}
   </div>
 </template>
 

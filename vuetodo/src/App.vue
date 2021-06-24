@@ -2,12 +2,9 @@
   <div id="app" class="container">
     <h1 class="text-center">Todo App</h1>
     <CompletedTodo  />
-    <AddTodo @add-todo="addTodo" />
+    <AddTodo />
     <hr>
-    <TodoList 
-      @toggle-checkbox="toggleCheckbox"  
-      @click-delete="deleteTodo"  
-    />
+    <TodoList />
   </div>
 </template>
 
@@ -31,27 +28,27 @@ export default {
     }
   },
   methods:{
-    deleteTodo(id){
-      const index = this.todos.findIndex(todo => {
-        return todo.id === id;
-      });
-      this.todos.splice(index,1);
-    },
-    addTodo(value) {
-      this.todos.push({
-        id: Math.random(),
-        text :value,
-        checked:false
-      });
-      this.todoText = '';
-    },
-    toggleCheckbox({id,checked}){ 
-      // 구조분해할당
-      const index = this.todos.findIndex(todo => {
-        return todo.id === id;
-      })
-      this.todos[index].checked = checked
-    }
+    // deleteTodo(id){
+    //   const index = this.todos.findIndex(todo => {
+    //     return todo.id === id;
+    //   });
+    //   this.todos.splice(index,1);
+    // },
+    // addTodo(value) {
+    //   this.todos.push({
+    //     id: Math.random(),
+    //     text :value,
+    //     checked:false
+    //   });
+    //   this.todoText = '';
+    // },
+    // toggleCheckbox({id,checked}){ 
+    //   // 구조분해할당
+    //   const index = this.todos.findIndex(todo => {
+    //     return todo.id === id;
+    //   })
+    //   this.todos[index].checked = checked
+    // }
   }
 }
 </script>
