@@ -319,6 +319,26 @@ npm install -g create-react-app
 - 이를 통해 이제 Addtodo,todolist 등 하위 vue 페이지에서 데이터를 받아올 필요가 없어서 v-bind되어 있던걸 다 지워도 된다.
 - 최상위 App.vue에서 받아온 데이터를 처리하는 methods들도 지워도 된다.
 - debbugging을 쉽게 할 수 있다.
+
+## vuex - action
+- 데이터 베이스에 비동기적으로 요청을 보내는 작업을 한다.
+- addTodo(context, payload) 형태로 들어간다.
+```
+this.$store.dispatch('addTodo', e.target.value) 형태로 받는다.
+         addTodo({commit}, value){
+            setTimeout(function(){
+                commit('ADD_TODO',value);
+            },2000)  
+        }
+```
+- 이를 통해 비동기적으로 동작하는 것을 확인 가능하다
+## axios
+- [블로그](https://tuhbm.github.io/2019/03/21/axios/)
+- javascript 라이브러리다.
+- 이를 통해 get, post 가 가능하다 ( HTTP 요청이 가능하다)
+## JSONplaceholder - API
+- [JSONplaceholder](https://jsonplaceholder.typicode.com/)
+- 가짜 API를 주고 받을 수 있다.
 ## Free note
 - em : Effective Micro-organisms 기울기 효과
 - ctrl + t : 새 탭 열기 / ctrl + n : 새 창 열기
