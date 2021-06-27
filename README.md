@@ -332,6 +332,27 @@ this.$store.dispatch('addTodo', e.target.value) 형태로 받는다.
         }
 ```
 - 이를 통해 비동기적으로 동작하는 것을 확인 가능하다
+
+## vuex -getters
+- 계산값을 다른 곳에서 사용할 수 있도록 함
+- computed와 비슷한 역할
+
+## mapState
+- vuex 기능
+- 사용할 vue에서 `import { mapState } from 'vuex' `
+- 아래처럼 사용
+```
+...mapState([
+            'todos',
+            'users'
+        ]),
+```
+원래 사용할라면 
+```
+    users(){
+        return this.$store.state.users;
+    },
+```
 ## axios
 - [블로그](https://tuhbm.github.io/2019/03/21/axios/)
 - javascript 라이브러리다.
