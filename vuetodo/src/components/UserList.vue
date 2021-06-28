@@ -1,7 +1,7 @@
 <template>
   <div>
       User List
-      <div v-for="user in people" :key="user.id">
+      <div v-for="user in users" :key="user.id">
           {{user.name}}
       </div>
   </div>
@@ -14,9 +14,10 @@ export default {
         this.getUsers();
     },
     computed:{
-        ...mapState({
-            people : 'users'
-        }),
+        ...mapState('user',['users']),
+        // ...mapState('user',{
+        //     users : state => state.users
+        // }),
         // users(){
         //     return this.$store.state.users;
         // },
@@ -25,9 +26,7 @@ export default {
         // }
     },
     methods: {
-        ...mapActions([
-            'getUsers'
-        ]),
+        ...mapActions('user',['getUsers']),
         // getUsers(){
         //     // store 내에 action을 실행해라
         //     this.$store.dispatch('getUsers')

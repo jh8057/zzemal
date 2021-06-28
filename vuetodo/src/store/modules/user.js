@@ -1,12 +1,13 @@
 import axios from 'axios'
 
 export default{
+    namespaced:true,
     state:{
         users:[]
     },
     mutations:{
         SET_USERS(state,users){
-            state.user.users = users;
+            state.users = users;
         },
     },
     actions:{

@@ -360,6 +360,18 @@ this.$store.dispatch('addTodo', e.target.value) 형태로 받는다.
 ## JSONplaceholder - API
 - [JSONplaceholder](https://jsonplaceholder.typicode.com/)
 - 가짜 API를 주고 받을 수 있다.
+
+## vuex - modules
+- store를 그냥 사용해도 되는데, 계속하다보면 몸집이 불어난다.
+- 종류별로, 사용하는 것 별로 정리하는 방법이 module화 하는 것이다.
+- store폴더 내에 modules라는 하위 폴더를 만들고, 각각 js파일을 만들어 정리한다.
+- 이 js파일을 다시 index.js파일에서 import해서 불러와 등록한다.
+- 이렇게 했을때 기존에 store에서 데이터를 가져오는 곳에서 module이름을 포함해 줘야된다. ( 이름을 다 변경해 줘야된다.)
+- `return this.$store.state.**todo**.todos;`
+- `...mapState(**'user'**,['users'])`,
+- `return this.$store.getters['**todo**/numberOfCompletedTodo'];`
+- `namespaced : ture` 를 꼭 module폴더 내 js파일에 넣어줘야된다.
+
 ## Free note
 - em : Effective Micro-organisms 기울기 효과
 - ctrl + t : 새 탭 열기 / ctrl + n : 새 창 열기

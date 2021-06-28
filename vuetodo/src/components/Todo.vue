@@ -27,10 +27,14 @@ export default {
             required : true,
         }
     },
-    
+    computed:{
+        numberOfCompletedTodo(){
+          return this.$store.getters['todo/numberOfCompletedTodo'];
+        }
+    },
     methods: {
       toggleCheckbox(e){
-        this.$store.dispatch('toggleTodo',{id: this.todo.id,checked : e.target.checked})
+        this.$store.dispatch('todo/toggleTodo',{id: this.todo.id,checked : e.target.checked})
         // this.$store.commit('TOGGLE_TODO',{id: this.todo.id,checked : e.target.checked})
         // this.$emit('toggle-checkbox',{
         //   id: this.todo.id,
@@ -38,7 +42,7 @@ export default {
         // })
       },
       clickDelete(){
-        this.$store.dispatch('deleteTodo',this.todo.id)
+        this.$store.dispatch('todo/deleteTodo',this.todo.id)
         // this.$store.commit('DELETE_TODO', this.todo.id);
         // this.$emit('click-delete',this.todo.id)
       }
