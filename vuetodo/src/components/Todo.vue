@@ -27,6 +27,7 @@ export default {
             required : true,
         }
     },
+    
     methods: {
       toggleCheckbox(e){
         this.$store.dispatch('toggleTodo',{id: this.todo.id,checked : e.target.checked})
