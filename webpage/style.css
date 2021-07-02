@@ -8,7 +8,7 @@ h1{
  text-shadow: 1px 0px 30px rgb(255, 126, 5);
 }
 html,body{
-    cursor: url(./img/smilecursor.gif), auto;
+    cursor: url(../img/smilecursor.gif), auto;
     width: 100%;
     height: 100%;
     margin : 0 ;
@@ -311,7 +311,7 @@ footer{
     width: 230px;
     height: 330px;
     z-index: 1;
-    background: url(./img/rockbox2.jpg);
+    background: url(../img/rockbox2.jpg);
     background-size: 100%;
     transform: rotate(-40deg) skew(20deg,10deg);
     box-shadow: -120px 110px 5px rgba(0,0,0,0.08);

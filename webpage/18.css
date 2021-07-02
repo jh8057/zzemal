@@ -10,7 +10,7 @@ main{
 
 .landing{
     min-height: 100vh;
-    background: url(./img/foot.jpg);
+    background: url(../img/foot.jpg);
     background-size: cover;
     padding: 0rem 5rem;
 }

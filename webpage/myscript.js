@@ -59,10 +59,10 @@ function addUserNameonTitle(){
 
 function change_img(self){
     let mySrc = self.getAttribute('src');
-    if(mySrc === './img/domain_img.jpg') {
-      self.setAttribute('src','./img/art1.jpg');
+    if(mySrc === '../img/domain_img.jpg') {
+      self.setAttribute('src','../img/art1.jpg');
     } else {
-      self.setAttribute('src','./img/domain_img.jpg');
+      self.setAttribute('src','../img/domain_img.jpg');
     }
 }
 
@@ -103,9 +103,9 @@ function playmusic(){
     let icon = document.getElementById("playicon");
     if(song.paused){
         song.play();
-        icon.src = "./img/pausebutton.png"
+        icon.src = "../img/pausebutton.png"
     } else{
         song.pause();
-        icon.src = "./img/playbutton.png"
+        icon.src = "../img/playbutton.png"
     }
 }
