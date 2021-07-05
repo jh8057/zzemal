@@ -1,5 +1,16 @@
 # zzemal_web
 Start make public website!😀
+
+## LIST (목차)
+
+### expo
+- react-native를 이용한 어플리케이션을 만드는데 사용된 오픈소스 플랫폼이다.
+
+### vueproject & vuetodo
+- vue를 공부하면서 만든 프로젝트들이다.
+
+### webpage
+- HTML,JS,CSS로 이루어진 웹에 구성된 다양한 파일들이 모여있다.
 ## reference site
 [My Site](https://jh8057.github.io/zzemal/)   
 [MDN web](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started)  
