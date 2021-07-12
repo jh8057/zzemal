@@ -1,16 +1,18 @@
 body{
-    background-color: brown;
+    background-color: gray;
 }
 
 h1{
-    color : white;
+    color : black;
     transition: color 0.5s ease-in-out;
 }
 
 .clicked{
-    color : green;
+    color : white;
 }
-
+.clock h1{
+    color: white;
+}
 .btn{
     cursor: pointer;
 }

@@ -62,6 +62,8 @@ if (hastitle){
 ## localstorage
 - 브라우저 상에 데이터를 저장하는 것이다.
 - [블로그](https://www.daleseo.com/js-web-storage/)
+- localStorage.setItem(name,content) => 저장
+- localStorage.getItem(name) => 꺼내오기
 
 ## event.preventDefault();
 - 기본적으로 발생하는 default값을 막는함수다.
