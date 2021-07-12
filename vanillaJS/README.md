@@ -11,6 +11,8 @@
 ## 공부할 부분
 - 우선 하드코딩을 하면 안된다.
 - 모든 것들이 js를 통해 객체를 만들고 이를 추가하는 방식으로 접근해야된다.
+- 이 강의에서는 개념을 배우고, 최종적으로는 monentum이라는 프로그램을 따라 만들어본다.
+- [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca?hl=ko)
 
 ## 개념
 ### camle case
@@ -22,10 +24,6 @@ Parameter는 함수 혹은 메서드 정의에서 나열되는 변수 명입니�
 반면 Argument는 함수 혹은 메서드를 호출할 때, 전달 혹은 입력되는 실제 값입니다. 
 ### event
 - 자바스크립트는 이벤트에 반응하기 위해 만들어졌다.
-
-## Construct
-
-
 ## className & classList
 - 기존에 document.querySelector("#title").className 을 하면 class가 주어졌다.
 ```js
@@ -56,3 +54,16 @@ if (hastitle){
     title.classList.toggle(CLICKED_CLASS)
 ```
 - 위 코드와 동일한 기능을 하는것이다.
+
+## setInterval()
+- `setInterval(fn,millisecond)`
+- 함수를 일정 시간마다 실행시켜주는 함수이다.
+
+## localstorage
+- 브라우저 상에 데이터를 저장하는 것이다.
+- [블로그](https://www.daleseo.com/js-web-storage/)
+
+## event.preventDefault();
+- 기본적으로 발생하는 default값을 막는함수다.
+- 예를들어 form에서 입력을 넣고 엔터를 넣었을때, event가 발생해서 이것이 form에서 출발해 document까지 변화를 주고 페이지가 reload되는게 default인데, 이를 막아 동작하지 않게 해준다.
+- 이를 통해 입력된 값만 빼오고, event는 따로 함수를 짜서 다른 방식 발생하게끔 코딩을 했다.(Nomard가)
