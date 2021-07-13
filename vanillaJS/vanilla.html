@@ -8,6 +8,9 @@
         <script defer src="toggletitle.js"></script>
         <script defer src="clock.js"></script>
         <script defer src="greeting.js"></script>
+        <script defer src="todo.js"></script>
+        <script defer src="timer.js"></script>
+        <script defer src="stopwatch.js"></script>
         <link defer rel="stylesheet" href="vanilla.css"></script>
     </head>
     <body>
@@ -19,6 +22,19 @@
             <input type="text" placeholder="what is your name" />
         </form>
         <h4 class="js-greeting greeting"></h4>
+
+        <div class="js-timer">
+            <h1>10:00</h1>
+            <button>timer</button>
+        </div>
+
+        <div class="js-stopwatch">
+            <h1>00:00</h1>
+            <button>start</button>
+        </div>
+        <form class="js-toDoForm">
+            <input type="text" placeholder="Write a todo" />
+        </form>
 
     </body>
 </html>
