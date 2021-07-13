@@ -69,3 +69,11 @@ if (hastitle){
 - 기본적으로 발생하는 default값을 막는함수다.
 - 예를들어 form에서 입력을 넣고 엔터를 넣었을때, event가 발생해서 이것이 form에서 출발해 document까지 변화를 주고 페이지가 reload되는게 default인데, 이를 막아 동작하지 않게 해준다.
 - 이를 통해 입력된 값만 빼오고, event는 따로 함수를 짜서 다른 방식 발생하게끔 코딩을 했다.(Nomard가)
+
+## document.createElement()
+- 그동안 querySelector를 통해 html에서 요소를 가져왔다.
+- JS 내에서 요소를 생성하는 함수다.
+- `const li = document.createElement("li");`
+
+## Element.appendChild();
+- Element가 부모가 되고 아래에 자식 요소들을 추가하는 함수이다.

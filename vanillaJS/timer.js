@@ -2,7 +2,7 @@ const timerContaniner = document.querySelector(".js-timer"),
     timerclock = timerContaniner.querySelector("h1"),
     timerBtn = timerContaniner.querySelector("button");
 
-const CLICKEDTIMER = "clickedTimer"
+const CLICKEDTIMER = "clickedTimer";
 const INITTIME = timerclock.innerText;
 
 function timerstart(){
