@@ -77,3 +77,8 @@ if (hastitle){
 
 ## Element.appendChild();
 - Element가 부모가 되고 아래에 자식 요소들을 추가하는 함수이다.
+
+## JSON.stringify(obj)
+- 자바스크립트 object를 string으로 바꿔주는 함수
+- JSON은 JavaScript Object Notation, 자바스크립트 객체 표기법의 약자이다.
+## JSON
