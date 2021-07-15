@@ -81,4 +81,18 @@ if (hastitle){
 ## JSON.stringify(obj)
 - 자바스크립트 object를 string으로 바꿔주는 함수
 - JSON은 JavaScript Object Notation, 자바스크립트 객체 표기법의 약자이다.
-## JSON
+## Image();
+- The Image() constructor creates a new HTMLImageElement instance. It is functionally equivalent to document.createElement('img').
+
+## navigator.geolocation.getCurrentPosition(SuccesFuntion,ErrorFunction)
+- 위치 정보를 알수 있는 함수이다.
+
+## Object tip
+- `latitude:latitude` 이런식으로 이름이 같은 key value 값을 저장할 때는 그냥 `latitude`만 써도 똑같이 작동한다.
+
+## fetch()
+- 새로고침 없이 데이터를 계속 받아들여온다.
+- fetch안에 URL을 넣어주면 데이터를 받아온다.
+- then()을 사용해서 fetch가 끝난 데이터를 이용할 수 있다.
+- fetch를 통해 얻은 데이터(response)는 네트워크 정보 및 json 데이터를 가지고 있다.
+- 여기서 우리가 원하는 것은 json파일에 담겨있는 데이터이므로 response.json()을 해주어 json 데이터를 얻어와야한다.
