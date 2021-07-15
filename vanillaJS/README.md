@@ -14,12 +14,11 @@
 - 이 강의에서는 개념을 배우고, 최종적으로는 monentum이라는 프로그램을 따라 만들어본다.
 - [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca?hl=ko)   
 
-
 # 결과
 
 <img src="./result/1.jpg" width="200px" height="100%" title="1" alt="1"></img>   <img src="./result/2.jpg" width="200px" height="100%" title="2" alt="2"></img><br/>
 - 모바일 환경에서도 잘 보이도록 구성하였다.<br>
-- 왼쪽 하단에 온도와 위치 정보를 표시했다 (위치 정보를 토대로 API를 이용해서 날씨를 얻어왔다.)
+- 왼쪽 하단에 온도와 위치 정보를 표시했다 (위치 정보를 토대로 API를 이용해서 날씨를 얻어왔다)
 
 <img src="./result/3.jpg" width="600px" height="100%" title="3" alt="3"></img>
 - 이름을 입력하면 localStorage에 저장하도록 하였다.    
