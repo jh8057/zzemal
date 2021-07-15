@@ -58,6 +58,7 @@ if (hastitle){
 ## setInterval()
 - `setInterval(fn,millisecond)`
 - 함수를 일정 시간마다 실행시켜주는 함수이다.
+- cleanInterval 으로 종료가 가능하다 한다.
 
 ## localstorage
 - 브라우저 상에 데이터를 저장하는 것이다.

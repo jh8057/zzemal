@@ -1,7 +1,7 @@
 const weather = document.querySelector(".js-weather");
 
 const COORDS = 'coords';
-const API_KEY = '#'
+const API_KEY = '9bd8e793a9b384b98835cd25b57fbcd8'
 
 function getWeather(lat,lon){
     fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`
@@ -14,7 +14,7 @@ function getWeather(lat,lon){
         const country = json.sys.country;
 
         weather.innerText = `TEMP : ${temperature} ℃
-        PLACE : ${country}-${place}`
+        Location : ${country}-${place}`
     })
 }
 
@@ -46,7 +46,6 @@ function loadCoords(){
         askForCoords();
     }else{
         const parseCoords = JSON.parse(loadedCoords)
-        console.log(parseCoords)
         getWeather(parseCoords.latitude,parseCoords.longitude);
     }
 }

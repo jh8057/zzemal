@@ -16,32 +16,36 @@
         <link defer rel="stylesheet" href="vanilla.css"></script>
     </head>
     <body>
-        <h1 id="title" class="btn">This Work!</h1>
-        <div class="js-clock clock">
-            <h1>00:00</h1>
-        </div>
-        <form class="js-form form">
-            <input type="text" placeholder="what is your name" />
-        </form>
-        <h4 class="js-greeting greeting"></h4>
-
-        <div class="js-timer">
-            <h1>10:00</h1>
-            <button>timer</button>
-        </div>
-
-        <div class="js-stopwatch">
-            <h1>00:00</h1>
-            <button>start</button>
+        <h1 id="title" class="btn">Always be Happy😊 </h1>
+        <section class="CLOCK"></section>
+            <div class="js-clock clock">
+                <h2></h2><h1>00:00</h1>
+            </div>
+        </section>
+        <section class="GREETING">
+            <form class="js-form greetingform">
+                <input type="text" placeholder="what is your name" />
+            </form>
+            <h3 class="js-greeting greeting"></h3>
+        </section>
+        <div class = "clocks">
+            <div class="js-timer timer">
+                <h1>10:00</h1><button>timer</button>
+            </div>
+            <div class="js-stopwatch stopwatch">
+                <h1>00:00</h1><button>start</button>
+            </div>
         </div>
         <br>
-        <h2>ToDo</h2>
-        <form class="js-toDoForm">
-            <input type="text" placeholder="Write a todo" />
-        </form>
-        <ul class="js-toDoList"></ul>
-
-        <span class="js-weather"></span>
-
+        <div class="todo">
+        <h1>ToDo</h1>
+            <form class="js-toDoForm">
+                <input type="text" placeholder="Write a todo" />
+            </form>
+            <ul class="js-toDoList"></ul>
+        </div>
+        <footer>
+        <span class="js-weather weather"></span>
+        </footer>
     </body>
 </html>
