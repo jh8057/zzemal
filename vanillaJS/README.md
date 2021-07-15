@@ -12,9 +12,32 @@
 - 우선 하드코딩을 하면 안된다.
 - 모든 것들이 js를 통해 객체를 만들고 이를 추가하는 방식으로 접근해야된다.
 - 이 강의에서는 개념을 배우고, 최종적으로는 monentum이라는 프로그램을 따라 만들어본다.
-- [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca?hl=ko)
+- [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca?hl=ko)   
 
-## 개념
+
+# 결과
+
+<img src="./result/1.jpg" width="200px" height="100%" title="1" alt="1"></img>   <img src="./result/2.jpg" width="200px" height="100%" title="2" alt="2"></img><br/>
+- 모바일 환경에서도 잘 보이도록 구성하였다.<br>
+- 왼쪽 하단에 온도와 위치 정보를 표시했다 (위치 정보를 토대로 API를 이용해서 날씨를 얻어왔다.)
+
+<img src="./result/3.jpg" width="600px" height="100%" title="3" alt="3"></img>
+- 이름을 입력하면 localStorage에 저장하도록 하였다.    
+
+<img src="./result/4.jpg" width="600px" height="100%" title="4" alt="4"></img>
+- ToDo 를 입력하면 localStorage에 저장되어 화면에 출력하는 것을 확인할 수 있다.  
+
+<img src="./result/5.jpg" width="600px" height="100%" title="5" alt="5"></img>
+- 큰 화면으로도 잘 나온다.  
+
+<img src="./result/6.jpg" width="600px" height="100%" title="6" alt="6"></img>
+- title을 누르면 색이 변한다.
+- 요소들에 마우스를 올리면 그림자가 옅게 생긴다.
+- 타이머와 스탑워치 기능이 있다.
+- ToDo 에 입력하면 아래에 출력되고, 버튼을 누르면 지워진다.
+- refresh해도 저장된 데이터를 불러와 동일하게 출력된다.(같은 브라우저에서)
+
+## 공부한 개념
 ### camle case
 - 변수명을 사용할때 소문자로 시작했다가 스페이스가 필요하면 대문자로 사용하는 것
 ### build-in-function(내장함수)
