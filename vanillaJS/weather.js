@@ -14,7 +14,7 @@ function getWeather(lat,lon){
         const country = json.sys.country;
 
         weather.innerText = `TEMP : ${temperature} ℃
-         PLACE : ${country}-${place}`
+        PLACE : ${country}-${place}`
     })
 }
 
