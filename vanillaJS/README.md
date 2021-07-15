@@ -16,7 +16,7 @@
 
 # 결과
 
-<img src="./result/1.jpg" width="200px" height="100%" title="1" alt="1"></img>   <img src="./result/2.jpg" width="200px" height="100%" title="2" alt="2"></img><br/>
+<img src="./result/r1.jpg" width="200px" height="100%" title="1" alt="1"></img>   <img src="./result/2.jpg" width="200px" height="100%" title="2" alt="2"></img><br/>
 - 모바일 환경에서도 잘 보이도록 구성하였다.<br>
 - 왼쪽 하단에 온도와 위치 정보를 표시했다 (위치 정보를 토대로 API를 이용해서 날씨를 얻어왔다)
 
