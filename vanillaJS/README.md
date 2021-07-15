@@ -16,20 +16,20 @@
 
 # 결과
 
-<img src="./result/r1.jpg" width="200px" height="100%" title="1" alt="1"></img>   <img src="./result/2.jpg" width="200px" height="100%" title="2" alt="2"></img><br/>
+<img src="./result/r1.jpg" width="200px" height="100%" title="1" alt="1"></img>   <img src="./result/r2.jpg" width="200px" height="100%" title="2" alt="2"></img><br/>
 - 모바일 환경에서도 잘 보이도록 구성하였다.<br>
 - 왼쪽 하단에 온도와 위치 정보를 표시했다 (위치 정보를 토대로 API를 이용해서 날씨를 얻어왔다)
 
-<img src="./result/3.jpg" width="600px" height="100%" title="3" alt="3"></img>
+<img src="./result/r3.jpg" width="600px" height="100%" title="3" alt="3"></img>
 - 이름을 입력하면 localStorage에 저장하도록 하였다.    
 
-<img src="./result/4.jpg" width="600px" height="100%" title="4" alt="4"></img>
+<img src="./result/r4.jpg" width="600px" height="100%" title="4" alt="4"></img>
 - ToDo 를 입력하면 localStorage에 저장되어 화면에 출력하는 것을 확인할 수 있다.  
 
-<img src="./result/5.jpg" width="600px" height="100%" title="5" alt="5"></img>
+<img src="./result/r5.jpg" width="600px" height="100%" title="5" alt="5"></img>
 - 큰 화면으로도 잘 나온다.  
 
-<img src="./result/6.jpg" width="600px" height="100%" title="6" alt="6"></img>
+<img src="./result/r6.jpg" width="600px" height="100%" title="6" alt="6"></img>
 - title을 누르면 색이 변한다.
 - 요소들에 마우스를 올리면 그림자가 옅게 생긴다.
 - 타이머와 스탑워치 기능이 있다.
