@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name= viewport content= "width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>CSS EDU</title>
+        <link rel="stylesheet" href="cssedu.css">
+    </head>
+    <body>
+        <header>
+            <h1> CSS 강좌 정리 페이지</h1>
+        </header>
+        <main>
+                <div>
+                    이 페이지는 <a href="https://www.youtube.com/watch?v=gGebK7lWnCk&list=PLv2d7VI9OotQ1F92Jp9Ce7ovHEsuRQB3Y&index=7" target="_blank">
+                        드림코더 유튜브</a>를 보고 배운 내용을 정리한 페이지 입니다.
+                </div>
+                <div>
+                    <h1>CSS란</h1>
+                    Cascading Style Sheet<br>
+                    Cascading : 작은 폭포, 연속 같은 의미<br>
+                    Style Sheet: 스타일을 잘 정리한 문서 한장<br>
+
+                </div>
+
+                <div>
+                    <h1> Cascading</h1>
+                    연속적으로 다음으로 넘어가는 의미라 생각하면 되겠다.<br>
+                    만약, 어떤 요소에 대한 정의가 있다면 쓰고, 없다면 다음 지정된 곳에 물어보는 연속적인 행동들이다.<br>
+                    웹은 아래와 같은 흐름으로 진행된다<br>
+                    <span><strong> style - css >>>  User style - ex)Dark mode, font size  >>> Browser</strong></span><br>
+                    이 흐름을 깨는 것은 !important 하나 뿐이다 => 별로 좋지 않은 방식이다.<br>
+                </div>
+                <div>
+                    <h1>Selector</h1>
+                    * : 모든 것<br>
+                    Tag : tag 영역<br>
+                    #id : id <br>
+                    .class : class<br>
+                    `:` :started<br>
+                    [] : attribute<br>
+
+                    <h2>css 문법</h2>
+                    <xmp>
+                    selector {
+                        property : value
+                    }
+                    
+                    ex) * : {
+                        color : green;
+                    } 
+                    - 모든 영역의 font color가 green이 된다.
+
+                    a[href="naver.com"]{
+                        color:purple
+                    }
+                    - a태그 속성중에 href를 가지고있고, href가 "naver.com"인 경우만 color가 purple이 된다.<br>
+                    
+                    a[href $=".com"]{
+                        color:purple
+                    } - ".com"으로 끝나는것
+                    </xmp>
+                    다양한 비교 연산자가 사용가능하다.
+                    <a href="https://developer.mozilla.org/ko/docs/Web/CSS/Attribute_selectors" target="_blank">
+                    MDN 특성 선택자 설명</a>
+                </div>
+                <div>
+                    <br>block 레벨의 컨테이너는 한줄을 다 차지한다.<br>
+                    background color로 확인가능<br>
+                    width hegiht를 조절하여 꾸밀 수 있다.
+                    Tag들을 묶어서 사용가능하다 - li #id하면 li중 #id만
+                </div>
+                <div>
+                    토막 html개념 - "&.nbsp(.은 삭제)" 를 넣으면 띄&nbsp어&nbsp쓰기가 된다.<br>
+                    - xmp태그를 사용하면 코드를 그대로 출력가능하다.
+                    
+                </div>
+                <div>
+                    padding : contents 안쪽 영역
+                    margin : contents 바깥 영역
+                </div>
+
+            </section>
+        </main>
+    </body>
+</html>
