@@ -42,7 +42,7 @@
                     [] : attribute<br>
 
                     <h2>css 문법</h2>
-                    <xmp>
+                    <pre>
                     selector {
                         property : value
                     }
@@ -60,28 +60,80 @@
                     a[href $=".com"]{
                         color:purple
                     } - ".com"으로 끝나는것
-                    </xmp>
+                    </pre>
                     다양한 비교 연산자가 사용가능하다.
                     <a href="https://developer.mozilla.org/ko/docs/Web/CSS/Attribute_selectors" target="_blank">
                     MDN 특성 선택자 설명</a>
                 </div>
-                <div>
+                <div class="block">
                     <br>block 레벨의 컨테이너는 한줄을 다 차지한다.<br>
                     background color로 확인가능<br>
+
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <br>
+                </div>
+                <div class="inlineblock">
+                    
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <br>
                     width hegiht를 조절하여 꾸밀 수 있다.
                     Tag들을 묶어서 사용가능하다 - li #id하면 li중 #id만
+                
                 </div>
+                    
                 <div>
                     토막 html개념 - "&.nbsp(.은 삭제)" 를 넣으면 띄&nbsp어&nbsp쓰기가 된다.<br>
-                    - xmp태그를 사용하면 코드를 그대로 출력가능하다.
+                    - pre태그를 사용하면 코드를 그대로 출력가능하다.
                     
                 </div>
                 <div>
                     padding : contents 안쪽 영역
                     margin : contents 바깥 영역
                 </div>
-
+                <br>
             </section>
+
+            <article class="container">
+                기본적으로 css의 포지션은 static이다. <br>따라서, position: relative로 변경해주면 left,top같은 위치 변화 값이 적용이 된다.
+                <br>position:absolute 는 포함된 컨테이너를 기준으로 위치 변경이 되는 것이다.
+                <br>position:fixed는 window 창을 기준으로 위치 변경
+                <div></div>
+                <div class="box">I'm Box</div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="absolute">I'm absolute</div>
+                <div class="fixed">I'm fixed</div>
+            </article >
+
+
+            <article class="stickycontainer">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </article>
+
+
         </main>
     </body>
 </html>

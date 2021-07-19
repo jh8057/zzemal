@@ -2,3 +2,68 @@ html,body{
     padding: 0;
     margin: 0;
 }
+
+.block div,span{
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+}
+
+.block div{
+    background-color : red;
+}
+
+.inlineblock div{
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    background-color: purple;
+    display: inline-block;
+}
+.block span{
+    background-color: blue;
+}
+
+.container{
+    position: relative;
+    background-color: yellow;
+    left: 20px;
+    top: 20px;
+}
+
+.container div{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: brown;
+}
+.container .box{
+    background-color: blue;
+}
+
+.container .absolute{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+.container .fixed{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+.stickycontainer div{
+    position: sticky;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: brown;
+    left: 100px;
+    top: 100px;
+}
+
+.stickycontainer{
+    background-color: blanchedalmond;
+}
+
