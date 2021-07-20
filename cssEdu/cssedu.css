@@ -24,6 +24,8 @@ html,body{
     background-color: blue;
 }
 
+/* container */
+
 .container{
     position: relative;
     background-color: yellow;
@@ -53,6 +55,9 @@ html,body{
     bottom: 10px;
 }
 
+
+/* stickycontainer */
+
 .stickycontainer div{
     position: sticky;
     width: 50px;
@@ -67,3 +72,77 @@ html,body{
     background-color: blanchedalmond;
 }
 
+
+/* flexbox */
+.flexbox{
+    background-color: burlywood;
+    height: 150vh;
+}
+
+.flexcontainer{
+    height: 50vh;
+    margin: 20px 0 20px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    /* flex-flow: row wrap; */
+
+    justify-content: space-around;
+    align-items:center;
+    align-content: center;
+}
+.item{
+    width: 80px;
+    height : 80px;
+    border : 1px solid black
+}
+.item1{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+.item2{
+    background-color: orange;
+}
+.item3{
+    background-color: yellow;
+}
+.item4{
+    background-color: pink;
+}
+.item5{
+    background-color: skyblue;
+}
+.item6{
+    background-color: greenyellow;
+}
+.item7{
+    background-color: purple;
+}
+.item8{
+    background-color: navy;
+}
+
+.flexcontainer2{
+    height: 50vh;
+    margin: 20px 0 20px 0;
+    display: flex;
+}
+
+.flexcontainer2 .item1{
+    background-color: red;
+    width:200px;
+    height:200px;
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+.flexcontainer2 .item2{
+    background-color: orange;
+    flex-basis: 40%;
+    align-self:center;
+}
+.flexcontainer2 .item3{
+    background-color: yellow;
+    flex-grow: 1;
+    flex-shrink: 1;
+}

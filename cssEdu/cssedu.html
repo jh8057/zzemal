@@ -132,6 +132,48 @@
                 <div></div>
                 <div></div>
             </article>
+            <article class="flexbox">
+                <h1>FlexBox</h1>
+                float = 이미지를 문단 내 어디에 위치시킬지 정하는 문법이였다.<br>
+                flexbox에는 container에 지정하는 속성, item에 지정하는 속성이 있다.<br>
+                main axis , cross axis 중심축 , 수평축이 있다.<br>
+                div.flexcontainer>div.item.item${$}*8<br>
+                위 처럼 작성하면 한번에 쉽게 작성할 수 있다.<br>
+                flex-direction을 통해 방향을 설정하여 배열을 바꿔줄수 있다.<br>
+                flex-wrap은 window창이 줄어들면 거기에 맞춰 overflow가 일어날 경우 다음 줄로 자동 옮겨주는 기능이다<br>
+                flex-flow는 flex-direction과 flex-wrap을 한번에 적는게 가능하다.<br>
+                justify-content은 중심축(main axis)을 기준으로 내용물을 정렬하는 기능이다.<br>
+                flex-end,space-around 등 다양하다.<br>
+                align-item 는 교차축(cross axis)을 기준으로 item을 정해진 contain안에서 정렬하는 것이다.<br>
+                align-content 는 교차축(cross axis)을 기준으로 내용물을 정렬하는 법을 정한다.<br>
+                <hr>
+                box align
+                <div class="flexcontainer">
+                    <div class="item item1">1</div>
+                    <div class="item item2">2</div>
+                    <div class="item item3">3</div>
+                    <div class="item item4">4</div>
+                    <div class="item item5">5</div>
+                    <div class="item item6">6</div>
+                    <div class="item item7">7</div>
+                    <div class="item item8">8</div>
+                </div>
+                <hr>
+                flex-grow를 설정하면 화면 크기에 맞추어 사이즈가 커진다.<br>
+                flex-shrink를 설정하면 화면 크기에 맞추어 사이즈가 작아진다.<br>
+                위 두개 기능을 합친게 flex-basis다.<br>
+                align-self를 통해 item 하나면 배치를 변화줄수있다.<br>
+                <hr>
+                item align
+                <div class="flexcontainer2">
+                    <div class="item item1">1</div>
+                    <div class="item item2">2</div>
+                    <div class="item item3">3</div>  
+
+                </div>
+
+
+            </article>
 
 
         </main>
