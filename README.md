@@ -151,6 +151,14 @@ Start make public website!😀
 >script에 gsap관련된거 한줄 넣어주면 끝이다. 다만, 형식을 알아야 쓸 수 있다.
 - c처럼 debug하지말자.. debugging은 웹페이지에서 검사누르면 바로나오는것을..
 - javascript도 순서가 존재한다는걸 알게되었다.. js끼리 서로 필요한 파일이 있으면, 라이브러리 script를 다 불르고 마지막에 내 script를 배치해야된다.
+- function expression 과 function declaration이 존재한다.
+- const STH = function~ :  function expression
+- function Name(){} : function declaration
+- function declaration은 함수가 정의되기 전에 호출해도 정상 동작한다.
+- anonymous function  : 이름없는 함수
+- named function : 이름 있는 함수
+- Arrow function : => 화살표를 통해 만든 함수
+- IIFE(Immediately Invoked Function Expression) : (function())(), 함수를 가로로 묶고 함수실행하듯 해주면 바로 함수가 따로 선언 없이 실행이 된다.
 ## graphic
 -언제나 에러는 짜증난다.. 그래픽작업을 한번 해볼라했는데.🔥🔥🔥🔥🔥🔥
 - [CORS error](https://velog.io/@takeknowledge/%EB%A1%9C%EC%BB%AC%EC%97%90%EC%84%9C-CORS-policy-%EA%B4%80%EB%A0%A8-%EC%97%90%EB%9F%AC%EA%B0%80-%EB%B0%9C%EC%83%9D%ED%95%98%EB%8A%94-%EC%9D%B4%EC%9C%A0-3gk4gyhreu)
