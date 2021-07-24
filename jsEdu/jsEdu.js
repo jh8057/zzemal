@@ -1,133 +1,112 @@
-'use strict';
-//Object-oriented programming
-//class : template
-//object : instace of a class
-// Javascript classes
-    // -introduced in ES6
-    //- synractical sugar over prototype-based inheritance(계승)
+'use strict'
 
-// 1. Class declarations
-class Person{
-    // constructor
-    constructor(name,age){
-        // field
-        this.name = name;
-        this.age = age;
-    }
+// Object
+// one of the Javascript's data types
+// a collection of related data and/or functionality
+// Nearly all objects in Javascript are instances of Object
+// object = {key,value};
 
-    // methods
-    speak(){
-        console.log(`${this.name} : hello!`)
+
+// 1.Literals and properties
+const obj1 = {} ; //'object literal' syntax
+const obj2 = new Object(); //'object constructor' syntax
+
+
+function printperson(person){
+    console.log(person.name);
+    console.log(person.age);
+}
+
+const zzemal = {
+    name : 'zzemal',
+    age : 28
+};
+
+// dynamic language 라서 나중에 생성하고 지우는게 가능하다.
+zzemal.hasJob = false; 
+delete zzemal.hasJob;
+
+// 2.computed properties
+// key should be always string
+console.log(zzemal.name);
+console.log(zzemal['name']);
+
+zzemal['hasjob'] = true;
+console.log(zzemal.hasjob)
+
+// 이런식으로 나중에 동적으로 값을 받아오고 적용할때 사용된다.
+function printValue(obj,key){
+    console.log(obj[key]);
+}
+printValue(zzemal,'name')
+
+// 3.property value shorthand
+const person1 = {name : 'bob',age:2};
+const person2 = {name : 'foa',age:3};
+const person3 = {name : 'dos',age:4};
+
+// 이런식으로 key와 value의 값이 같다면 한번만 써도 된다.
+function makePerson(name,age){
+    return {
+        name,
+        age
     }
 }
 
-
-const zzemal = new Person('zzemal', 20);
-// console.log(zzemal.name);
-// console.log(zzemal.age);
-// zzemal.speak();
-
-// 2.Getter and setters
-// age가 -1이 말이 안된다. 이런 잘못된 선언을 바로 잡아주는것이 Getter,setter이다.
-class User{
-    constructor(firstName,lastName,age){
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
-    }
-    // this.age에 변수를 넣을때 get을 호출하고 get이 set을 호출한다
-    get age(){
-        // 변수명이 같으면 무한 콜백이 일어나기에 _를 앞에 넣어 변수명을 바꿔준다
-        return this._age;
-    }
-    
-    set age(value){
-        this._age = value < 0 ? 0 : value;
-    }
+// 4. Constructor function
+// 순수하게 object를 생성하는 함수는 대문자로 시작하고, this를 사용해준다.
+// 위와 동일한 함수이다.
+function Person(name,age){
+    // this={}; 가 생략
+    this.name = name;
+    this.age = age;
+    // return this; 가 생략
 }
 
-const user1 = new User('Steve','Job',-1);
-// console.log(user1.age)
+// 5. in operator : property existance check( key in obj)
+console.log("has name?" ,"name" in zzemal)
 
-
-// 3.Fields(public,private)
-// 최신이라 아직 적용이 안된 브라우저가 많다.
-// #을 붙이면 private변수 선언이고, 이는 class 내부에서만 볼수 있다
-class Experiment{
-    publicField =2;
-    #privateField = 8;
-
-    privateshow(){
-        console.log(this.#privateField)
-    }
+// 6. for .. in vs for .. of
+// for (key in obj)
+console.clear();
+for (let key in zzemal){
+    console.log(key)
 }
-const experiment = new Experiment();
-// console.log(experiment.publicField)
-// console.log(experiment.privateField)
-// experiment.privateshow()
-
-
-// 4.static properties and methods
-// 이것도 최신 것이다.
-// object에 복사되지 않는 고유의 값을 선언하는 것이다
-// 공통적으로 쓰이는 값을 선언하는데 주로 사용된다 -> 메모리 사용량 줄일수있다.
-class Article{
-    static publisher = 'Dream Coding';
-    constructor(articleNumber){
-        this.articleNumber = articleNumber;
-    }
-
-    static printPublisher(){
-        console.log(Article.publisher )
-    }
+// for (key of obj)
+// https://helloworldjavascript.net/pages/260-iteration.html
+// iterable(반복 가능한 객체)에 한해 사용할 수 있다.
+const array = [1,4,5,7,9];
+for( let value of array){
+    console.log(value)
 }
 
-const article1 = new Article(1);
-console.log(Article.publisher)
-console.log(article1.publisher)
+// 7. Fun cloning
+// object.assign(dest, [obj1,obj2,obj3...])
+const user = {name : 'zzemal',age:'20'};
+const user2 = user;
+user2.name = 'coder'
+console.log(user)
 
-// 5.Inheritance(상속)
-// a way for one class to extend another class
-// extends 를 사용하면 상속이 된다.
-class Shape{
-    constructor(width,height,color){
-        this.width = width;
-        this.height = height;
-        this.color = color;
-    }
-
-    draw(){
-        console.log(`drawing ${this.color} color!`)
-    }
-    getArea(){
-        return this.width * this.height
-    }
+// old way
+const user3 = {};
+for( let key in user){
+    user3[key] = user[key]
 }
+console.clear()
+console.log(user3)
 
-class Rectangle extends Shape{}
-class Triangle extends Shape{
-    draw(){
-        // overidding 하면서 기존의 부모에 있던 함수도 같이 사용하고 싶다면
-        // super!
-        super.draw()
-        console.log('🔺')
-    }
-    // overidding : 덮어쓰기가 가능하다.
-    getArea(){
-        return (this.width * this.height)/2
-    }
-}
+const user4 = {};
+Object.assign( user4, user);
+console.log(user4)
 
-const rectangle = new Rectangle(20,20,'red');
-const triangle = new Triangle(20,20,'yello');
-rectangle.draw()
-console.log(rectangle.getArea())
-triangle.draw()
-console.log(triangle.getArea())
+const user5 = Object.assign({}, user);
+console.log(user5)
+user5.name = "change"
+console.log(user5, user)
 
-
-// 6. class checking : instanceof
-console.log(rectangle instanceof Rectangle)
-console.log(triangle instanceof Rectangle)
-console.log(triangle instanceof Shape)
-console.log(triangle instanceof Object)
+// another example
+// 뒤에 붙은게 마지막으로 적용된다.
+const fruit1 = {color:'red'}
+const fruit2 = {color:'blue',size:'big'}
+const mixed = Object.assign({},fruit1,fruit2);
+console.log(mixed)
