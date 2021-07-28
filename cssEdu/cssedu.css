@@ -1,170 +1,170 @@
-html,body{
-    padding: 0;
-    margin: 0;
+html,
+body {
+  padding: 0;
+  margin: 0;
 }
 
-.block div,span{
-    width: 80px;
-    height: 80px;
-    margin: 20px;
+.block div,
+span {
+  width: 80px;
+  height: 80px;
+  margin: 20px;
 }
 
-.block div{
-    background-color : red;
+.block div {
+  background-color: red;
 }
 
-.inlineblock div{
-    width: 80px;
-    height: 80px;
-    margin: 20px;
-    background-color: purple;
-    display: inline-block;
+.inlineblock div {
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  background-color: purple;
+  display: inline-block;
 }
-.block span{
-    background-color: blue;
+.block span {
+  background-color: blue;
 }
 
 /* container */
 
-.container{
-    position: relative;
-    background-color: yellow;
-    left: 20px;
-    top: 20px;
+.container {
+  position: relative;
+  background-color: yellow;
+  left: 20px;
+  top: 20px;
 }
 
-.container div{
-    width: 50px;
-    height: 50px;
-    margin-bottom: 20px;
-    background-color: brown;
+.container div {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+  background-color: brown;
 }
-.container .box{
-    background-color: blue;
-}
-
-.container .absolute{
-    position: absolute;
-    left: 100px;
-    top: 100px;
+.container .box {
+  background-color: blue;
 }
 
-.container .fixed{
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
+.container .absolute {
+  position: absolute;
+  left: 100px;
+  top: 100px;
 }
 
+.container .fixed {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
 
 /* stickycontainer */
 
-.stickycontainer div{
-    position: sticky;
-    width: 50px;
-    height: 50px;
-    margin-bottom: 20px;
-    background-color: brown;
-    left: 100px;
-    top: 100px;
+.stickycontainer div {
+  position: sticky;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+  background-color: brown;
+  left: 100px;
+  top: 100px;
 }
 
-.stickycontainer{
-    background-color: blanchedalmond;
+.stickycontainer {
+  background-color: blanchedalmond;
 }
-
 
 /* flexbox */
-.flexbox{
-    background-color: burlywood;
-    height: 150vh;
+.flexbox {
+  background-color: burlywood;
+  height: 150vh;
 }
 
-.flexcontainer{
-    height: 50vh;
-    margin: 20px 0 20px 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    /* flex-flow: row wrap; */
+.flexcontainer {
+  height: 50vh;
+  margin: 20px 0 20px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* flex-flow: row wrap; */
 
-    justify-content: space-around;
-    align-items:center;
-    align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
 }
-.item{
-    width: 80px;
-    height : 80px;
-    border : 1px solid black
+.item {
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
 }
-.item1{
-    background-color: red;
-    width: 100px;
-    height: 100px;
+.item1 {
+  background-color: red;
+  width: 100px;
+  height: 100px;
 }
-.item2{
-    background-color: orange;
+.item2 {
+  background-color: orange;
 }
-.item3{
-    background-color: yellow;
+.item3 {
+  background-color: yellow;
 }
-.item4{
-    background-color: pink;
+.item4 {
+  background-color: pink;
 }
-.item5{
-    background-color: skyblue;
+.item5 {
+  background-color: skyblue;
 }
-.item6{
-    background-color: greenyellow;
+.item6 {
+  background-color: greenyellow;
 }
-.item7{
-    background-color: purple;
+.item7 {
+  background-color: purple;
 }
-.item8{
-    background-color: navy;
-}
-
-.flexcontainer2{
-    height: 50vh;
-    margin: 20px 0 20px 0;
-    display: flex;
+.item8 {
+  background-color: navy;
 }
 
-.flexcontainer2 .item1{
-    background-color: red;
-    width:200px;
-    height:200px;
-    flex-grow: 2;
-    flex-shrink: 2;
+.flexcontainer2 {
+  height: 50vh;
+  margin: 20px 0 20px 0;
+  display: flex;
 }
-.flexcontainer2 .item2{
-    background-color: orange;
-    flex-basis: 40%;
-    align-self:center;
+
+.flexcontainer2 .item1 {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  flex-grow: 2;
+  flex-shrink: 2;
 }
-.flexcontainer2 .item3{
-    background-color: yellow;
-    flex-grow: 1;
-    flex-shrink: 1;
+.flexcontainer2 .item2 {
+  background-color: orange;
+  flex-basis: 40%;
+  align-self: center;
+}
+.flexcontainer2 .item3 {
+  background-color: yellow;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .component {
-    width: 50%;
-    border: 1px solid burlywood;
-    font-size: 2rem;
+  width: 50%;
+  border: 1px solid burlywood;
+  font-size: 2rem;
+}
+
+.title {
+  padding: 0.5em 0.5rem;
+  background-color: burlywood;
+}
+
+.contents {
+  font-size: 1rem;
+  padding: 0.5em 0.5rem;
+}
+
+@media screen and (max-width: 48rem) {
+  .component {
+    font-size: 1.5rem;
   }
-  
-  .title {
-    padding: 0.5em 0.5rem;
-    background-color: burlywood;
-  }
-  
-  .contents {
-    font-size: 1rem;
-    padding: 0.5em 0.5rem;
-  }
-  
-  @media screen and (max-width: 48rem) {
-    .component {
-      font-size: 1.5rem;
-    }
-  }
+}

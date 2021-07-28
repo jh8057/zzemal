@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name= viewport content= "width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>CSS EDU</title>
-        <link rel="stylesheet" href="cssedu.css">
-    </head>
-    <body>
-        <header>
-            <h1> CSS 강좌 정리 페이지</h1>
-        </header>
-        <main>
-                <div>
-                    이 페이지는 <a href="https://www.youtube.com/watch?v=gGebK7lWnCk&list=PLv2d7VI9OotQ1F92Jp9Ce7ovHEsuRQB3Y&index=7" target="_blank">
-                        드림코더 유튜브</a>를 보고 배운 내용을 정리한 페이지 입니다.
-                </div>
-                <div>
-                    <h1>CSS란</h1>
-                    Cascading Style Sheet<br>
-                    Cascading : 작은 폭포, 연속 같은 의미<br>
-                    Style Sheet: 스타일을 잘 정리한 문서 한장<br>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>CSS EDU</title>
+    <link rel="stylesheet" href="cssedu.css" />
+  </head>
+  <body>
+    <header>
+      <h1>CSS 강좌 정리 페이지</h1>
+    </header>
+    <main>
+      <div>
+        이 페이지는
+        <a
+          href="https://www.youtube.com/watch?v=gGebK7lWnCk&list=PLv2d7VI9OotQ1F92Jp9Ce7ovHEsuRQB3Y&index=7"
+          target="_blank"
+        >
+          드림코더 유튜브</a
+        >를 보고 배운 내용을 정리한 페이지 입니다.
+      </div>
+      <div>
+        <h1>CSS란</h1>
+        Cascading Style Sheet<br />
+        Cascading : 작은 폭포, 연속 같은 의미<br />
+        Style Sheet: 스타일을 잘 정리한 문서 한장<br />
+      </div>
 
-                </div>
+      <div>
+        <h1>Cascading</h1>
+        연속적으로 다음으로 넘어가는 의미라 생각하면 되겠다.<br />
+        만약, 어떤 요소에 대한 정의가 있다면 쓰고, 없다면 다음 지정된 곳에
+        물어보는 연속적인 행동들이다.<br />
+        웹은 아래와 같은 흐름으로 진행된다<br />
+        <span
+          ><strong>
+            style - css >>> User style - ex)Dark mode, font size >>>
+            Browser</strong
+          ></span
+        ><br />
+        이 흐름을 깨는 것은 !important 하나 뿐이다 => 별로 좋지 않은
+        방식이다.<br />
+      </div>
+      <div>
+        <h1>Selector</h1>
+        * : 모든 것<br />
+        Tag : tag 영역<br />
+        #id : id <br />
+        .class : class<br />
+        `:` :started<br />
+        [] : attribute<br />
 
-                <div>
-                    <h1> Cascading</h1>
-                    연속적으로 다음으로 넘어가는 의미라 생각하면 되겠다.<br>
-                    만약, 어떤 요소에 대한 정의가 있다면 쓰고, 없다면 다음 지정된 곳에 물어보는 연속적인 행동들이다.<br>
-                    웹은 아래와 같은 흐름으로 진행된다<br>
-                    <span><strong> style - css >>>  User style - ex)Dark mode, font size  >>> Browser</strong></span><br>
-                    이 흐름을 깨는 것은 !important 하나 뿐이다 => 별로 좋지 않은 방식이다.<br>
-                </div>
-                <div>
-                    <h1>Selector</h1>
-                    * : 모든 것<br>
-                    Tag : tag 영역<br>
-                    #id : id <br>
-                    .class : class<br>
-                    `:` :started<br>
-                    [] : attribute<br>
-
-                    <h2>css 문법</h2>
-                    <pre>
+        <h2>css 문법</h2>
+        <pre>
                     selector {
                         property : value
                     }
@@ -61,146 +72,139 @@
                         color:purple
                     } - ".com"으로 끝나는것
                     </pre>
-                    다양한 비교 연산자가 사용가능하다.
-                    <a href="https://developer.mozilla.org/ko/docs/Web/CSS/Attribute_selectors" target="_blank">
-                    MDN 특성 선택자 설명</a>
-                </div>
-                <div class="block">
-                    <br>block 레벨의 컨테이너는 한줄을 다 차지한다.<br>
-                    background color로 확인가능<br>
+        다양한 비교 연산자가 사용가능하다.
+        <a
+          href="https://developer.mozilla.org/ko/docs/Web/CSS/Attribute_selectors"
+          target="_blank"
+        >
+          MDN 특성 선택자 설명</a
+        >
+      </div>
+      <div class="block">
+        <br />block 레벨의 컨테이너는 한줄을 다 차지한다.<br />
+        background color로 확인가능<br />
 
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <span>1</span>
-                    <span>2</span>
-                    <span>3</span>
-                    <br>
-                </div>
-                <div class="inlineblock">
-                    
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <br>
-                    width hegiht를 조절하여 꾸밀 수 있다.
-                    Tag들을 묶어서 사용가능하다 - li #id하면 li중 #id만
-                
-                </div>
-                    
-                <div>
-                    토막 html개념 - "&.nbsp(.은 삭제)" 를 넣으면 띄&nbsp어&nbsp쓰기가 된다.<br>
-                    - pre태그를 사용하면 코드를 그대로 출력가능하다.
-                    
-                </div>
-                <div>
-                    padding : contents 안쪽 영역
-                    margin : contents 바깥 영역
-                </div>
-                <br>
-            </section>
-            
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <br />
+      </div>
+      <div class="inlineblock">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <br />
+        width hegiht를 조절하여 꾸밀 수 있다. Tag들을 묶어서 사용가능하다 - li
+        #id하면 li중 #id만
+      </div>
 
-            <article class="container">
-                기본적으로 css의 포지션은 static이다. <br>따라서, position: relative로 변경해주면 left,top같은 위치 변화 값이 적용이 된다.
-                <br>position:absolute 는 포함된 컨테이너를 기준으로 위치 변경이 되는 것이다.
-                <br>position:fixed는 window 창을 기준으로 위치 변경
-                <div></div>
-                <div class="box">I'm Box</div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div class="absolute">I'm absolute</div>
-                <div class="fixed">I'm fixed</div>
-            </article >
+      <div>
+        토막 html개념 - "&.nbsp(.은 삭제)" 를 넣으면 띄&nbsp어&nbsp쓰기가
+        된다.<br />
+        - pre태그를 사용하면 코드를 그대로 출력가능하다.
+      </div>
+      <div>padding : contents 안쪽 영역 margin : contents 바깥 영역</div>
+      <br />
 
+      <article class="container">
+        기본적으로 css의 포지션은 static이다. <br />따라서, position: relative로
+        변경해주면 left,top같은 위치 변화 값이 적용이 된다.
+        <br />position:absolute 는 포함된 컨테이너를 기준으로 위치 변경이 되는
+        것이다. <br />position:fixed는 window 창을 기준으로 위치 변경
+        <div></div>
+        <div class="box">I'm Box</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div class="absolute">I'm absolute</div>
+        <div class="fixed">I'm fixed</div>
+      </article>
 
-            <article class="stickycontainer">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </article>
-            <article class="flexbox">
-                <h1>FlexBox</h1>
-                float = 이미지를 문단 내 어디에 위치시킬지 정하는 문법이였다.<br>
-                flexbox에는 container에 지정하는 속성, item에 지정하는 속성이 있다.<br>
-                main axis , cross axis 중심축 , 수평축이 있다.<br>
-                div.flexcontainer>div.item.item${$}*8<br>
-                위 처럼 작성하면 한번에 쉽게 작성할 수 있다.<br>
-                flex-direction을 통해 방향을 설정하여 배열을 바꿔줄수 있다.<br>
-                flex-wrap은 window창이 줄어들면 거기에 맞춰 overflow가 일어날 경우 다음 줄로 자동 옮겨주는 기능이다<br>
-                flex-flow는 flex-direction과 flex-wrap을 한번에 적는게 가능하다.<br>
-                justify-content은 중심축(main axis)을 기준으로 내용물을 정렬하는 기능이다.<br>
-                flex-end,space-around 등 다양하다.<br>
-                align-item 는 교차축(cross axis)을 기준으로 item을 정해진 contain안에서 정렬하는 것이다.<br>
-                align-content 는 교차축(cross axis)을 기준으로 내용물을 정렬하는 법을 정한다.<br>
-                <hr>
-                box align
-                <div class="flexcontainer">
-                    <div class="item item1">1</div>
-                    <div class="item item2">2</div>
-                    <div class="item item3">3</div>
-                    <div class="item item4">4</div>
-                    <div class="item item5">5</div>
-                    <div class="item item6">6</div>
-                    <div class="item item7">7</div>
-                    <div class="item item8">8</div>
-                </div>
-                <hr>
-                flex-grow를 설정하면 화면 크기에 맞추어 사이즈가 커진다.<br>
-                flex-shrink를 설정하면 화면 크기에 맞추어 사이즈가 작아진다.<br>
-                위 두개 기능을 합친게 flex-basis다.<br>
-                align-self를 통해 item 하나면 배치를 변화줄수있다.<br>
-                <hr>
-                item align
-                <div class="flexcontainer2">
-                    <div class="item item1">1</div>
-                    <div class="item item2">2</div>
-                    <div class="item item3">3</div>  
+      <article class="stickycontainer">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </article>
+      <article class="flexbox">
+        <h1>FlexBox</h1>
+        float = 이미지를 문단 내 어디에 위치시킬지 정하는 문법이였다.<br />
+        flexbox에는 container에 지정하는 속성, item에 지정하는 속성이 있다.<br />
+        main axis , cross axis 중심축 , 수평축이 있다.<br />
+        div.flexcontainer>div.item.item${$}*8<br />
+        위 처럼 작성하면 한번에 쉽게 작성할 수 있다.<br />
+        flex-direction을 통해 방향을 설정하여 배열을 바꿔줄수 있다.<br />
+        flex-wrap은 window창이 줄어들면 거기에 맞춰 overflow가 일어날 경우 다음
+        줄로 자동 옮겨주는 기능이다<br />
+        flex-flow는 flex-direction과 flex-wrap을 한번에 적는게 가능하다.<br />
+        justify-content은 중심축(main axis)을 기준으로 내용물을 정렬하는
+        기능이다.<br />
+        flex-end,space-around 등 다양하다.<br />
+        align-item 는 교차축(cross axis)을 기준으로 item을 정해진 contain안에서
+        정렬하는 것이다.<br />
+        align-content 는 교차축(cross axis)을 기준으로 내용물을 정렬하는 법을
+        정한다.<br />
+        <hr />
+        box align
+        <div class="flexcontainer">
+          <div class="item item1">1</div>
+          <div class="item item2">2</div>
+          <div class="item item3">3</div>
+          <div class="item item4">4</div>
+          <div class="item item5">5</div>
+          <div class="item item6">6</div>
+          <div class="item item7">7</div>
+          <div class="item item8">8</div>
+        </div>
+        <hr />
+        flex-grow를 설정하면 화면 크기에 맞추어 사이즈가 커진다.<br />
+        flex-shrink를 설정하면 화면 크기에 맞추어 사이즈가 작아진다.<br />
+        위 두개 기능을 합친게 flex-basis다.<br />
+        align-self를 통해 item 하나면 배치를 변화줄수있다.<br />
+        <hr />
+        item align
+        <div class="flexcontainer2">
+          <div class="item item1">1</div>
+          <div class="item item2">2</div>
+          <div class="item item3">3</div>
+        </div>
+      </article>
 
-                </div>                  
-            </article>
+      <article class="em">
+        <br />
+        <br />
+        <br />
+        em은 부모의 사이즈에 곱한다. 기본 브라우저의 사이즈는 16px이다. 그렇기에
+        8em이면 16*8 = 128px이다 만약 여기 자식에서 0.5em이면 128*0.5=64px이
+        된다. 근데 여기서 0.5rem은 root요소에 의해 결정되므로 root요소는
+        16px이므로 16*0.5=8px이다. 요소가 어떤 곳에서도 동일한 크기로 사용되면
+        rem , 아니면 em 을 사용하는 것이 좋다.
+      </article>
 
-            <article class = "em">
-                <br>
-                <br>
-                <br>
-
-                em은 부모의 사이즈에 곱한다.
-                기본 브라우저의 사이즈는 16px이다.
-                그렇기에 8em이면 16*8 = 128px이다
-                만약 여기 자식에서 0.5em이면 128*0.5=64px이 된다.
-                근데 여기서 0.5rem은 root요소에 의해 결정되므로 root요소는 16px이므로 16*0.5=8px이다.
-
-                요소가 어떤 곳에서도 동일한 크기로 사용되면 rem , 아니면 em 을 사용하는 것이 좋다.
-
-            </article>
-
-            <section class="component">
-                <header class="title">Master Front-end ✨</header>
-                <p class="contents">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
-                  veniam, nulla porro distinctio aliquid, quos quidem odio consectetur
-                  aperiam, delectus cum. Deserunt facilis excepturi similique natus minus
-                  deleniti rem sit?
-                </p>
-              </section>
-
-
-
-        </main>
-    </body>
+      <section class="component">
+        <header class="title">Master Front-end ✨</header>
+        <p class="contents">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
+          veniam, nulla porro distinctio aliquid, quos quidem odio consectetur
+          aperiam, delectus cum. Deserunt facilis excepturi similique natus
+          minus deleniti rem sit?
+        </p>
+      </section>
+    </main>
+  </body>
 </html>
