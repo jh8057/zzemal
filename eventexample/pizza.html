@@ -4,7 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>PIZZA STORE</title>
+    <link rel="stylesheet" href="pizza.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="pizza.js"></script>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <article class="logo">
+        <h1>ZZEMAL PIZZA</h1>
+        <img src="../img/pizza.png" alt="pizza" />
+      </article>
+      <article class="selectlocation">
+        <form action="location" class="location">
+          <h1>🏍 주문하실 지점을 선택해주세요.</h1>
+          <div class="dropdown">
+            <button type="button" class="dropdown-toggle">
+              지점을 선택해주세요
+            </button>
+            <ul class="dropdown-menu">
+              <li class="dropitem">
+                <button class="dropdown-option" type="button" value="1">
+                  zzemal pizza 강서점
+                </button>
+              </li>
+              <li class="dropitem">
+                <button class="dropdown-option" type="button" value="2">
+                  zzemal pizza 마곡점
+                </button>
+              </li>
+              <li class="dropitem">
+                <button class="dropdown-option" type="button" value="3">
+                  zzemal pizza 화곡점
+                </button>
+              </li>
+              <li class="dropitem">
+                <button class="dropdown-option" type="button" value="4">
+                  zzemal pizza 잠실점
+                </button>
+              </li>
+              <li class="dropitem">
+                <button class="dropdown-option" type="button" value="5">
+                  zzemal pizza 강남점
+                </button>
+              </li>
+            </ul>
+          </div>
+          <button type="submit" class="next-button">다 음</button>
+        </form>
+      </article>
+    </main>
+  </body>
 </html>
