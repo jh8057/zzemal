@@ -40,7 +40,8 @@ function handlelogin(event){
     event.preventDefault();
     const id = idContain.value;
     const password = pwContain.value;
-    userstorage.loginUser(id,password)
+    userstorage
+        .loginUser(id,password)
         .then(userstorage.getRoles)
         .then(result=>alert(`${result.name} has ${result.role}`))
         .catch(console.log)
