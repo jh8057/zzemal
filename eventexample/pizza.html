@@ -13,49 +13,45 @@
     <script defer src="pizza.js"></script>
   </head>
   <body>
-    <main>
-      <article class="logo">
-        <h1>ZZEMAL PIZZA</h1>
-        <img src="../img/pizza.png" alt="pizza" />
-      </article>
-      <article class="selectlocation">
-        <form action="location" class="location">
-          <h1>🏍 주문하실 지점을 선택해주세요.</h1>
-          <div class="dropdown">
-            <button type="button" class="dropdown-toggle">
-              지점을 선택해주세요
+    <article class="logo">
+      <h1>ZZEMAL PIZZA</h1>
+      <img src="../img/pizza.png" alt="pizza" />
+    </article>
+    <form action="location" class="location">
+      <h1>🏍 주문하실 지점을 선택해주세요.</h1>
+      <div class="dropdown">
+        <button type="button" class="dropdown-toggle">
+          지점을 선택해주세요
+        </button>
+        <ul class="dropdown-menu">
+          <li class="dropitem">
+            <button class="dropdown-option" type="button" value="1">
+              zzemal pizza 강서점
             </button>
-            <ul class="dropdown-menu">
-              <li class="dropitem">
-                <button class="dropdown-option" type="button" value="1">
-                  zzemal pizza 강서점
-                </button>
-              </li>
-              <li class="dropitem">
-                <button class="dropdown-option" type="button" value="2">
-                  zzemal pizza 마곡점
-                </button>
-              </li>
-              <li class="dropitem">
-                <button class="dropdown-option" type="button" value="3">
-                  zzemal pizza 화곡점
-                </button>
-              </li>
-              <li class="dropitem">
-                <button class="dropdown-option" type="button" value="4">
-                  zzemal pizza 잠실점
-                </button>
-              </li>
-              <li class="dropitem">
-                <button class="dropdown-option" type="button" value="5">
-                  zzemal pizza 강남점
-                </button>
-              </li>
-            </ul>
-          </div>
-          <button type="submit" class="next-button">다 음</button>
-        </form>
-      </article>
-    </main>
+          </li>
+          <li class="dropitem">
+            <button class="dropdown-option" type="button" value="2">
+              zzemal pizza 마곡점
+            </button>
+          </li>
+          <li class="dropitem">
+            <button class="dropdown-option" type="button" value="3">
+              zzemal pizza 화곡점
+            </button>
+          </li>
+          <li class="dropitem">
+            <button class="dropdown-option" type="button" value="4">
+              zzemal pizza 잠실점
+            </button>
+          </li>
+          <li class="dropitem">
+            <button class="dropdown-option" type="button" value="5">
+              zzemal pizza 강남점
+            </button>
+          </li>
+        </ul>
+      </div>
+      <button type="submit" class="next-button" disabled>다 음</button>
+    </form>
   </body>
 </html>
