@@ -1,42 +1,37 @@
-const form = document.querySelector(".location"),
-    dropdown = form.querySelector(".dropdown"),
-    dropdowntoggle = dropdown.querySelector(".dropdown-toggle"),
-    dropdownmenu = dropdown.querySelector(".dropdown-menu"),
-    dropdownopt = dropdown.querySelectorAll(".dropdown-option"),
-    nextbtn = form.querySelector(".next-button");
+const dropdown = document.querySelector(".dropdown"),
+    toggle = document.querySelector(".dropdown-toggle"),
+    menu = document.querySelector(".dropdown-menu"),
+    option = document.querySelectorAll(".dropdown-option"),
+    nextbtn = document.querySelector(".next-button");
 
-function selected(){
-    dropdownmenu.classList.remove("show");
-    dropdowntoggle.classList.add("selected");
-    nextbtn.removeAttribute("disabled")
+function selectOption(e) {
+    const value = e.relatedTarget;
+    if(value !== null){
+        if(value.classList.contains("dropdown-option")){
+            toggle.innerText = value.innerText;
+        }
+        toggle.classList.add('selected')
+        nextbtn.removeAttribute('disabled')
+    } else{
+        toggle.innerText = "지점을 선택해주세요"
+    }
 }
 
-function changeInnerText(){
-    // dropdownmenu.addEventListener("click",selected)
-    dropdownopt.forEach((item)=>{
-        item.addEventListener("click",(e)=>{
-            const value = e.currentTarget.textContent.trim();
-            dropdowntoggle.innerText = value;
-            selected()
-        })
-    })
+function removeShow(e){
+    menu.classList.remove("show")
+    selectOption(e)
 }
 
-function removeShow(){
-    dropdownmenu.classList.remove("show")
-}
-
-function handleAddSelect(){
-    dropdownmenu.classList.toggle("show");
-    dropdowntoggle.classList.remove("selected");
+function clickedtoggle(){
+    menu.classList.toggle("show");
+    toggle.classList.remove("selected");
     nextbtn.setAttribute("disabled","disable")
-    // dropdowntoggle.addEventListener("blur",removeShow)
-    changeInnerText();
+    toggle.innerText = "지점을 선택해주세요"
 }
 
 function init(){
-    dropdowntoggle.addEventListener("click",handleAddSelect)
-    // dropdowntoggle.addEventListener("blur",handleAddSelect)
+    toggle.addEventListener("click",clickedtoggle)
+    toggle.addEventListener("blur",removeShow)
 }
 
-init()
+init();
