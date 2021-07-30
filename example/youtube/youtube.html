@@ -11,6 +11,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="youtube.js"></script>
   </head>
   <body>
@@ -25,47 +30,72 @@
           <i class="fas fa-ellipsis-v"></i>
         </div>
       </header>
-      <iframe
-        src="https://www.youtube.com/embed/67stn7Pu7s4"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-        autoplay
-      >
-        해당 브라우저는 iframe 태그를 지원하지 않습니다.
-      </iframe>
+      <section class="player">
+        <iframe
+          src="https://www.youtube.com/embed/67stn7Pu7s4"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          autoplay
+        >
+          해당 브라우저는 iframe 태그를 지원하지 않습니다.
+        </iframe>
+      </section>
       <section class="pc">
         <section class="main-video">
           <article class="video-info">
-            <div class="tags">
-              <span>#DreamCoding</span>
-              <span>#DreamCoders</span>
-              <span>#Ellie</span>
-            </div>
-            <div class="videotitle">
-              <p>
+            <ul class="tags">
+              <li>#DreamCoding</li>
+              <li>#DreamCoders</li>
+              <li>#Ellie</li>
+            </ul>
+            <div class="titleAndButton">
+              <span class="videotitle more">
                 Clone Coding : Youtube 따라만들기. | 반응형 웹 페에지 따라
                 만들기 | 프론트엔드 개발 | HTML,CSS,Javascript | 할수있다! |
                 2줄만 나오고 그 이상은 클릭했을때 나오게 js를 통해 구현한다. |
                 addeventlister("click") 을 이용한다. | classList.toggle을
                 이용한다.
-              </p>
-              <i class="fas fa-caret-down"></i>
+              </span>
+              <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
             </div>
             <div class="videodate">
-              <span>1M views ·</span>
-              <span>1month ago</span>
+              <span>1M views · 1month ago</span>
             </div>
-            <div class="videoexplain"></div>
           </article>
-          <article class="video-tools">
-            <i class="fas fa-thumbs-up"></i>
-            <i class="fas fa-thumbs-down"></i>
-            <i class="fas fa-share"></i>
-            <i class="fas fa-plus"></i>
-            <i class="fas fa-flag"></i>
-          </article>
+          <ul class="video-tools">
+            <li>
+              <button>
+                <i class="fas fa-thumbs-up"></i>
+                <span>1K</span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <i class="fas fa-thumbs-down"></i>
+                <span>0</span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <i class="fas fa-share"></i>
+                <span>Share</span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <i class="fas fa-plus"></i>
+                <span>Save</span>
+              </button>
+            </li>
+            <li>
+              <button>
+                <i class="fas fa-flag"></i>
+                <span>Report</span>
+              </button>
+            </li>
+          </ul>
           <article class="subscribe">
             <div class="icon">
               <img src="../../img/rainbowface.jpg" alt="icon" />
@@ -74,57 +104,68 @@
                 <p>1M subscribers</p>
               </div>
             </div>
-            <div class="subscribeicon">SUBSCRIBE</div>
+            <button class="subscribeicon">SUBSCRIBE</button>
           </article>
         </section>
         <nav class="nextvideos">
           <ul>
             <h1>Up next</h1>
-            <li>
-              <div class="videosinfo">
-                <a href="#">
-                  <img src="../../img/bg1.jpg" alt="bg1" />
-                  <p>
-                    Clone Coding : Youtube 따라만들기. | 반응형 웹 페에지 따라
-                    만들기 | 프론트엔드 개발 | HTML,CSS,Javascript | 할수있다!
-                  </p>
-                  <i class="fas fa-ellipsis-v"></i>
-                </a>
+            <li class="item">
+              <div class="imgContainer">
+                <img src="../../img/bg1.jpg" alt="bg1" />
               </div>
-              <div class="videosinfo">
-                <a href="#">
-                  <img src="../../img/bg2.jpg" alt="bg2" />
-                  <p>
-                    Clone Coding : Youtube 따라만들기. | 반응형 웹 페에지 따라
-                    만들기 | 프론트엔드 개발 | HTML,CSS,Javascript | 할수있다!
-                  </p>
-                  <i class="fas fa-ellipsis-v"></i>
-                </a>
+              <div class="nextinfo">
+                <span class="nexttitle">
+                  Clone Coding : Youtube 따라만들기. | 반응형 웹 페에지 따라
+                  만들기 | 프론트엔드 개발 | HTML,CSS,Javascript | 할수있다!
+                </span>
+                <span class="name"> ZZEMAL</span>
+                <span class="views"> 100K views</span>
               </div>
-              <div class="videosinfo">
-                <a href="#">
-                  <img src="../../img/bg3.jpg" alt="bg3" />
-                  <p>
-                    Clone Coding : Youtube 따라만들기. | 반응형 웹 페에지 따라
-                    만들기 | 프론트엔드 개발 | HTML,CSS,Javascript | 할수있다!
-                  </p>
-                  <i class="fas fa-ellipsis-v"></i>
-                </a>
-              </div>
-              <div class="videosinfo">
-                <a href="#">
-                  <img src="../../img/bg4.jpg" alt="bg4" />
-                  <p>
-                    Clone Coding : Youtube 따라만들기. | 반응형 웹 페에지 따라
-                    만들기 | 프론트엔드 개발 | HTML,CSS,Javascript | 할수있다!
-                  </p>
-                  <i class="fas fa-ellipsis-v"></i>
-                </a>
-              </div>
+              <button><i class="fas fa-ellipsis-v"></i></button>
             </li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li class="item">
+              <div class="imgContainer">
+                <img src="../../img/bg2.jpg" alt="bg2" />
+              </div>
+              <div class="nextinfo">
+                <span class="nexttitle">
+                  Clone Coding : Youtube 따라만들기. | 반응형 웹 페에지 따라
+                  만들기 | 프론트엔드 개발 | HTML,CSS,Javascript | 할수있다!
+                </span>
+                <span class="name"> ZZEMAL</span>
+                <span class="views"> 100K views</span>
+              </div>
+              <button><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+            <li class="item">
+              <div class="imgContainer">
+                <img src="../../img/bg3.jpg" alt="bg3" />
+              </div>
+              <div class="nextinfo">
+                <span class="nexttitle">
+                  Clone Coding : Youtube 따라만들기. | 반응형 웹 페에지 따라
+                  만들기 | 프론트엔드 개발 | HTML,CSS,Javascript | 할수있다!
+                </span>
+                <span class="name"> ZZEMAL</span>
+                <span class="views"> 100K views</span>
+              </div>
+              <button><i class="fas fa-ellipsis-v"></i></button>
+            </li>
+            <li class="item">
+              <div class="imgContainer">
+                <img src="../../img/bg4.jpg" alt="bg4" />
+              </div>
+              <div class="nextinfo">
+                <span class="nexttitle">
+                  Clone Coding : Youtube 따라만들기. | 반응형 웹 페에지 따라
+                  만들기 | 프론트엔드 개발 | HTML,CSS,Javascript | 할수있다!
+                </span>
+                <span class="name"> ZZEMAL</span>
+                <span class="views"> 100K views</span>
+              </div>
+              <button><i class="fas fa-ellipsis-v"></i></button>
+            </li>
           </ul>
         </nav>
       </section>
