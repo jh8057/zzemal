@@ -1,0 +1,57 @@
+* {
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 1px 0px 30px rgb(255, 126, 5);
+  margin-bottom: 2vh;
+  margin-top: 5vh;
+}
+h2 {
+  margin-top: 5vh;
+}
+body {
+  margin: 5vh;
+  border: 4px solid red;
+}
+
+.orangebg {
+  background-color: orange;
+  font-weight: bold;
+  font-style: italic;
+}
+
+main {
+  border: 3px dashed orange;
+}
+
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+header {
+  border: 3px dashed yellow;
+}
+nav {
+  border: 3px dashed green;
+}
+
+article {
+  border: 3px dashed blue;
+}
+
+aside {
+  border: 3px dashed navy;
+}
+footer {
+  border: 3px dashed purple;
+}

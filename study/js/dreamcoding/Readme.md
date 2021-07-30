@@ -1,3 +1,9 @@
+# dreamcoder
+
+[초보자를 위한 강의 리스트](https://www.youtube.com/watch?v=gGebK7lWnCk&list=PLv2d7VI9OotQ1F92Jp9Ce7ovHEsuRQB3Y&index=8)
+
+[기초 JS 강의 리스트](https://www.youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2)
+
 # class
 
 - fields(datas) & methods 로 구성
