@@ -5,6 +5,14 @@ YouTube 페이지 형태의 UI를 구현해 보았습니다.
 
 <hr>
 
+## 결과
+
+<img src="./result/mobile.jpg" width="250px" height="100%" title="1" alt="1"></img>
+<img src="./result/pc.jpg" width="540px" height="435px" title="1" alt="1"></img>
+
+모바일과 PC환경에서 반응하여 구성되도록 만들었습니다.  
+버튼을 누르면 동작을 수행하도록 JS를 작성하였습니다.
+
 ## 내용
 
 ### HTML

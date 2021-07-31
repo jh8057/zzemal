@@ -7,6 +7,14 @@ DOM에 대해 공부하면서 만들어 본 페이지입니다.
 
 <hr>
 
+## 결과
+
+<img src="./result/1.jpg" width="250px" height="300px" title="1" alt="1"></img>
+<img src="./result/2.jpg" width="250px" height="300px" title="2" alt="2"></img>
+<img src="./result/3.jpg" width="250px" height="300px" title="3" alt="3"></img>
+
+버튼을 눌러 지점을 선택하면 다음버튼이 활성화되는 페이지입니다.
+
 ## 내용
 
 #### JS
