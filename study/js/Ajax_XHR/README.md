@@ -2,6 +2,8 @@
 
 MDN글의 XHR 예제를 조금 변경해 보았습니다.
 
+MDN 예제 : [링크](https://developer.mozilla.org/en-US/docs/Web/Guide/AJAX/Getting_Started)
+
 `https://reqres.in/`에서 Ajax에 활용가능한 데이터를 얻어 올 수 있다.
 해당 api를 이용하여 Json 파일을 얻어 온 후 활용할 수 있도록 아래처럼 변경하여 실행해보았다.
 
