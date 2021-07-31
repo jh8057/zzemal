@@ -8,9 +8,12 @@
 
 ## 결과
 
-<img src="./result/1.jpg" width="100%" height="100%" title="1" alt="1"></img>
-<img src="./result/2.jpg" width="100%" height="100%" title="2" alt="3"></img>
-<img src="./result/3.jpg" width="100%" height="100%" title="3" alt="3"></img>
+<img src="./result/1.jpg" width="60%" height="100%" title="1" alt="1"></img> 기본 페이지
+
+<img src="./result/2.jpg" width="60%" height="100%" title="2" alt="3"></img> Mobile 페이지
+
+<img src="./result/3.jpg" width="60%" height="100%" title="3" alt="3"></img>
+Button 클릭 시 페이지
 
 크기가 작아지면 반응하는 메뉴바입니다. 모바일에서는 오른쪽 상단 버튼을 누르면 메뉴가 펼처집니다.
 
