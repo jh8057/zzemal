@@ -7,8 +7,8 @@ MDN글의 XHR 예제를 조금 변경해 보았습니다.
 
 # 결과
 
-<img src="./result/1.jpg" width="100%" height="100%" title="1" alt="1"></img>
-<img src="./result/2.jpg" width="100%" height="100%" title="2" alt="2"></img>
+<img src="./result/r1.jpg" width="100%" height="100%" title="1" alt="1"></img>
+<img src="./result/r2.jpg" width="100%" height="100%" title="2" alt="2"></img>
 
 이 처럼 시간이 지남에 따라 화면에 글자가 변경되고, 데이터에 따라 색도 변경되는 것을 확인하였다.
 
