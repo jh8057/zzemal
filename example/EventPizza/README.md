@@ -9,11 +9,12 @@ DOM에 대해 공부하면서 만들어 본 페이지입니다.
 
 ## 결과
 
-<img src="./result/1.jpg" width="250px" height="300px" title="1" alt="1"></img>
-<img src="./result/2.jpg" width="250px" height="300px" title="2" alt="2"></img>
-<img src="./result/3.jpg" width="250px" height="300px" title="3" alt="3"></img>
+<img src="./result/1.jpg" width="40%" height="350px" title="1" alt="1"></img>
+<img src="./result/2.jpg" width="40%" height="350px" title="2" alt="2"></img>
+<img src="./result/3.jpg" width="80.5%" height="100%" title="3" alt="3"></img>
 
-버튼을 눌러 지점을 선택하면 다음버튼이 활성화되는 페이지입니다.
+버튼을 눌러 지점을 선택하면 다음버튼이 활성화되는 페이지입니다.  
+지점을 제대로 선택하지 않을았을때 자연스럽게 처리하도록 설정해주었습니다.
 
 ## 내용
 
