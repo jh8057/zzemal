@@ -7,7 +7,17 @@ const toolsicon = document.querySelector(".video-tools");
 const subscribe = document.querySelector(".subscribeicon");
 
 function handletoolsicon(e) {
-  console.log(e.target);
+  let target = e.target;
+
+  while (!target.classList.contains("video-tools")) {
+    if (target.classList.contains("buttons")) {
+      const icon = target.querySelector("i");
+      icon.classList.toggle("active");
+      break;
+    } else {
+      target = target.parentNode;
+    }
+  }
 }
 
 function handlemoretoggle() {
@@ -21,7 +31,7 @@ function handlesubscribe() {
 function init() {
   moreBtn.addEventListener("click", handlemoretoggle);
   subscribe.addEventListener("click", handlesubscribe);
-  // toolsicon.addEventListener("click", handletoolsicon);
+  toolsicon.addEventListener("click", handletoolsicon);
 }
 
 init();
