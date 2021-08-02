@@ -35,6 +35,7 @@ Start make public website!😀
 [애니메이션 넣어주는 라이브러리 animate.css](https://animate.style/)  
 [html 데이터저장](https://www.zerocho.com/category/HTML&DOM/post/5a76d1eaabd090001b981ba6)  
 [icon받는곳/fontawesome](https://fontawesome.com/icons/bars?style=solid)
+[publicAPIs](https://github.com/public-apis/public-apis)
 
 <!-- html에 링크하나를 첨부해줘야된다. -->
 
