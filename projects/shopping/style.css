@@ -6,8 +6,60 @@
   --color-yellow: #fbbe28;
   --color-pink: #fd7f84;
   --color-light-grey: #dfdfdf;
+
+  /* size */
+  --buttons-items-width: 3rem;
+  --buttons-items-height: 2.5rem;
 }
 
 * {
   box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--color-black);
+}
+
+header {
+  margin-top: 3rem;
+}
+
+.buttons ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  gap: 10px;
+}
+.buttons > ul > li > img {
+  width: var(--buttons-items-width);
+  height: var(--buttons-items-height);
+}
+.buttons > ul > li > div {
+  width: var(--buttons-items-width);
+  height: var(--buttons-items-height);
+  border-radius: 3px;
+}
+
+.buttons ul li .blue {
+  background-color: var(--color-blue);
+  text-align: center;
+  align-items: center;
+  line-height: var(--buttons-items-height);
+}
+.buttons ul li .yello {
+  background-color: var(--color-yellow);
+  text-align: center;
+  align-items: center;
+  line-height: var(--buttons-items-height);
+}
+
+.buttons ul li .pink {
+  background-color: var(--color-pink);
+  text-align: center;
+  align-items: center;
+  line-height: var(--buttons-items-height);
 }
