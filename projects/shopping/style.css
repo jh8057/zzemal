@@ -8,8 +8,15 @@
   --color-light-grey: #dfdfdf;
 
   /* size */
-  --buttons-items-width: 3rem;
-  --buttons-items-height: 2.5rem;
+  --buttons-items-width: 3.75rem;
+  --buttons-items-height: 3.75rem;
+  --font-size: 1.2rem;
+  --items-width: 3rem;
+  --items-heigth: 3rem;
+  --gap-space: 0.8rem;
+  --border-radius-size: 0.25rem;
+  /* animation */
+  --animaion-duration: 300ms;
 }
 
 * {
@@ -22,44 +29,75 @@ body {
   justify-content: center;
   flex-direction: column;
   background-color: var(--color-black);
+  height: 100vh;
 }
-
-header {
-  margin-top: 3rem;
+/* header */
+.logo {
+  cursor: pointer;
+  transition: transform var(--animaion-duration) ease;
 }
-
-.buttons ul {
+.btn:hover,
+.logo:hover {
+  transform: scale(1.1);
+}
+/* buttons */
+.buttons {
   display: flex;
-  list-style: none;
+  align-items: center;
   flex-direction: row;
-  gap: 10px;
-}
-.buttons > ul > li > img {
-  width: var(--buttons-items-width);
-  height: var(--buttons-items-height);
-}
-.buttons > ul > li > div {
-  width: var(--buttons-items-width);
-  height: var(--buttons-items-height);
-  border-radius: 3px;
+  gap: var(--gap-space);
 }
 
-.buttons ul li .blue {
+.btn {
+  width: var(--buttons-items-width);
+  height: var(--buttons-items-height);
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--border-radius-size);
+  transition: transform var(--animaion-duration) ease;
+  font-size: var(--font-size);
+}
+.buttons img {
+  width: var(--buttons-items-width);
+  height: var(--buttons-items-height);
+}
+
+.blue {
   background-color: var(--color-blue);
-  text-align: center;
-  align-items: center;
-  line-height: var(--buttons-items-height);
 }
-.buttons ul li .yello {
+.yellow {
   background-color: var(--color-yellow);
-  text-align: center;
-  align-items: center;
-  line-height: var(--buttons-items-height);
+}
+.pink {
+  background-color: var(--color-pink);
 }
 
-.buttons ul li .pink {
-  background-color: var(--color-pink);
-  text-align: center;
+/* items */
+
+.items {
+  margin: var(--gap-space);
+  padding: 0;
+  width: 60%;
+  height: 60%;
+  list-style: none;
+  overflow-y: scroll;
+}
+
+.item {
+  background-color: white;
+  display: flex;
   align-items: center;
-  line-height: var(--buttons-items-height);
+  gap: var(--gap-space);
+  padding: var(--gap-space);
+  margin-bottom: var(--gap-space);
+}
+.items > .item > img {
+  width: var(--items-width);
+  height: var(--items-height);
+}
+
+.item__description {
+  font-size: var(--font-size);
 }
