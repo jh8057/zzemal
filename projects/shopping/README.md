@@ -13,3 +13,19 @@
 
 - 거의 모든 요소들을 :root안에 선언 해준 후, 그 값을 가져와서 사용했다.
 - `overflow:scorll-y`를 하면 페이지 전체가 내려가지 않고, 해당 부분만 스크롤이 진행된다.
+
+#### JS
+
+- fetch API에서 url 뿐 아니라, 일반 경로를 적어도 적용된다.
+- 아무것도 안쓰고 적으면 localhost에서 동작하는 것이다.
+- innerHTML을 알게되었다.
+- innerHTML은 HTML 요소들도 다룬다.
+- sth.innerHTML = <태그>를 사용하면 이것이 그대로 HTML에서 작성한 것처럼 된다.
+- 따라서, ``을 이용해서 string 형태로 반환해주면 변수를 사용하면서 html태그를 추가 해줄 수 있다.
+- [innerText vs innerHTML](https://hianna.tistory.com/480)
+
+#### 구조
+
+- data는 따로 폴더를 만들어서 보관하는 것이 좋다.
+- JS 는 함수만
+- Data를 JS안에 넣어두지 말자.
