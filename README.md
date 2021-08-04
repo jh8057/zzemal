@@ -301,3 +301,10 @@ paste
 - Coding Nepal
 - 코지코더
 - dream coder
+
+#### README TIP
+
+- 프로젝트 이름
+- 스택(기술)
+- 주요 기능
+- 아키텍쳐

@@ -5,7 +5,15 @@
 
 <hr>
 
-# 내용
+## 결과
+
+<img src="./result/1.jpg" width="60%" height="100%" title="1" alt="1"></img> 기본 페이지
+
+<img src="./result/2.jpg" width="300px" height="350px" title="2" alt="3"></img><img src="./result/3.jpg" width="300px" height="350px" title="3" alt="3"></img>
+filter 된 페이지
+
+JSON으로 되어있는 Data에서 정보를 읽어서, list형태로 화면에 보여줍니다.  
+상단의 버튼을 누르면 해당 관련 정보들만 filter가 되도록 구현하였습니다.
 
 # 새로 배운 내용
 
@@ -29,3 +37,4 @@
 - data는 따로 폴더를 만들어서 보관하는 것이 좋다.
 - JS 는 함수만
 - Data를 JS안에 넣어두지 말자.
+- DRY : Don't Repeat Yourself!
