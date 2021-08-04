@@ -101,3 +101,7 @@ body {
 .item__description {
   font-size: var(--font-size);
 }
+
+.invisible {
+  display: none;
+}
