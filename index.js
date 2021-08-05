@@ -3,10 +3,10 @@ function playmusic() {
   let icon = document.getElementById("playicon");
   if (song.paused) {
     song.play();
-    icon.src = "firstpage/img/pausebutton.png";
+    icon.src = "projects/firstpage/img/pausebutton.png";
   } else {
     song.pause();
-    icon.src = "firstpage/img/playbutton.png";
+    icon.src = "projects/firstpage/img/playbutton.png";
   }
 }
 

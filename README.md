@@ -14,16 +14,17 @@ Start make public website!😀
 
 ## reference site
 
-[My Site](https://jh8057.github.io/zzemal/)  
-[MDN web](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started)  
-[Google Font](https://fonts.google.com/specimen/Hachi+Maru+Pop?selection.family=Hachi+Maru+Pop&sidebar.open=true#standard-styles)  
-[freepik(사진)](https://www.freepik.com/vectors)  
-[colorTool(색감)](https://material.io/resources/color/#!/?view.left=0&view.right=0)  
-[Flat UI(색감)](https://flatuicolors.com/)  
-[animate.css](https://animate.style/)  
-[html 데이터저장](https://www.zerocho.com/category/HTML&DOM/post/5a76d1eaabd090001b981ba6)  
-[fontawesome(icon)](https://fontawesome.com/icons/bars?style=solid)  
-[publicAPIs](https://github.com/public-apis/public-apis)
+- [My Site](https://jh8057.github.io/zzemal/)
+- [MDN web](https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
+- [Google Font](https://fonts.google.com/specimen/Hachi+Maru+Pop?selection.family=Hachi+Maru+Pop&sidebar.open=true#standard-styles)
+- [freepik(사진)](https://www.freepik.com/vectors)
+- [colorTool(색감)](https://material.io/resources/color/#!/?view.left=0&view.right=0)
+- [Flat UI(색감)](https://flatuicolors.com/)
+- [animate.css](https://animate.style/)
+- [html 데이터저장](https://www.zerocho.com/category/HTML&DOM/post/5a76d1eaabd090001b981ba6)
+- [fontawesome(icon)](https://fontawesome.com/icons/bars?style=solid)
+- [canva(icon)](https://www.canva.com/)
+- [publicAPIs](https://github.com/public-apis/public-apis)
 
 <!-- html에 링크하나를 첨부해줘야된다. -->
 <hr>
@@ -77,8 +78,9 @@ paste
 - [드림코딩 아카데미](https://academy.dream-coding.com/)
 - 포토폴리오 웹사이트 클론코딩
 - 쇼핑몰 미니게임 클론코딩 & 코드 리뷰
+<hr>
 
-## 구독한 Youtuber
+## Youtuber
 
 - Dev Ed
 - Easy Tutorial
@@ -90,11 +92,9 @@ paste
 
 ## youtube site
 
-[웨이브만들기 Youtube](https://www.youtube.com/watch?v=LLfhY4eVwDY)  
-[Thanks Dev Ed!](https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q)
-[VanillaJS - 노마드 코더](https://www.youtube.com/watch?v=VBmQUMUGznU&list=PLLUCyU7SBaR7tOMe-ySJ5Uu1UlEBznxTr&index=16)  
-[vuejs - 코지 코더](https://www.youtube.com/watch?v=gZBKGn0wQXU&list=PLB7CpjPWqHOtYP7P_0Ls9XNed0NLvmkAh)  
-[javascript 기초 - 드림 코딩](https://www.youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2)  
-[frontend 기초 - 드림 코딩](https://www.youtube.com/watch?v=NeEaTeYcFhE&list=PLv2d7VI9OotQ1F92Jp9Ce7ovHEsuRQB3Y&index=1)
-
-<hr>
+- [웨이브만들기 Youtube](https://www.youtube.com/watch?v=LLfhY4eVwDY)
+- [Thanks Dev Ed!](https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q)
+- [VanillaJS - 노마드 코더](https://www.youtube.com/watch?v=VBmQUMUGznU&list=PLLUCyU7SBaR7tOMe-ySJ5Uu1UlEBznxTr&index=16)
+- [vuejs - 코지 코더](https://www.youtube.com/watch?v=gZBKGn0wQXU&list=PLB7CpjPWqHOtYP7P_0Ls9XNed0NLvmkAh)
+- [javascript 기초 - 드림 코딩](https://www.youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2)
+- [frontend 기초 - 드림 코딩](https://www.youtube.com/watch?v=NeEaTeYcFhE&list=PLv2d7VI9OotQ1F92Jp9Ce7ovHEsuRQB3Y&index=1)
