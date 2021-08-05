@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+h1 {
+  text-align: center;
+  /* padding: 20px 0; /*top left*/
+
+  text-shadow: 1px 0px 30px rgb(255, 126, 5);
+}
+html,
+body {
+  cursor: url(img/smilecursor.gif), auto;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  background-color: wheat;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: "Nanum Pen Script", cursive;
+}
+
+.logo {
+  font-family: "Nanum Pen Script", cursive;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  padding: 0;
+}
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.burger {
+  display: none;
+  cursor: pointer;
+}
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: aliceblue;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.togglebur .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.togglebur .line2 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+  opacity: 0;
+}
+.togglebur .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    margin: 0px;
+    top: 8vh;
+    display: flex;
+    flex-direction: column;
+    background-color: wheat;
+    align-items: center;
+    width: 30%;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    z-index: 1;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+img {
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  padding-right: 3%;
+}
+
+#special1 {
+  font-size: 20pt;
+}
+
+.comment-row {
+  padding: 5px 0 5px 0;
+  border: 2px ridge rgb(255, 150, 89);
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: x-large;
+}
+
+.orangebg {
+  background-color: orange;
+  font-weight: bold;
+}
+.border {
+  border: 5px ridge rgb(201, 114, 0);
+}
+.scroll {
+  position: absolute;
+  right: 10%;
+  bottom: 10%;
+}
+
+footer {
+  margin: 0;
+}
+
+#footerimg {
+  width: 50%;
+  height: 50%;
+  margin: 0;
+}
+
+#bodyP3 {
+  width: 30%;
+  height: 30%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  transition-duration: 2s;
+}
+
+#bodyP3:hover {
+  transform: translate(50%, -50%);
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+#scrollpath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.01);
+}
+
+#progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  background: linear-gradient(to top, rgb(122, 122, 235), rgb(201, 237, 252));
+  animation: animatebar 5s linear infinite;
+}
+
+@keyframes animatebar {
+  0%,
+  100% {
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.landing {
+  min-height: 100vh;
+  min-width: 100%;
+}
+.wrapcircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+.outcircle {
+  animation: moveupdown 3s ease infinite;
+}
+.circle {
+  background-color: black;
+  width: 12px;
+  height: 12px;
+  border-radius: 75px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 12px;
+  vertical-align: middle;
+  line-height: 150px;
+}
+.circletext {
+  font-size: 100px;
+  padding-top: 5%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.circletext2 {
+  font-size: 40px;
+  font-family: "Permanent Marker", cursive;
+  padding-top: 6%;
+  margin: 0;
+}
+@keyframes moveupdown {
+  0%,
+  100% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+}
+@keyframes zooming {
+  30% {
+    width: 90%;
+    height: 12px;
+    opacity: 0.2;
+  }
+  100% {
+    width: 90%;
+    height: 44vh;
+    background: linear-gradient(to bottom, wheat, rgb(255, 179, 179));
+    filter: drop-shadow(0px 10px 5px gray);
+  }
+}
+@keyframes circletext {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bgblack {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: rgb(255, 190, 179);
+  }
+}
+@keyframes bgwhite {
+  0% {
+    background-color: rgb(255, 190, 179);
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+.pg_project {
+  min-height: 100vh;
+}
+
+.boxpage {
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.phonebox {
+  position: absolute;
+  width: 230px;
+  height: 330px;
+  z-index: 1;
+  background: url(img/rockbox2.jpg);
+  background-size: 100%;
+  transform: rotate(-40deg) skew(20deg, 10deg);
+  box-shadow: -120px 110px 5px rgba(0, 0, 0, 0.08);
+  transition: 0.5s;
+}
+
+.phonebox:hover {
+  transform: rotate(-40deg) skew(20deg, 10deg) translate(30px, -30px);
+  box-shadow: -150px 140px 10px rgba(0, 0, 0, 0.08);
+}
+
+.phonebox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -90px;
+  width: 90px;
+  height: 100%;
+  background: linear-gradient(to left, black, rgb(71, 71, 71));
+  transform-origin: right;
+  transform: skewY(-43deg);
+}
+
+.phonebox::after {
+  content: "";
+  position: absolute;
+  bottom: -84px;
+  left: 0;
+  width: 100%;
+  height: 84px;
+  background: linear-gradient(to bottom, black, rgb(71, 71, 71));
+  transform-origin: top;
+  transform: skewX(-47deg);
+}
+
+@keyframes bgdark {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: #343f4f;
+  }
+}
+
+@keyframes bglight {
+  0% {
+    background-color: #343f4f;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+@keyframes opacityup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.wrapper {
+  display: inline-flex;
+  position: relative;
+  bottom: 300px;
+  font-family: "Bebas Neue", cursive;
+  z-index: 1;
+  opacity: 0;
+}
+.wrapper .static-txt {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 400;
+}
+.static-txt {
+  position: relative;
+  bottom: -16px;
+  left: 40px;
+}
+.wrapper .dynamic-txt {
+  margin-left: 15px;
+  padding-right: 4px;
+  height: 70px;
+  line-height: 80px;
+  letter-spacing: 2px;
+  overflow: hidden;
+}
+.dynamic-txt {
+  opacity: 0;
+}
+.dynamic-txt li {
+  color: rgb(255, 118, 118);
+  list-style: none;
+  font-size: 60px;
+  font-weight: 500;
+  animation: sliding 8s steps(4) infinite;
+}
+.dynamic-txt li span {
+  position: relative;
+  animation-play-state: paused;
+}
+
+.dynamic-txt li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  background: #343f4f;
+  border-left: 2px solid rgb(255, 118, 118);
+  animation: typing 2s steps(16) infinite, blinking 0.5s steps(16) infinite;
+}
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+@keyframes sliding {
+  100% {
+    transform: translateY(-320px);
+  }
+}
+
+@keyframes blinking {
+  0%,
+  100% {
+    border-left-color: transparent;
+  }
+  50% {
+    border-left-color: rgb(255, 118, 118);
+  }
+}
+
+hr {
+  color: wheat;
+  overflow: visible;
+  border: none;
+  border-top: 3px dotted wheat;
+  text-align: center;
+  height: 15px;
+}
+
+hr::after {
+  position: relative;
+  top: -18px;
+  background: white;
+  content: "§";
+  padding: 0 4px;
+}
+
+ol h2 {
+  background-color: rgb(255, 231, 152);
+  width: fit-content;
+  padding: 2px 20px 2px 20px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px #343f4f;
+  cursor: pointer;
+}
+
+.listwrap {
+  width: 500px;
+  height: fit-content;
+  overflow: hidden;
+}
+
+.listtext {
+  transform: translateY(-250px);
+}
+
+@keyframes listfadein {
+  0% {
+    transform: translateY(-250px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.music {
+  cursor: pointer;
+}

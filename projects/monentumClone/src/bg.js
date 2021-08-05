@@ -15,7 +15,7 @@ const IMG_NUMBER = 8;
 
 function paintImage(imgNumber) {
   const image = new Image();
-  image.src = `../../../img/bg${imgNumber + 1}.jpg`;
+  image.src = `img/bg${imgNumber + 1}.jpg`;
   image.classList.add("bgImage");
   body.appendChild(image);
   // image.addEventListener("loadend",handleImage);//FOR API

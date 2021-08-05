@@ -1,26 +1,16 @@
-# Vanilla JS
+# Vanilla JS -초보자를 위한 바닐라 자바스크립트
 
-처음으로 1차 코딩테스트를 통과하고, 2차 코딩테스트를 보았다.
+처음으로 1차 코딩테스트를 통과하고, 2차 코딩테스트를 보았다.  
 2차는 Vanilla JS 테스트였는데, 문제를 읽고 손을 댈수조차 없었다.
-그렇기에 이 프로젝트를 시작한다.
 
-# 초보자를 위한 바닐라 자바스크립트
-
-- `노마드 코더` 의 유뷰트 강의가 있어서 들어보기로 했다.
-- 아주 기초부터 시작하기에, 한번 점검하는 차원에서 들어보았다.
-- [노마드코더링크](https://www.youtube.com/watch?v=wUHncG3VwPw&list=PLLUCyU7SBaR7tOMe-ySJ5Uu1UlEBznxTr)
-
-## 공부할 부분
-
-- 우선 하드코딩을 하면 안된다.
-- 모든 것들이 js를 통해 객체를 만들고 이를 추가하는 방식으로 접근해야된다.
-- 이 강의에서는 개념을 배우고, 최종적으로는 monentum이라는 프로그램을 따라 만들어본다.
-- [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca?hl=ko)
+- [노마드 코더](https://www.youtube.com/watch?v=wUHncG3VwPw&list=PLLUCyU7SBaR7tOMe-ySJ5Uu1UlEBznxTr)
+  의 유뷰트 강의가 있어서 들어보기로 했다.
 
 # 결과
 
 <img src="./result/r1.jpg" width="200px" height="100%" title="1" alt="1"></img> <img src="./result/r2.jpg" width="200px" height="100%" title="2" alt="2"></img><br/>
 
+- Monentum이라는 프로그램을 따라 만들어보았다. [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca?hl=ko)
 - 모바일 환경에서도 잘 보이도록 구성하였다.<br>
 - 왼쪽 하단에 온도와 위치 정보를 표시했다 (위치 정보를 토대로 API를 이용해서 날씨를 얻어왔다)
 
@@ -44,7 +34,7 @@
 - ToDo 에 입력하면 아래에 출력되고, 버튼을 누르면 지워진다.
 - refresh해도 저장된 데이터를 불러와 동일하게 출력된다.(같은 브라우저에서)
 
-## 공부한 개념
+# 공부한 개념
 
 ### camle case
 

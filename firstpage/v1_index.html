@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Study Web- zzemal</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- animation link-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Nanum+Pen+Script&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="myscript.js"></script>
+    <script defer src="scrollevent.js"></script>
+    <!-- <script defer src="rainbowscroll.js"></script> -->
+    <script defer src="navigator.js"></script>
+    <script defer src="landing.js"></script>
+  </head>
+  <body>
+    <!-- <div id="progressbar"></div>
+    <div id="scrollpath"></div> -->
+    <a name="HOME"></a>
+    <section class="landing">
+      <nav>
+        <div class="logo">
+          <h4>zzemal</h4>
+        </div>
+        <div class="music" onclick="playmusic()">
+          Enjoy with music<img
+            id="playicon"
+            src="img/playbutton.png"
+            style="width: 30px"
+          />
+          <audio id="Theme_song">
+            <source src="img/duggy-morningdaily.mp3" type="audio/mp3" />
+          </audio>
+        </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#HOME">Home</a>
+          </li>
+          <li>
+            <a href="#project">Project</a>
+          </li>
+          <li>
+            <a href="JH.html">Author</a>
+          </li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+      <div class="wrapcircle" onclick="drawline()">
+        <div class="outcircle">
+          <div class="circle">
+            <div class="circletext" style="opacity: 0">
+              <strong>"Hello World"</strong>
+            </div>
+            <div class="circletext2" style="opacity: 0">I'm Kim Jaehyun</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a name="project"></a>
+    <section class="boxpage">
+      <div
+        onmouseover="mouseover_event()"
+        onmouseout="mouseout_event()"
+        class="phonebox"
+      ></div>
+      <div class="wrapper">
+        <div class="static-txt">Sometimes, I</div>
+        <ul class="dynamic-txt">
+          <li><span>feel lazy</span></li>
+          <li><span>worried future</span></li>
+          <li><span>feel anxious</span></li>
+          <li><span>have no confident</span></li>
+        </ul>
+      </div>
+    </section>
+    <div id="no1" class="test" style="opacity: 0">
+      <div><img id="bodyP3" src="img/ball.png" /></div>
+    </div>
+  </body>
+  <footer>
+    <div style="text-align: center; padding-top: 2em; line-height: 2em">
+      <strong>ZZEMAL</strong><br />
+      I start this page from 21.01.22 <br />
+      Now <span id="countday"></span> day passed!<br />
+      WOW😉<br />
+      <br />
+      <hr />
+      <ul style="list-style: none; margin-top: 0">
+        <li>
+          <a href="JH.html">Jaehyun(zzemal)😍</a> | Email :
+          luckysymbol13@gmail.com | <a href="UZ.html">Uz😘</a>
+        </li>
+        <p>Copyright ⓒ 2021. Kim Jae hyun. All rights reserved.</p>
+      </ul>
+    </div>
+  </footer>
+</html>
