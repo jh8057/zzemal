@@ -11,7 +11,7 @@
       rgba(248, 186, 127, 0.2),
       rgba(248, 186, 127, 0.4)
     ),
-    url(projects/firstpage/img/animal.jpg);
+    url(img/animal.jpg);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -388,7 +388,7 @@ h3 {
   margin: 100px auto;
   width: 80%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(projects/firstpage/img/dolphin3.png);
+    url(img/dolphin3.png);
   background-size: cover;
   background-position: center;
   border-radius: 10px;

@@ -9,6 +9,7 @@
 ## 결과
 
 [브라우저에서 보기!](https://jh8057.github.io/zzemal/projects/MenuBar/)
+
 <img src="./result/1.jpg" width="60%" height="100%" title="1" alt="1"></img> 기본 페이지
 
 <img src="./result/2.jpg" width="60%" height="100%" title="2" alt="3"></img> Mobile 페이지
