@@ -2,7 +2,7 @@
 
 안녕하세요! 프론트엔드 개발자가 `간절히` 되고 싶은 김재현입니다.😀
 
-<img src="study/freeNote(reference)/img/welcome_face.jpg" alt="welcome">
+<img src="study/z.freeNote(reference)/img/welcome_face.jpg" alt="welcome">
 
 <hr>
 

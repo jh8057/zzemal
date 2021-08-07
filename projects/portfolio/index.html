@@ -18,15 +18,19 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="src/" defer></script> -->
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <div class="logo">
-          <img src="img/logo.png" alt="logo" />
-          <span>ZZEMAL</span>
-        </div>
-        <ul>
+        <a href="#">
+          <div class="navbar__logo">
+            <img src="img/logo.png" alt="logo" />
+            <span>ZZEMAL</span>
+          </div>
+        </a>
+        <ul class="navbar__menu">
           <li class="menu">Home</li>
           <li class="menu">About</li>
           <li class="menu">Skills</li>
@@ -38,47 +42,53 @@
     </header>
     <section class="thumnail">
       <img src="img/logo2.png" alt="logo2" />
-      <h1>안녕하세요, 프론트엔드 개발자로 거듭나고 싶은 김재현입니다.</h1>
+      <h1>
+        안녕하세요,<br />
+        프론트엔드 개발 지망생 김재현입니다.
+      </h1>
       <h2>정말, 너무, 아주 , 매우 , 간절하게 바래고 바랍니다.</h2>
-      <button class="thumnail__button">Contact me</button>
+      <button class="thumnail__button">CONTACT ME</button>
     </section>
     <section class="about">
       <h1>About me</h1>
-      <div>
+      <div class="about__div">
         임베디드 팀에서 인터넷 없이 동작하는 환경을 구축하던 중, 오히려 인터넷의
         가능성을 보고, 인터넷의 매력을 느껴 웹 개발자가 되기로 결심하였습니다.
         그 후, 사용자들과 가깝고, 저의 고민이 고객들의 편의성과 바로 이어질 수
         있다는 매력이 있는 프론트엔드 개발자가 되기로 마음 먹었습니다. 저는 이를
         위해 다음과 같은 기술들을 갈고 닦았습니다.
       </div>
-      <article class="icon">
-        <img src="img/logo.png" alt="front-end" />
-        <h1>Front-end</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-          repellat tempore facere possimus minus recusandae quam veniam quaerat
-          voluptas?
-        </p>
-      </article>
-      <article class="icon">
-        <img src="img/logo.png" alt="mobile" />
-        <h1>Mobile</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-          repellat tempore facere possimus minus recusandae quam veniam quaerat
-          voluptas?
-        </p>
-      </article>
-      <article class="icon">
-        <img src="img/logo.png" alt="back-end" />
-        <h1>Back-end</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-          repellat tempore facere possimus minus recusandae quam veniam quaerat
-          voluptas?
-        </p>
-      </article>
-      <article class="pv">
+      <div class="about__div--articles">
+        <article class="about__article--icon">
+          <img src="img/logo.png" alt="front-end" />
+          <h1>Front-end</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            repellat tempore facere possimus minus recusandae quam veniam
+            quaerat voluptas?
+          </p>
+        </article>
+        <article class="about__article--icon">
+          <img src="img/logo.png" alt="mobile" />
+          <h1>Mobile</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            repellat tempore facere possimus minus recusandae quam veniam
+            quaerat voluptas?
+          </p>
+        </article>
+        <article class="about__article--icon">
+          <img src="img/logo.png" alt="back-end" />
+          <h1>Back-end</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+            repellat tempore facere possimus minus recusandae quam veniam
+            quaerat voluptas?
+          </p>
+        </article>
+      </div>
+
+      <article class="about__article--pv">
         <img src="img/logo.png" alt="logo" />
         <p>
           powervoice - 음성인식개발 관련해서 펌웨어 및 어플리케이션을

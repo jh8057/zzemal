@@ -7,6 +7,8 @@ HTML 관련 내용들을 모아 두었습니다.
 조금 더 명확한 설명을 위한 태그이다.  
 상세 내용 : [블로그](https://kutar37.tistory.com/entry/%EC%8B%9C%EB%A9%98%ED%8B%B1-%ED%83%9C%EA%B7%B8-Semantic-Tag)
 
+브라우저로 간단히 보기 : [내가 만든 HTML](https://jh8057.github.io/zzemal/study/html)
+
 ## tags
 
 - `<form>` : 사용자의 정보를 알기 위해 입력 틀을 만들때 사용 / 입력된 데이터를 한번에 서버에 전송 / 전송 후 페이지 리로드
