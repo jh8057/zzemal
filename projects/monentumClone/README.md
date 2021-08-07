@@ -8,6 +8,7 @@
 
 # 결과
 
+[브라우저에서 보기!](https://jh8057.github.io/zzemal/projects/monentumClone/)
 <img src="./result/r1.jpg" width="200px" height="100%" title="1" alt="1"></img> <img src="./result/r2.jpg" width="200px" height="100%" title="2" alt="2"></img><br/>
 
 - Monentum이라는 프로그램을 따라 만들어보았다. [Momentum](https://chrome.google.com/webstore/detail/momentum/laookkfknpbbblfpciffpaejjkokdgca?hl=ko)

@@ -6,6 +6,8 @@
 
 # 결과
 
+[브라우저에서 보기!](https://jh8057.github.io/zzemal/projects/portfolio/)
+
 # 새로 배운 내용
 
 - meta를 통해 페이지 정보, 만든이 등을 넣어줄 수 있다.

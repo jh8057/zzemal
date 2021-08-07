@@ -7,6 +7,7 @@
 
 ## 결과
 
+[브라우저에서 보기!](https://jh8057.github.io/zzemal/projects/shopping/)
 <img src="./result/1.jpg" width="60%" height="100%" title="1" alt="1"></img> 기본 페이지
 
 <img src="./result/2.jpg" width="300px" height="350px" title="2" alt="3"></img><img src="./result/3.jpg" width="300px" height="350px" title="3" alt="3"></img>
