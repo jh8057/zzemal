@@ -9,7 +9,7 @@ DOM에 대해 공부하면서 만들어 본 페이지입니다.
 
 ## 결과
 
-[브라우저에서 보기!](https://jh8057.github.io/zzemal/projects/EventPizza/)
+[브라우저에서 보기!](https://jh8057.github.io/zzemal/projects/05.EventPizza/)
 
 <img src="./result/1.jpg" width="40%" height="350px" title="1" alt="1"></img>
 <img src="./result/2.jpg" width="40%" height="350px" title="2" alt="2"></img>
