@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="gallery page" />
+    <meta name="author" content="zzemal" />
+    <link rel="icon" href="img_src/logorm.png" />
+    <!-- font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="src/bg.js"></script>
+    <script defer src="src/gallery.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b50a7e6f6b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Gallery</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <h1><a href="#">LOGO</a></h1>
+        </div>
+        <ul class="navbar__menu">
+          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="thumnail">
+        <article class="imgContainer"></article>
+        <article class="MainDesription">
+          <h1>
+            사진을 <span class="keyword"> _________</span> 사람들의 모임에
+            오신걸 환영합니다! 🎉
+          </h1>
+          <p>
+            재밋는 사람들과 함께 하고 싶으면 연락 바래요!<br />
+            기존 모임분들은 선정된 베스트 샷을 구경해보세요!
+          </p>
+        </article>
+      </section>
+      <section class="gallery">
+        <a name="gallery"></a>
+        <div class="gallery__box"></div>
+      </section>
+      <img src="#" class="hidden" alt="clicked" />
+    </main>
+  </body>
+</html>

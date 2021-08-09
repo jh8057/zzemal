@@ -1,0 +1,171 @@
+:root {
+  /* color */
+  --color-black: #3f454d;
+  --color-whiteblack: #dfe4ea;
+  --color-white: #ffffff;
+  --color-blue: #3b88c3;
+  --color-yellow: #fbbe28;
+  --color-pink: #fd7f84;
+  --color-light-grey: #dfdfdf;
+
+  /* size */
+  --gap-size: 40px;
+  --margin-size: 20px;
+  --icon-size: 60px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: var(--margin-size);
+}
+.navbar a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar__menu li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  display: block;
+  background: orange;
+  margin: auto;
+  transition: 0.5s all ease;
+}
+
+.navbar__menu li:hover::after {
+  width: 100%;
+}
+
+.navbar__menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  gap: var(--gap-size);
+}
+.navbar__menu {
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.bgImage {
+  min-width: 405px;
+  min-height: 612px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  object-fit: contain;
+  z-index: -1;
+}
+.thumnail {
+  width: 100%;
+  display: flex;
+}
+.imgContainer {
+  margin: 3%;
+  width: 100%;
+  height: 80vh;
+}
+
+.MainDesription {
+  margin-right: 8%;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--gap-size);
+}
+.keyword {
+  color: var(--color-pink);
+}
+
+.flash {
+  animation: flash 1.5s ease;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.gallery__box {
+  margin: calc(var(--margin-size) * 2);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery__box img {
+  /* width: 32%; */
+  width: 500px;
+  flex: 1 1 auto;
+}
+
+.galleryImg {
+  cursor: pointer;
+}
+.galleryImg:hover {
+  transform: scale(1.02);
+  transition: all 0.5s ease;
+}
+.hidden {
+  max-height: 0;
+}
+
+.clicked {
+  position: fixed;
+  max-height: 100%;
+  top: 0px;
+  background-color: var(--color-whiteblack);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+  .thumnail {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-size);
+  }
+  .imgContainer {
+    margin: 0;
+    width: 100%;
+  }
+
+  .MainDesription {
+    padding: var(--margin-size);
+    margin: 0;
+    width: 100%;
+  }
+  .gallery__box {
+    margin: 0;
+    width: 100%;
+  }
+  .gallery__box img {
+    width: 170px;
+    height: auto;
+  }
+}

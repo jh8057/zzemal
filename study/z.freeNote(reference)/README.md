@@ -91,3 +91,7 @@ paste
 - [vuejs - 코지 코더](https://www.youtube.com/watch?v=gZBKGn0wQXU&list=PLB7CpjPWqHOtYP7P_0Ls9XNed0NLvmkAh)
 - [javascript 기초 - 드림 코딩](https://www.youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2)
 - [frontend 기초 - 드림 코딩](https://www.youtube.com/watch?v=NeEaTeYcFhE&list=PLv2d7VI9OotQ1F92Jp9Ce7ovHEsuRQB3Y&index=1)
+
+```
+<script src="https://kit.fontawesome.com/b50a7e6f6b.js" crossorigin="anonymous"></script>
+```
