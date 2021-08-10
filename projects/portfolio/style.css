@@ -19,6 +19,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  text-align: center;
 }
 
 /* navbar */
@@ -67,7 +68,6 @@ body {
 }
 .thumnail h1 {
   width: 80%;
-  text-align: center;
 }
 
 .thumnail h2 {
@@ -91,7 +91,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 .about__div {
@@ -102,7 +101,6 @@ body {
   width: var(--icon-size);
 }
 .about__article--icon p {
-  text-align: center;
   margin: 0%;
 }
 .about__div--articles {
@@ -122,4 +120,20 @@ body {
 .about__article--pv img {
   width: var(--logo-size);
   height: var(--logo-size);
+}
+
+.skills__description {
+  margin: var(--margin-size);
+}
+
+.skills__box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.skill___box--rigth {
+  display: flex;
+  flex-direction: column;
 }
