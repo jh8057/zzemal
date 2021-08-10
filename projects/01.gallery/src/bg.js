@@ -25,14 +25,7 @@ function updateImage() {
   }, 2000);
 }
 function genKeyword() {
-  const keywords = [
-    "사랑하는",
-    "찍고싶은",
-    "취미삼는",
-    "찍히고픈",
-    "좋아하는",
-    "ㅡ ㅅ ㅡ 하는",
-  ];
+  const keywords = ["사랑하는", "찍고싶은", "취미삼는", "찍히고픈", "좋아하는"];
   const number = Math.floor(Math.random() * 5);
   return keywords[number];
 }
