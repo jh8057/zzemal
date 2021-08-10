@@ -24,7 +24,13 @@ body {
 }
 
 /* navbar */
-
+.subtitle {
+  font-size: small;
+  font-weight: 400;
+}
+.navbar__logo h1 {
+  margin-bottom: 0;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
