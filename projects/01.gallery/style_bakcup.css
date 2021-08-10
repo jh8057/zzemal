@@ -90,7 +90,7 @@ main {
 }
 
 .MainDesription {
-  margin-right: calc(var(--margin-size) * 2);
+  margin-right: 8%;
   width: 50%;
   text-align: center;
   display: flex;
@@ -122,19 +122,27 @@ main {
   width: 100%;
   margin: 0;
 }
-.gallery__box {
+.gallery__box--left {
   margin: 0;
   display: flex;
-  width: 100%;
+  width: 50%;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 10px;
 }
-
-.gallery__box img {
+.gallery__box--rigth {
+  margin: 0;
+  /* margin: calc(var(--margin-size) * 2); */
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.gallery__box--left img,
+.gallery__box--rigth img {
   margin: 10px;
   min-width: 300px;
-  width: 400px;
   object-fit: cover;
   flex: 1 1 auto;
   cursor: pointer;
@@ -183,10 +191,8 @@ main {
   right: 32px;
   font-size: 25px;
 }
-#disqus_thread {
-  margin: 10px;
-}
-@media screen and (max-width: 740px) {
+
+@media screen and (max-width: 700px) {
   .thumnail {
     width: 100%;
     display: flex;
@@ -229,12 +235,9 @@ main {
     margin: 0;
     gap: 0;
   }
-  .gallery__box {
-    gap: 0;
-  }
-  .gallery__box img {
-    margin: 3px;
-    width: 180px;
+  .gallery__box--left img,
+  .gallery__box--rigth img {
+    margin: 10px;
     min-width: 170px;
   }
   .clickedtoggle {

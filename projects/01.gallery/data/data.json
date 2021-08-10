@@ -1,7 +1,7 @@
 {
   "items": [
     {
-      "type": "photo",
+      "type": "left",
       "image": "img/1.jpg"
     },
     {
@@ -9,11 +9,11 @@
       "image": "img/2.jpg"
     },
     {
-      "type": "photo",
+      "type": "best",
       "image": "img/3.jpg"
     },
     {
-      "type": "photo",
+      "type": "best",
       "image": "img/4.jpg"
     },
     {
@@ -21,7 +21,7 @@
       "image": "img/5.jpg"
     },
     {
-      "type": "photo",
+      "type": "rigth",
       "image": "img/6.jpg"
     },
     {
@@ -29,7 +29,7 @@
       "image": "img/7.jpg"
     },
     {
-      "type": "photo",
+      "type": "left",
       "image": "img/8.jpg"
     },
     {
@@ -37,7 +37,7 @@
       "image": "img/9.jpg"
     },
     {
-      "type": "photo",
+      "type": "left",
       "image": "img/10.jpg"
     },
     {
@@ -57,7 +57,7 @@
       "image": "img/14.jpg"
     },
     {
-      "type": "photo",
+      "type": "rigth",
       "image": "img/15.jpg"
     },
     {
@@ -69,15 +69,15 @@
       "image": "img/17.jpg"
     },
     {
-      "type": "photo",
+      "type": "left",
       "image": "img/18.jpg"
     },
     {
-      "type": "photo",
+      "type": "rigth",
       "image": "img/19.jpg"
     },
     {
-      "type": "photo",
+      "type": "rigth",
       "image": "img/20.jpg"
     },
     {
@@ -89,7 +89,7 @@
       "image": "img/22.jpg"
     },
     {
-      "type": "photo",
+      "type": "left",
       "image": "img/23.jpg"
     },
     {
@@ -105,7 +105,7 @@
       "image": "img/26.jpg"
     },
     {
-      "type": "photo",
+      "type": "rigth",
       "image": "img/27.jpg"
     },
     {
@@ -129,7 +129,7 @@
       "image": "img/32.jpg"
     },
     {
-      "type": "photo",
+      "type": "best",
       "image": "img/33.jpg"
     },
     {
@@ -137,7 +137,7 @@
       "image": "img/34.jpg"
     },
     {
-      "type": "photo",
+      "type": "left",
       "image": "img/35.jpg"
     },
     {

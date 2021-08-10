@@ -4,29 +4,9 @@ function loadItems() {
     .then((json) => json.items);
 }
 function displayItems(items) {
-  // const galleryLeft = document.querySelector(".gallery__box--left");
-  // const galleryRight = document.querySelector(".gallery__box--rigth");
-  // galleryLeft.innerHTML = items
-  //   .map((item) => {
-  //     if (item.type === "left") {
-  //       return createHtmlString(item.image);
-  //     }
-  //   })
-  //   .join("");
-  // galleryRight.innerHTML = items
-  //   .map((item) => {
-  //     if (item.type === "rigth") {
-  //       return createHtmlString(item.image);
-  //     }
-  //   })
-  //   .join("");
   const gallery = document.querySelector(".gallery__box");
   gallery.innerHTML = items
-    .map((item) => {
-      if (item.type === "rigth" || item.type === "left") {
-        return createHtmlString(item.image);
-      }
-    })
+    .map((item) => createHtmlString(item.image))
     .join("");
 }
 
