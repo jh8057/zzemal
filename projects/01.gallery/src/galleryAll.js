@@ -18,20 +18,28 @@ function createHtmlString(num) {
 
 function handleImg(e) {
   const hidden = document.querySelector(".hiddenImg");
+  const hiddendiv = document.querySelector(".hiddenDiv");
   let value = e.target.src;
   value = value.split("gallery/");
   const target = value[1];
   hidden.src = target;
   hidden.classList.toggle("imgClicked");
+  hiddendiv.classList.toggle("divClicked");
+}
+
+function resettoggle() {
+  const hidden = document.querySelector(".hiddenImg");
+  const hiddendiv = document.querySelector(".hiddenDiv");
+  hidden.classList.toggle("imgClicked");
+  hiddendiv.classList.toggle("divClicked");
 }
 
 function setEventListeners() {
   const imgs = document.querySelectorAll(".galleryImg");
   const hidden = document.querySelector(".hiddenImg");
   imgs.forEach((img) => img.addEventListener("click", handleImg));
-  hidden.addEventListener("click", () => hidden.classList.toggle("imgClicked"));
+  hidden.addEventListener("click", resettoggle);
 }
-
 function init() {
   loadItems()
     .then((items) => {

@@ -154,7 +154,9 @@ main {
 .hiddenImg {
   max-height: 0;
 }
-
+.hiddenDiv {
+  display: none;
+}
 /* image enlarge */
 .imgClicked {
   position: fixed;
@@ -167,6 +169,17 @@ main {
   cursor: pointer;
 }
 
+.divClicked {
+  position: fixed;
+  display: block;
+  max-height: 100%;
+  top: 0px;
+  right: 0;
+  width: 100%;
+  cursor: pointer;
+  color: var(--color-white);
+  text-align: end;
+}
 /* footer */
 .commnet__description {
   padding: var(--margin-size);
