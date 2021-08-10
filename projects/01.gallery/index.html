@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="style.css" />
     <script defer src="src/bg.js"></script>
     <script defer src="src/gallery.js"></script>
+    <script defer src="src/mobiletoggle.js"></script>
     <script
       src="https://kit.fontawesome.com/b50a7e6f6b.js"
       crossorigin="anonymous"
@@ -29,9 +30,11 @@
         </div>
         <ul class="navbar__menu">
           <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="#gallery">COMMENT</a></li>
           <li><a href="#">CONTACT</a></li>
         </ul>
       </nav>
+      <div class="toggleBtn"><i class="fas fa-bars"></i></div>
     </header>
     <main>
       <section class="thumnail">
@@ -43,7 +46,7 @@
           </h1>
           <p>
             재밋는 사람들과 함께 하고 싶으면 연락 바래요!<br />
-            기존 모임분들은 선정된 베스트 샷을 구경해보세요!
+            기존 모임분들은 선정된 베스트 샷을 구경해보세요📷✨
           </p>
         </article>
       </section>
@@ -51,7 +54,46 @@
         <a name="gallery"></a>
         <div class="gallery__box"></div>
       </section>
-      <img src="#" class="hidden" alt="clicked" />
+      <img src="img/1.jpg" class="hiddenImg" alt="clickedImg" />
     </main>
+    <footer class="comment">
+      <div class="commnet__description">
+        <h2>재밌게 보셧나요? 감상평을 남겨주세요!</h2>
+        <p>소중한 댓글은 저와 같은 초보자에게 큰 힘이 된답니다😉</p>
+      </div>
+      <div id="disqus_thread"></div>
+      <hr />
+      <div class="footer__email">
+        모임장(쌍마이웨이😎) 메일 : 머시기머시기@ 머시기;<br />
+        개발자(취준생😂) 메일 : luckysymbol13@gmail.com
+        <br />
+        <br />
+        Copyright ⓒ 2021. logo. All rights reserved.
+      </div>
+    </footer>
+    <script>
+      /**
+       *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+       *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+      /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+      (function () {
+        // DON'T EDIT BELOW THIS LINE
+        var d = document,
+          s = d.createElement("script");
+        s.src = "https://zzemal.disqus.com/embed.js";
+        s.setAttribute("data-timestamp", +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <script
+      id="dsq-count-scr"
+      src="//zzemal.disqus.com/count.js"
+      async
+    ></script>
   </body>
 </html>

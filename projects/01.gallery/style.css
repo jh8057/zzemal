@@ -15,18 +15,22 @@
 }
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 body {
+  margin: 0;
   font-family: "Roboto", sans-serif;
 }
+
+/* navbar */
+
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: var(--margin-size);
+  margin-bottom: 0;
 }
 .navbar a {
   color: black;
@@ -34,6 +38,7 @@ body {
   cursor: pointer;
 }
 
+/* navbar__menu hover */
 .navbar__menu li::after {
   content: "";
   width: 0%;
@@ -54,32 +59,33 @@ body {
   list-style: none;
   align-items: center;
   gap: var(--gap-size);
-}
-.navbar__menu {
   text-decoration: none;
 }
 
+/* gallery - main */
 main {
   display: flex;
   flex-wrap: wrap;
 }
+
+/* Javscript data img */
 .bgImage {
-  min-width: 405px;
-  min-height: 612px;
   width: 100%;
   height: 100%;
   overflow: hidden;
   object-fit: contain;
   z-index: -1;
 }
+
+/* First Page */
 .thumnail {
   width: 100%;
   display: flex;
 }
 .imgContainer {
-  margin: 3%;
+  /* margin: 1%; */
   width: 100%;
-  height: 80vh;
+  height: 85vh;
 }
 
 .MainDesription {
@@ -91,6 +97,8 @@ main {
   justify-content: center;
   gap: var(--gap-size);
 }
+
+/* keyword */
 .keyword {
   color: var(--color-pink);
 }
@@ -117,23 +125,22 @@ main {
 }
 
 .gallery__box img {
-  /* width: 32%; */
   width: 500px;
   flex: 1 1 auto;
+  cursor: pointer;
+  /* width: 32%; */
 }
 
-.galleryImg {
-  cursor: pointer;
-}
 .galleryImg:hover {
   transform: scale(1.02);
   transition: all 0.5s ease;
 }
-.hidden {
+.hiddenImg {
   max-height: 0;
 }
 
-.clicked {
+/* image enlarge */
+.imgClicked {
   position: fixed;
   max-height: 100%;
   top: 0px;
@@ -143,16 +150,58 @@ main {
   object-fit: contain;
   cursor: pointer;
 }
+
+/* footer */
+.commnet__description {
+  padding: var(--margin-size);
+}
+
+.footer__email {
+  padding: var(--margin-size);
+  font-size: small;
+  color: #3f454d;
+}
+/* mobile */
+.toggleBtn {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 32px;
+  font-size: 25px;
+}
+
 @media screen and (max-width: 700px) {
   .thumnail {
-    padding: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: var(--gap-size);
   }
+  .navbar {
+    width: 100%;
+    padding: 0 calc(var(--margin-size) * 2);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .toggleBtn {
+    display: block;
+    cursor: pointer;
+  }
+  .navbar__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar__menu li {
+    width: 100%;
+    text-align: center;
+  }
+
   .imgContainer {
     margin: 0;
-    width: 100%;
   }
 
   .MainDesription {
@@ -166,6 +215,8 @@ main {
   }
   .gallery__box img {
     width: 170px;
-    height: auto;
+  }
+  .clickedtoggle {
+    display: flex;
   }
 }
