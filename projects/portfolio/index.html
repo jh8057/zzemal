@@ -4,9 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ZZemal's portfolio</title>
+    <title>Portfolio</title>
     <meta name="description" content="portfolio page" />
     <meta name="author" content="zzemal" />
+    <meta
+      property="og:url"
+      content="https://jh8057.github.io/zzemal/projects/portfolio/"
+    />
+    <meta property="og:title" content="Portfolio - 김재현" />
+    <meta
+      property="og:description"
+      content="프론트엔드 개발자 되고싶은 김재현입니다!"
+    />
+    <meta
+      property="og:image"
+      content="https://jh8057.github.io/zzemal/projects/portfolio/img/logo2.png"
+    />
     <!-- icon -->
     <script
       src="https://kit.fontawesome.com/b50a7e6f6b.js"
@@ -24,13 +37,12 @@
   </head>
   <body>
     <header>
+      <!-- navbar -->
       <nav class="navbar">
-        <a href="#">
-          <div class="navbar__logo">
-            <img src="img/logo.png" alt="logo" />
-            <span>ZZEMAL</span>
-          </div>
-        </a>
+        <div class="navbar__logo">
+          <img src="img/logo.png" alt="logo" />
+          <a href="index.html">ZZEMAL</a>
+        </div>
         <ul class="navbar__menu">
           <li class="menu">Home</li>
           <li class="menu">About</li>
@@ -41,15 +53,19 @@
         </ul>
       </nav>
     </header>
-    <section class="thumnail">
-      <img src="img/logo2.png" alt="logo2" />
-      <h1>
+    <!-- thumbnail -->
+    <section class="thumbnail">
+      <img src="img/logo2.png" alt="logo2" class="thumbnail__avatar" />
+      <h1 class="thumbnail__title">
         안녕하세요,<br />
         프론트엔드 개발 지망생 <span class="orangebg">김재현</span>입니다.
       </h1>
-      <h2>정말, 너무, 아주 , 매우 , 간절하게 바래고 바랍니다.</h2>
-      <button class="thumnail__button">CONTACT ME</button>
+      <h2 class="thumbnail__description">
+        디자인을 좋아하면서 취미도 다양한 개발 지망생입니다.
+      </h2>
+      <button class="thumbnail__contact">CONTACT ME</button>
     </section>
+    <!-- about -->
     <section class="about">
       <h1>About me</h1>
       <div class="about__div">
@@ -59,8 +75,8 @@
         있다는 매력이 있는 프론트엔드 개발자가 되기로 마음 먹었습니다. 저는 이를
         위해 다음과 같은 기술들을 갈고 닦았습니다.
       </div>
-      <div class="about__div--articles">
-        <article class="about__article--icon">
+      <div class="about__major">
+        <article class="major__icon">
           <img src="img/logo.png" alt="front-end" />
           <h1>Front-end</h1>
           <p>
@@ -69,7 +85,7 @@
             quaerat voluptas?
           </p>
         </article>
-        <article class="about__article--icon">
+        <article class="major__icon">
           <img src="img/logo.png" alt="mobile" />
           <h1>Mobile</h1>
           <p>
@@ -78,7 +94,7 @@
             quaerat voluptas?
           </p>
         </article>
-        <article class="about__article--icon">
+        <article class="major__icon">
           <img src="img/logo.png" alt="back-end" />
           <h1>Back-end</h1>
           <p>
@@ -90,7 +106,7 @@
       </div>
 
       <article class="about__article--pv">
-        <img src="img/logo.png" alt="logo" />
+        <img src="img/pvlogo.jpg" alt="logo" />
         <p>
           powervoice - 음성인식개발 관련해서 펌웨어 및 어플리케이션을
           담당하였습니다.
@@ -98,9 +114,10 @@
         <p>2020.07-2021.03</p>
       </article>
     </section>
+    <!-- skills -->
     <section class="skills">
       <h1>SKills</h1>
-      <h3>Skills & Attriubutes</h3>
+      <h2>Skills & Attriubutes</h2>
       <p class="skills__description">
         Web에 기본적인 HTML, CSS를 다룰줄 알며, Javascript, 더 나아가 React,Vue
         에 대해 공부하였습니다. 서버 관련한 linux 지식, git, docker와 같은 개발
@@ -114,7 +131,7 @@
               <span>HTML</span>
               <span>80%</span>
             </div>
-            <div class="skills__box--gaugebar"></div>
+            <div class="skills__box--HTML"></div>
           </article>
           <article class="skills__box--gaugebox">
             <div class="skills__box--description">
@@ -167,9 +184,10 @@
         </div>
       </div>
     </section>
+    <!-- mywork -->
     <section class="myWork">
       <h1>My Work</h1>
-      <h3>Projects</h3>
+      <h2>Projects</h2>
       <div class="myWork__buttons">
         <button class="myWork__buttons--button">ALL</button>
         <button class="myWork__buttons--button">Front-end</button>
@@ -184,30 +202,28 @@
         <img src="img/background.jpg" alt="box" />
       </div>
     </section>
+    <!-- testmonial -->
     <section class="testmonials">
       <h1>Testimonial</h1>
-      <h3>See What they say about me</h3>
+      <h2>See What they say about me</h2>
       <div class="testmonials__talk">
         <img src="img/zzemal.png" alt="face" />
         <div class="talk__box">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sed
-            magnam nemo dolorem
+            항상 열심히 사는 사람입니다! 특히 음악 리스트가 너무 맘에 들어요😉
           </p>
-          <p>ZZEMAL's Friend / Tom</p>
+          <p>ZZEMAL's Friend / Uzi</p>
         </div>
       </div>
-      <div class="talk">
+      <div class="testmonials__talk">
         <div class="talk__box">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime sed
-            magnam nemo dolorem
-          </p>
-          <p>ZZEMAL's Friend / Tom</p>
+          <p>He is always a hard worker! I especially like the music list.😎</p>
+          <p>ZZEMAL's Friend / Bang</p>
         </div>
         <img src="img/zzemal.png" alt="face" />
       </div>
     </section>
+    <!-- contact -->
     <footer class="Contact">
       <h1>Let's talk</h1>
       <h2>luckysymbol13@gmail.com</h2>
