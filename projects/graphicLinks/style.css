@@ -63,7 +63,12 @@ body {
 .sidemenu li {
   margin: var(--margin-size);
 }
-
+.bgMode {
+  outline: none;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
 .home {
   text-align: center;
 }
