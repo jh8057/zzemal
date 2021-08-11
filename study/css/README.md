@@ -161,6 +161,17 @@ p {
 - -webkit-line-clamp: 3;  
   보여지는 텍스트 줄 제한
 
+#### scroll-behavior
+
+```
+html{
+  scroll-behavior: smooth
+}
+```
+
+를 하면 전체 문서에 대해서 a링크 이동이 스크롤 이동하듯 진행된다.  
+그동안 이걸 몰라서 위치 계산을 했던걸 생각하면 .. 🧓
+
 #### Update log
 
 - <s>이제 좀 css에 익숙해진 것 같다.(21.1.28)</s>
