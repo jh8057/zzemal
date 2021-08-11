@@ -40,3 +40,5 @@
 git fetch --all
 git reset --hard origin/master
 ```
+
+[detached HEAD](https://aroma-dev.tistory.com/4)
