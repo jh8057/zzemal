@@ -76,32 +76,38 @@
         위해 다음과 같은 기술들을 갈고 닦았습니다.
       </div>
       <div class="about__major">
-        <article class="major__icon">
-          <img src="img/logo.png" alt="front-end" />
-          <h1>Front-end</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            repellat tempore facere possimus minus recusandae quam veniam
-            quaerat voluptas?
-          </p>
+        <article class="major">
+          <div class="major__icon">
+            <i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i>
+          </div>
+          <h1 class="major__title">HTML / CSS</h1>
+          <div class="major__description">
+            Semantic tag를 이용해 많은 프로젝트를 진행해보았습니다. 반응형 웹
+            페이지에 대한 이해도도 높으며, keyframe, hover 등 동적인 효과도 다수
+            제작해보았습니다.
+          </div>
         </article>
-        <article class="major__icon">
-          <img src="img/logo.png" alt="mobile" />
-          <h1>Mobile</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            repellat tempore facere possimus minus recusandae quam veniam
-            quaerat voluptas?
-          </p>
+        <article class="major">
+          <div class="major__icon">
+            <i class="fab fa-js-square"></i>
+          </div>
+          <h1 class="major__title">JAVASCRIPT</h1>
+          <div class="major__description">
+            이벤트 처리에 익숙합니다. Dom, Prototype, Hositing 등 기본 개념도
+            충분히 익혔으며, JSON 파일을 이용한 data를 fetch를 통해 다루어
+            보았습니다. VanillaJS로 구성된 페이지를 다수 제작해보았습니다.
+          </div>
         </article>
-        <article class="major__icon">
-          <img src="img/logo.png" alt="back-end" />
-          <h1>Back-end</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-            repellat tempore facere possimus minus recusandae quam veniam
-            quaerat voluptas?
-          </p>
+        <article class="major">
+          <div class="major__icon">
+            <i class="fas fa-server"></i> <i class="fab fa-linux"></i>
+          </div>
+          <h1 class="major__title">Back-end</h1>
+          <div class="major__description">
+            Linux 환경에 대한 이해가 높습니다. npm, nodejs에 익숙하며 server를
+            이용해 작업을 해보았습니다. 가상환경에서 환경 세팅을 해보았으며
+            shell script를 이용해 자동화 프로그램도 만들어 보았습니다.
+          </div>
         </article>
       </div>
 
@@ -125,56 +131,60 @@
       </p>
       <div class="skills__box">
         <div class="skills__box--skillgraph">
-          <h1>Skills</h1>
-          <article class="skills__box--gaugebox">
-            <div class="skills__box--description">
+          <h3 class="skillgraph__title">Skills</h3>
+          <article class="skillgraph__process">
+            <div class="process__description">
               <span>HTML</span>
               <span>80%</span>
             </div>
             <div class="skills__box--HTML"></div>
+            <div class="process__value"></div>
           </article>
-          <article class="skills__box--gaugebox">
-            <div class="skills__box--description">
+          <article class="skillgraph__process">
+            <div class="process__description">
               <span>CSS</span>
               <span>80%</span>
             </div>
-            <div class="skills__box--gaugebar"></div>
+            <div class="process__maxbar"></div>
+            <div class="process__value"></div>
           </article>
-          <article class="skills__box--gaugebox">
-            <div class="skills__box--description">
+          <article class="skillgraph__process">
+            <div class="process__description">
               <span>JAVASCRIPT</span>
               <span>80%</span>
             </div>
-            <div class="skills__box--gaugebar"></div>
+            <div class="process__maxbar"></div>
+            <div class="process__value"></div>
           </article>
-          <article class="skills__box--gaugebox">
-            <div class="skills__box--description">
+          <article class="skillgraph__process">
+            <div class="process__description">
               <span>VUE</span>
               <span>30%</span>
             </div>
-            <div class="skills__box--gaugebar"></div>
+            <div class="process__maxbar"></div>
+            <div class="process__value"></div>
           </article>
-          <article class="skills__box--gaugebox">
-            <div class="skills__box--description">
+          <article class="skillgraph__process">
+            <div class="process__description">
               <span>LINUX</span>
               <span>70%</span>
             </div>
-            <div class="skills__box--gaugebar"></div>
+            <div class="process__maxbar"></div>
+            <div class="process__value"></div>
           </article>
         </div>
         <div class="skill___box--rigth">
-          <div class="skills__box--toolsbox">
-            <h1>Tools</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Necessitatibus, unde repellendus nihil reprehenderit eaque et,
-              expedita dolorum quia e dolorum ipsam error.
-            </p>
-            <p>VS code Photoshop Adobe programs</p>
+          <div class="toolsbox">
+            <h3>Tools</h3>
+            <ul class="toolsbox__list">
+              <li><span>VS code</span></li>
+              <li><span>Photoshop</span></li>
+              <li><span>Adobe programs</span></li>
+            </ul>
           </div>
-          <div class="skills__box--etcbox">
-            <h1>ETC</h1>
-            <ul>
+          <div class="etc">
+            <h3>ETC</h3>
+            <ul class="etc__list">
               <li>Git</li>
               <li>Docker</li>
               <li>Linux</li>
@@ -187,19 +197,98 @@
     <!-- mywork -->
     <section class="myWork">
       <h1>My Work</h1>
-      <h2>Projects</h2>
+      <h3>Projects</h3>
       <div class="myWork__buttons">
-        <button class="myWork__buttons--button">ALL</button>
-        <button class="myWork__buttons--button">Front-end</button>
-        <button class="myWork__buttons--button">Back-end</button>
-        <button class="myWork__buttons--button">Mobile</button>
+        <button class="buttons__btn">
+          ALL <span class="buttons__count">8</span>
+        </button>
+        <button class="buttons__btn">
+          VanillaJS <span class="buttons__count">3</span>
+        </button>
+        <button class="buttons__btn">
+          Responsive <span class="buttons__count">3</span>
+        </button>
+        <button class="buttons__btn">
+          Basic <span class="buttons__count">2</span>
+        </button>
       </div>
-      <div class="myWork__boxs">
-        <img src="img/background.jpg" alt="box" />
-        <img src="img/background.jpg" alt="box" />
-        <img src="img/background.jpg" alt="box" />
-        <img src="img/background.jpg" alt="box" />
-        <img src="img/background.jpg" alt="box" />
+      <div class="myWork__projects">
+        <a
+          href="https://jh8057.github.io/zzemal/projects/01.gallery/"
+          class="project"
+          target="blank"
+        >
+          <img
+            src="img/projects/gallery.jpg"
+            alt="gallery"
+            class="project__img"
+          />
+          <div class="project__description">
+            <h3>Gallery Site</h3>
+            <p>Make gallery site for photo club</p>
+            <p>HTML / CSS / VanillaJS / Responsive</p>
+          </div>
+        </a>
+        <a
+          href="https://jh8057.github.io/zzemal/projects/02.youtube/"
+          class="project"
+          target="blank"
+        >
+          <img
+            src="img/projects/youtube.jpg"
+            alt="youtube"
+            class="project__img"
+          />
+          <div class="project__description">
+            <h3>Youtube Site</h3>
+            <p>Clone coding Youtube UI</p>
+            <p>HTML / CSS</p>
+          </div>
+        </a>
+        <a
+          href="https://jh8057.github.io/zzemal/projects/03.monentumClone/"
+          class="project"
+          target="blank"
+        >
+          <img
+            src="img/projects/monentum.jpg"
+            alt="gallery"
+            class="project__img"
+          />
+          <div class="project__description">
+            <h3>Monentum Site</h3>
+            <p>Clone coding Monentum Site</p>
+            <p>HTML / CSS / VanillaJS</p>
+          </div>
+        </a>
+        <a
+          href="https://jh8057.github.io/zzemal/projects/04.shopping/"
+          class="project"
+          target="blank"
+        >
+          <img
+            src="img/projects/shopping.jpg"
+            alt="gallery"
+            class="project__img"
+          />
+          <div class="project__description">
+            <h3>Shopping Site</h3>
+            <p>Filtering button shopping Site</p>
+            <p>HTML / CSS / VanillaJS / Responsive</p>
+          </div>
+        </a>
+        <a
+          href="https://jh8057.github.io/zzemal/projects/05.eventPizza/"
+          class="project"
+          target="blank"
+        >
+          <img src="img/projects/menu.jpg" alt="gallery" class="project__img" />
+          <div class="project__description">
+            <h3>Select Site</h3>
+            <p>Select pizza store Site</p>
+            <p>HTML / CSS / VanillaJS</p>
+          </div>
+        </a>
       </div>
     </section>
     <!-- testmonial -->

@@ -42,7 +42,7 @@ function randomKeyword() {
 function init() {
   randomImage();
   randomKeyword();
-  setInterval(updateImage, 10000);
-  setInterval(randomKeyword, 10000);
+  setInterval(updateImage, 5000);
+  setInterval(randomKeyword, 5000);
 }
 init();

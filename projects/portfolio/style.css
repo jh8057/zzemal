@@ -24,7 +24,10 @@ body {
   font-family: "Open Sans", sans-serif;
   text-align: center;
 }
-
+a {
+  text-decoration: none;
+  color: black;
+}
 h2 {
   font-size: larger;
 }
@@ -109,13 +112,34 @@ h2 {
   width: 80%;
   margin-bottom: var(--margin-size);
 }
-.major__icon img {
-  width: var(--icon-size);
+.major__icon {
+  display: flex;
+  justify-content: center;
+  gap: var(--gap-size);
+  font-size: var(--icon-size);
 }
-.major__icon p {
+.fa-html5 {
+  color: orangered;
+}
+.fa-css3-alt {
+  color: rgb(63, 63, 224);
+}
+.fa-js-square {
+  color: var(--color-yellow);
+}
+.fa-server {
+  color: var(--color-blue);
+}
+.major__description {
+  padding: var(--padding-size);
+  text-align: center;
+  font-size: medium;
+}
+.major p {
   margin: 0%;
 }
 .about__major {
+  padding: calc(var(--padding-size) * 2);
   display: flex;
   flex-direction: row;
   gap: calc(var(--gap-size) * 2);
@@ -149,14 +173,20 @@ h2 {
   gap: var(--gap-size);
 }
 
-.skills__box--gaugebox {
+.skills__box--skillgraph {
+  flex: 1 1 60%;
+}
+.skillgraph__title {
+  margin-bottom: 0;
+}
+.skillgraph__process {
   margin: calc(var(--margin-size) * 2);
 }
-.skills__box--description {
+.process__description {
   display: flex;
   justify-content: space-between;
 }
-.skills__box--gaugebar {
+.process__maxbar {
   width: 100%;
   height: var(--gauge--heigth);
   background-color: var(--color-black);
@@ -176,25 +206,24 @@ h2 {
   background-color: green;
   border-radius: var(--radius-size);
 }
-.skills__box--skillgraph {
-  flex: 1 1 60%;
-}
-.skills__box--skillgraph h1 {
-  margin-bottom: 0;
-}
 
 .skill___box--rigth {
   display: flex;
   flex-direction: column;
   flex: 1 1 40%;
 }
-
-.skills__box--etcbox ul {
+.toolsbox__list {
   list-style: none;
+  text-align: center;
+  padding: 0;
+}
+.etc__list {
+  list-style: none;
+  padding: 0;
 }
 
 /* myWork */
-.myWork__buttons--button {
+.buttons__btn {
   outline: none;
   border: none;
   cursor: pointer;
@@ -203,14 +232,15 @@ h2 {
   border-radius: var(--radius-size);
   background-color: var(--color-orange);
 }
-.myWork__boxs {
+.myWork__projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: var(--gap-size);
 }
-.myWork__boxs img {
+.project__img {
   width: var(--project-size);
+  /* height: calc(var(--project-size) * 1.5); */
 }
 /* testmonial */
 .testmonials__talk {
