@@ -10,11 +10,11 @@
       property="og:url"
       content="https://jh8057.github.io/zzemal/projects/graphicLinks/"
     />
-    <meta property="og:title" content="Galbe - 그래픽" />
-    <meta property="og:description" content="그래픽 관련 링크들이 한곳에?!" />
+    <meta property="og:title" content="GALBE - 그래픽" />
+    <meta property="og:description" content="그래픽? 너두 할 수 있어!" />
     <meta
       property="og:image"
-      content="https://jh8057.github.io/zzemal/projects/01.graphicLinks/img/logo.png"
+      content="https://jh8057.github.io/zzemal/projects/graphicLinks/img/logo.png"
     />
     <link rel="icon" href="img/logo.png" />
     <!-- font -->
@@ -27,7 +27,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script defer src="src/main.js"></script>
+    <script defer src="src/toggle.js"></script>
     <script
       src="https://kit.fontawesome.com/b50a7e6f6b.js"
       crossorigin="anonymous"
@@ -40,13 +40,16 @@
       <nav class="navbar">
         <div class="navbar__logo">
           <img src="img/logo.png" alt="logo" class="logo__img" />
-          <h1>GALBE</h1>
+          <h1><a href="index.html">GALBE</a></h1>
         </div>
-        <ul class="navbar__menu">
-          <li>MEMBERS</li>
-          <li>CONTACT</li>
-        </ul>
+        <div class="mobile__navbar--menu">
+          <ul class="navbar__menu">
+            <li><a href="#members">MEMBERS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
       </nav>
+      <div class="toggleBtn"><i class="fas fa-bars"></i></div>
     </header>
     <section class="home">
       <h1 class="home__title">그래픽?</h1>
@@ -150,5 +153,11 @@
         <li>link</li>
       </ul>
     </section>
+    <section class="members">
+      <a name="members"></a>
+    </section>
+    <foooter class="contact">
+      <a name="contact"></a>
+    </foooter>
   </body>
 </html>
