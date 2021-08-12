@@ -1,4 +1,4 @@
-# PIZZA STORE
+# GALBE - Graphic Links
 
 Link가 정리가 안된다는 친한 형의 말을 듣고 만들기 시작한 페이지 입니다.
 

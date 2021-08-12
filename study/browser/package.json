@@ -1,0 +1,11 @@
+{
+  "name": "zzemal",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo 'hello world'"
+  },
+  "author": "zzemal",
+  "license": "ISC"
+}

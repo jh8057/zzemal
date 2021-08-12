@@ -75,7 +75,7 @@ a {
 }
 .home {
   text-align: center;
-  background: center/70% no-repeat url("img/paint.gif");
+  background: center/480px no-repeat url("img/paint.gif");
 }
 
 .home__title {
@@ -124,7 +124,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .home__title {
-    font-size: 90px;
+    font-size: 80px;
   }
 
   .navbar__menu li {
@@ -134,19 +134,20 @@ a {
     width: 100%;
     bottom: 0%;
     right: 0;
-    padding: var(--margin-size);
     background-color: var(--color-whitepink);
   }
   .mobile__sidemenu {
     display: flex;
     margin: 0;
-    gap: var(--gap-size);
+    gap: 0;
+    padding: calc(var(--margin-size) / 1.5);
     justify-content: space-evenly;
   }
   .mobile__sidemenu li {
     margin: 0;
   }
   .home {
-    background-size: 100%;
+    background-size: 340px;
+    background-position: 50% 40%;
   }
 }
