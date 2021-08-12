@@ -172,6 +172,42 @@ html{
 를 하면 전체 문서에 대해서 a링크 이동이 스크롤 이동하듯 진행된다.  
 그동안 이걸 몰라서 위치 계산을 했던걸 생각하면 .. 🧓
 
+#### position
+
+- position: static - 기본값
+- position: relative - 원래 공간 유지한 체 움직이는 것
+- position: absolute - 부모가 static이 아닌 곳 까지 올라가서 그곳 기준으로 자리를 잡는다. 또한, 원래 공간에서 벗어나서 새로운 위치에서 자리를 잡는다.
+- position: sticky - 부모 기준이고, 공간도 유지한체 scrolling 됬을때 고정된다.
+- position: fixed - viewport(브라우저) 기준으로 포지션을 보여준다.
+
+#### align
+
+- `margin:auto` 를 해주면 block 레벨에서 오른쪽에 배치되어있던 margin이 골고루 분배되면서 센터에 자리잡는다.(수직은 적용x)
+- text가 아니더라도 inline 요소들은
+  `text-align :center` 로 정렬 가능하다.
+- `transform : translate(50%,50%)` 으로도 가능하다
+- text의 수직도 중앙으로 맞추고 싶으면 line-height 을 원하는 만큼 지정해주면 된다.( 단, 한줄일때만)
+
+#### background
+
+- background-repeat : no-repeat / 반복하는지 여부
+- background-position : center / 사진의 중앙부가 보이도록 해준다.
+- background- size : cover / 남은 부분 채우기(or contain)
+- `background : center/cover no-repeat url('')` 이렇게 하면 위 요소들이 다 적용된다.
+- `background : center/70% no-repeat url('')` 요렇게 응용해서 사이즈 조절도 가능하다.
+
+#### transform
+
+- transform : translate( 100px , 100px) - x,y이동
+- transform : scale(1.2) - 1.2배
+- transform : rotate(45deg) - 45도 이동
+- `transform : translate(100px,100px) scale(1.2) rotate(45deg)` 요렇게 한번에 가능하다.
+
+#### transition
+
+- transition : background-color 300ms linear;
+- linear 대신 cubic-bezier 이라는 효과가 있는데 이를 사용하면 커스텀한 속도로 변경 가능하다
+
 #### Update log
 
 - <s>이제 좀 css에 익숙해진 것 같다.(21.1.28)</s>

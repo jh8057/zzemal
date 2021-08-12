@@ -19,7 +19,9 @@
   --radius-size: 3px;
   --gauge--heigth: 10px;
 }
-
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: "Open Sans", sans-serif;
   text-align: center;
@@ -249,12 +251,12 @@ h2 {
   justify-content: center;
   align-items: center;
 }
-.testmonials__talk img {
+.testmonials__avatar {
   width: calc(var(--icon-size) * 2);
 }
 
 /* contact */
-.Contact {
+#Contact {
   padding: var(--padding-size);
   background-color: var(--color-orange);
 }

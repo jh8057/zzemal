@@ -61,7 +61,7 @@ a {
 .sidemenu {
   list-style: none;
   position: fixed;
-  bottom: 50%;
+  bottom: 30%;
   right: var(--margin-size);
 }
 .sidemenu li {
@@ -75,6 +75,7 @@ a {
 }
 .home {
   text-align: center;
+  background: center/70% no-repeat url("img/paint.gif");
 }
 
 .home__title {
@@ -82,7 +83,7 @@ a {
   display: inline-block;
   font-family: "Orbitron", sans-serif;
   margin-bottom: 0;
-  animation: textup 1s infinite;
+  animation: textup 1s 0.7s infinite;
 }
 .home__title:hover {
   animation: none;
@@ -144,5 +145,8 @@ a {
   }
   .mobile__sidemenu li {
     margin: 0;
+  }
+  .home {
+    background-size: 100%;
   }
 }
