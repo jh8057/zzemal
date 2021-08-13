@@ -208,6 +208,10 @@ html{
 - transition : background-color 300ms linear;
 - linear 대신 cubic-bezier 이라는 효과가 있는데 이를 사용하면 커스텀한 속도로 변경 가능하다
 
+#### z-index
+
+- z-index 설정하려면 position도 설정해주어야 하는 경우가 있다.(background-image)
+
 #### Update log
 
 - <s>이제 좀 css에 익숙해진 것 같다.(21.1.28)</s>
