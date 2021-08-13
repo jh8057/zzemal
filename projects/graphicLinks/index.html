@@ -28,7 +28,8 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script defer src="src/toggle.js"></script>
-    <!-- <script defer src="src/scroll.js"></script> -->
+    <script defer src="src/moveicon.js"></script>
+    <script defer src="src/darkmode.js"></script>
     <script
       src="https://kit.fontawesome.com/b50a7e6f6b.js"
       crossorigin="anonymous"
@@ -52,6 +53,7 @@
       </nav>
       <div class="toggleBtn"><i class="fas fa-bars"></i></div>
     </header>
+
     <section class="home">
       <h1 class="home__title">그래픽?</h1>
       <h2 class="home__description">너두 할 수 있어!</h2>
@@ -60,7 +62,15 @@
         딱 필요한 기능을 찾는 행운이 당신에게 있기를..!🙏
       </p>
     </section>
-
+    <section class="icons">
+      <img src="img/icon/pac11.png" alt="icon" class="iconImg s1" />
+      <img src="img/icon/pac12.png" alt="icon" class="iconImg s2" />
+      <img src="img/icon/pac13.png" alt="icon" class="iconImg s3" />
+      <img src="img/icon/pac14.png" alt="icon" class="iconImg s4" />
+      <img src="img/icon/pac15.png" alt="icon" class="iconImg s5" />
+      <img src="img/icon/pac16.png" alt="icon" class="iconImg s6" />
+      <img src="img/icon/pac17.png" alt="icon" class="iconImg s7" />
+    </section>
     <nav class="sidemenu">
       <section class="mobile__sidemenu">
         <li>
@@ -71,7 +81,13 @@
         <li><a href="#game">Game</a></li>
         <li><a href="#3d">3D</a></li>
         <li><a href="#git">Git</a></li>
-        <li><button class="bgMode">DarkMode</button></li>
+        <li>
+          <button class="bgMode">
+            <div class="darkMode">
+              <div class="darkMode__circle"></div>
+            </div>
+          </button>
+        </li>
       </section>
     </nav>
     <main class="Links">
@@ -159,8 +175,51 @@
         <a name="members"></a>
       </section>
     </main>
-    <foooter class="contact">
-      <a name="contact"></a>
+    <foooter id="etc">
+      <section class="members">
+        <a name="members"></a>
+        <h1 class="members__title">Members</h1>
+        <article class="member member__galbe"></article>
+        <article class="member member__zzemal"></article>
+      </section>
+      <section class="contact">
+        <a name="contact"></a>
+        <h1 class="contact__title">Contact</h1>
+        <article class="contact contact__galbe">
+          <p class="contact__email">Galbe / Graphic Engineer : --@gmail.com</p>
+          <ul class="contact__links">
+            <li>
+              <a href="https://github.com/jh8057/zzemal"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://zzemal.tistory.com/"
+                ><i class="fab fa-blogger"></i
+              ></a>
+            </li>
+          </ul>
+        </article>
+        <article class="contact contact__zzemal">
+          <p class="contact__email">
+            ZZemal / wannbe..Front-end Engineer : luckysymbol13@gmail.com
+          </p>
+          <ul class="contact__links">
+            <li>
+              <a href="https://github.com/jh8057/zzemal"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://zzemal.tistory.com/"
+                ><i class="fab fa-blogger"></i
+              ></a>
+            </li>
+          </ul>
+        </article>
+
+        <p class="contact__rights">2021 zzemal - All rights reserved</p>
+      </section>
     </foooter>
   </body>
 </html>
