@@ -54,7 +54,7 @@ body {
   display: block;
   background: orange;
   margin: auto;
-  transition: 0.5s all ease;
+  transition: all 0.5s ease;
 }
 
 .navbar__menu li:hover::after {
