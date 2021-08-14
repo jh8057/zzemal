@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "type": "graphic",
+      "name": "naver",
+      "link": "https://www.naver.com"
+    },
+    {
+      "type": "light",
+      "name": "naver",
+      "link": "https://www.naver.com"
+    },
+    {
+      "type": "game",
+      "name": "naver",
+      "link": "https://www.naver.com"
+    },
+    {
+      "type": "threed",
+      "name": "naver",
+      "link": "https://www.naver.com"
+    },
+    {
+      "type": "git",
+      "name": "naver",
+      "link": "https://www.naver.com"
+    }
+  ]
+}
