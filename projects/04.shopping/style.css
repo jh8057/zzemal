@@ -109,8 +109,8 @@ body {
 
 @media screen and (max-width: 768px) {
   .buttons img {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 22px;
   }
   .btn {
     padding-top: 5px;
