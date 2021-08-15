@@ -109,10 +109,11 @@ body {
 
 @media screen and (max-width: 768px) {
   .buttons img {
-    width: calc(var(--buttons-items-width) / 1.5);
-    height: calc(var(--buttons-items-height) / 1.5);
+    width: calc(var(--buttons-items-width) / 2);
+    height: calc(var(--buttons-items-height) / 2);
   }
   .btn {
+    padding-top: 5px;
     width: calc(var(--buttons-items-width) / 1.5);
     height: calc(var(--buttons-items-height) / 1.5);
   }
@@ -131,5 +132,6 @@ body {
   .items {
     width: 80%;
     height: 60%;
+    overflow-y: scroll;
   }
 }
