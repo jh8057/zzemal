@@ -24,6 +24,11 @@
       "type": "git",
       "name": "naver",
       "link": "https://www.naver.com"
+    },
+    {
+      "type": "git",
+      "name": "galbe",
+      "link": "https://www.naver.com"
     }
   ]
 }

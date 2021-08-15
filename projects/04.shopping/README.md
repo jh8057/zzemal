@@ -40,3 +40,30 @@ JSON으로 되어있는 Data에서 정보를 읽어서, list형태로 화면에 
 - JS 는 함수만
 - Data를 JS안에 넣어두지 말자.
 - DRY : Don't Repeat Yourself!
+
+#### PWA
+
+- Progressive Web App
+- icon - [maskable.app](https://maskable.app/)
+
+조건
+
+1. 이미 만든 웹 페이지
+2. https 주소
+3. Application Manifest - json파일
+4. Service Worker 역할을 해줄 javascript
+
+[참조사이트](https://web.dev/install-criteria/)
+
+pwa builder에서 진행 사항
+
+- display - standalone
+- icon upload
+- offline page add
+- NEXT -> download
+- https://github.com/pwa-builder/pwabuilder-web/blob/V2/src/assets/next-steps.md
+- Upload manifest.json to your server
+- Upload pwabuilder-sw.js to your server
+- Upload the images folder to your server
+- Add a manifest link tag to your HTML
+- Add a service worker registration snippet to your HTML
