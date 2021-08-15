@@ -30,6 +30,7 @@ body {
   flex-direction: column;
   background-color: var(--color-black);
   height: 100vh;
+  margin: 0;
 }
 /* header */
 .logo {
@@ -104,4 +105,31 @@ body {
 
 .invisible {
   display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .buttons img {
+    width: calc(var(--buttons-items-width) / 1.5);
+    height: calc(var(--buttons-items-height) / 1.5);
+  }
+  .btn {
+    width: calc(var(--buttons-items-width) / 1.5);
+    height: calc(var(--buttons-items-height) / 1.5);
+  }
+  .yellow,
+  .pink,
+  .blue {
+    padding: 0;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .items > .item > img {
+    width: calc(var(--items-width) / 2);
+    height: calc(var(--items-height) / 2);
+  }
+  .items {
+    width: 80%;
+    height: 60%;
+  }
 }
