@@ -59,6 +59,8 @@ JSON으로 되어있는 Data에서 정보를 읽어서, list형태로 화면에 
 pwa builder에서 진행 사항
 
 - display - standalone
+- Add ios head info
+- add module script on HTML
 - icon upload
 - offline page add
 - NEXT -> download

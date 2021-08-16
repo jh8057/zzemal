@@ -1,0 +1,33 @@
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "BARADEON",
+  "short_name": "BARADEON",
+  "scope": "/zzemal/projects/01.gallery/",
+  "display": "standalone",
+  "start_url": "/zzemal/projects/01.gallery/",
+  "background_color": "transparent",
+  "theme_color": "transparent",
+  "orientation": "any",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "images/152x152.png",
+      "type": "image/png",
+      "sizes": "152x152",
+      "purpose": "any"
+    },
+    {
+      "src": "images/256x256.png",
+      "type": "image/png",
+      "sizes": "256x256",
+      "purpose": "any"
+    },
+    {
+      "src": "images/512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
+  ]
+}
