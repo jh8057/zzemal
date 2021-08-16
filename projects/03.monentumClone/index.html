@@ -1,50 +1,72 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name= viewport content= "width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Monentum Clone</title>
-        <script defer src="src/toggletitle.js"></script>
-        <script defer src="src/clock.js"></script>
-        <script defer src="src/greeting.js"></script>
-        <script defer src="src/timer.js"></script>
-        <script defer src="src/stopwatch.js"></script>
-        <script defer src="src/todo.js"></script>
-        <script defer src="src/bg.js"></script>
-        <script defer src="src/weather.js"></script>
-        <link defer rel="stylesheet" href="style.css"></script>
-    </head>
-    <body>
-        <h1 id="title" class="btn">Always be Happy😊 </h1>
-        <section class="CLOCK"></section>
-            <div class="js-clock clock">
-                <h2></h2><h1>00:00</h1>
-            </div>
-        </section>
-        <section class="GREETING">
-            <form class="js-form greetingform">
-                <input type="text" placeholder="what is your name" />
-            </form>
-            <h3 class="js-greeting greeting"></h3>
-        </section>
-        <div class = "clocks">
-            <div class="js-timer timer">
-                <h1>10:00</h1><button>timer</button>
-            </div>
-            <div class="js-stopwatch stopwatch">
-                <h1>00:00</h1><button>start</button>
-            </div>
-        </div>
-        <div class="todo">
-        <h1>ToDo</h1>
-            <form class="js-toDoForm">
-                <input type="text" placeholder="Write a todo" />
-            </form>
-            <ul class="js-toDoList"></ul>
-        </div>
-        <footer>
-        <span class="js-weather weather"></span>
-        </footer>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Monentum Clone</title>
+    <script defer src="src/toggletitle.js"></script>
+    <script defer src="src/clock.js"></script>
+    <script defer src="src/greeting.js"></script>
+    <script defer src="src/timer.js"></script>
+    <script defer src="src/stopwatch.js"></script>
+    <script defer src="src/todo.js"></script>
+    <script defer src="src/bg.js"></script>
+    <script defer src="src/weather.js"></script>
+    <link defer rel="stylesheet" href="style.css" />
+    <!-- iOS -->
+    <!-- 주소창 등의 웹 브라우저 UI를 표시하지 않기 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- 상태 바의 스타일을 지정 -->
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <!-- 홈 화면에서 표시되는 앱 이름을 지정 -->
+    <meta name="apple-mobile-web-app-title" content="Todo" />
+    <!-- 홈 화면에서 표시되는 앱 아이콘을 지정 -->
+    <link rel="apple-touch-icon" href="images/152x152.png" />
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json" />
+    <script type="module">
+      import "https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate";
+      const el = document.createElement("pwa-update");
+      document.body.appendChild(el);
+    </script>
+  </head>
+  <body>
+    <h1 id="title" class="btn">Always be Happy😊</h1>
+    <section class="CLOCK">
+      <div class="js-clock clock">
+        <h2></h2>
+        <h1>00:00</h1>
+      </div>
+    </section>
+    <section class="GREETING">
+      <form class="js-form greetingform">
+        <input type="text" placeholder="what is your name" />
+      </form>
+      <h3 class="js-greeting greeting"></h3>
+    </section>
+    <div class="clocks">
+      <div class="js-timer timer">
+        <h1>10:00</h1>
+        <button>timer</button>
+      </div>
+      <div class="js-stopwatch stopwatch">
+        <h1>00:00</h1>
+        <button>start</button>
+      </div>
+    </div>
+    <div class="todo">
+      <h1>ToDo</h1>
+      <form class="js-toDoForm">
+        <input type="text" placeholder="Write a todo" />
+      </form>
+      <ul class="js-toDoList"></ul>
+    </div>
+    <footer>
+      <span class="js-weather weather"></span>
+    </footer>
+  </body>
 </html>
