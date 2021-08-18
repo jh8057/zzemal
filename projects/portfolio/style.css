@@ -18,7 +18,7 @@
   --icon-size: 100px;
   --project-size: 200px;
   --gap-size: 10px;
-  --radius-size: 3px;
+  --radius-size: 4px;
   --gauge--heigth: 10px;
   /* Font Size */
   --font-large: 48px;
@@ -37,6 +37,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   text-align: center;
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -85,6 +86,8 @@ p {
   display: flex;
   align-items: center;
   gap: var(--gap-size);
+  padding: var(--margin-half-size);
+  font-size: calc(var(--font-regular) * 1.2);
 }
 .navbar__logo img {
   width: var(--logo-size);
@@ -96,9 +99,20 @@ p {
   display: flex;
   flex-direction: row;
   list-style: none;
-  gap: calc(var(--gap-size) * 3);
+  /* gap: calc(var(--gap-size) * 3); */
 }
-
+.menu {
+  padding: 8px 12px;
+  margin: 0 4px;
+  cursor: pointer;
+  border-radius: var(--radius-size);
+}
+.menu:hover {
+  background-color: var(--color-orange);
+}
+.menu.active {
+  /* border: 0.5px solid rgb(0, 0, 0); */
+}
 /* thumbnail */
 .thumbnail {
   display: flex;
@@ -109,6 +123,7 @@ p {
 }
 
 .orangebg {
+  padding: 2px;
   background-color: var(--color-orange);
   border-radius: 10px;
 }
@@ -128,7 +143,7 @@ p {
 .thumbnail__contact {
   margin: var(--margin-size);
   background-color: var(--color-orange);
-  border: 1px solid black;
+  border: 1px dashed black;
   padding: var(--padding-size);
   border-radius: var(--radius-size);
   outline: none;
