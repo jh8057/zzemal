@@ -1,34 +1,74 @@
 {
   "items": [
     {
-      "type": "graphic",
-      "name": "naver",
-      "link": "https://www.naver.com"
+      "type": "basic",
+      "name": "MDN",
+      "link": "https://developer.mozilla.org/ko/docs/Learn/HTML/Introduction_to_HTML/Getting_started"
     },
     {
-      "type": "light",
-      "name": "naver",
-      "link": "https://www.naver.com"
+      "type": "font",
+      "name": "Google Font",
+      "link": "https://fonts.google.com/specimen/Hachi+Maru+Pop?selection.family=Hachi+Maru+Pop&sidebar.open=true#standard-styles"
     },
     {
-      "type": "game",
-      "name": "naver",
-      "link": "https://www.naver.com"
+      "type": "color",
+      "name": "colorTool",
+      "link": "https://material.io/resources/color/#!/?view.left=0&view.right=0"
     },
     {
-      "type": "threed",
-      "name": "naver",
-      "link": "https://www.naver.com"
+      "type": "color",
+      "name": "Flat UI",
+      "link": "https://flatuicolors.com/"
     },
     {
-      "type": "git",
-      "name": "naver",
-      "link": "https://www.naver.com"
+      "type": "etc",
+      "name": "html 데이터저장",
+      "link": "https://www.zerocho.com/category/HTML&DOM/post/5a76d1eaabd090001b981ba6"
     },
     {
-      "type": "git",
-      "name": "galbe",
-      "link": "https://www.naver.com"
+      "type": "icon",
+      "name": "fontawesome",
+      "link": "https://fontawesome.com/icons/bars?style=solid"
+    },
+    {
+      "type": "icon",
+      "name": "canva",
+      "link": "https://www.canva.com/"
+    },
+    {
+      "type": "etc",
+      "name": "publicAPIs",
+      "link": "https://github.com/public-apis/public-apis"
+    },
+    {
+      "type": "etc",
+      "name": "드림코딩 아카데미",
+      "link": "https://academy.dream-coding.com/"
+    },
+    {
+      "type": "etc",
+      "name": "javascript 기초 - 드림 코딩",
+      "link": "https://www.youtube.com/playlist?list=PLv2d7VI9OotTVOL4QmPfvJWPJvkmv6h-2"
+    },
+    {
+      "type": "etc",
+      "name": "frontend 기초 - 드림 코딩",
+      "link": "https://www.youtube.com/watch?v=NeEaTeYcFhE&list=PLv2d7VI9OotQ1F92Jp9Ce7ovHEsuRQB3Y&index=1"
+    },
+    {
+      "type": "etc",
+      "name": "Dev Ed",
+      "link": "https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q"
+    },
+    {
+      "type": "etc",
+      "name": "VanillaJS - 노마드 코더",
+      "link": "https://www.youtube.com/watch?v=VBmQUMUGznU&list=PLLUCyU7SBaR7tOMe-ySJ5Uu1UlEBznxTr&index=16"
+    },
+    {
+      "type": "etc",
+      "name": "웨이브만들기 Youtube",
+      "link": "https://www.youtube.com/watch?v=LLfhY4eVwDY"
     }
   ]
 }

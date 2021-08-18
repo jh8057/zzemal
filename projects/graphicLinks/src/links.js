@@ -1,8 +1,8 @@
-const graphic = document.querySelector(".graphic__list");
-const light = document.querySelector(".light__list");
-const game = document.querySelector(".game__list");
-const threed = document.querySelector(".threed__list");
-const git = document.querySelector(".git__list");
+const basic = document.querySelector(".basic__list");
+const font = document.querySelector(".font__list");
+const color = document.querySelector(".color__list");
+const icon = document.querySelector(".icon__list");
+const etc = document.querySelector(".etc__list");
 
 function loadItems() {
   return fetch("data/data.json")
@@ -11,32 +11,32 @@ function loadItems() {
 }
 
 function createLinksString(url, name) {
-  return `<a href = "${url}" alt="link" target="_blank">${name} - ${url}</a>`;
+  return `<a href = "${url}" alt="link" target="_blank">${name}</a>`;
 }
 
 function displayItems(items) {
   items.forEach((item) => {
     const list = document.createElement("li");
     switch (item.type) {
-      case "graphic":
+      case "basic":
         list.innerHTML = createLinksString(item.link, item.name);
-        graphic.appendChild(list);
+        basic.appendChild(list);
         break;
-      case "light":
+      case "font":
         list.innerHTML = createLinksString(item.link, item.name);
-        light.appendChild(list);
+        font.appendChild(list);
         break;
-      case "game":
+      case "color":
         list.innerHTML = createLinksString(item.link, item.name);
-        game.appendChild(list);
+        color.appendChild(list);
         break;
-      case "threed":
+      case "icon":
         list.innerHTML = createLinksString(item.link, item.name);
-        threed.appendChild(list);
+        icon.appendChild(list);
         break;
-      case "git":
+      case "etc":
         list.innerHTML = createLinksString(item.link, item.name);
-        git.appendChild(list);
+        etc.appendChild(list);
         break;
     }
   });
