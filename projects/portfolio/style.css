@@ -1,6 +1,7 @@
 :root {
   /* color */
-  --color-black: #3f454d;
+  --color-black: black;
+  --color-whiteblack: #3f454d;
   --color-white: #ffffff;
   --color-blue: #3b88c3;
   --color-yellow: #fdd46b;
@@ -9,7 +10,8 @@
   --color-orange: #fdc5a0;
   --color-light-grey: #dfdfdf;
   /* size */
-  --margin-size: 20px;
+  --margin-half-size: 16px;
+  --margin-size: 16px;
   --padding-size: 5px;
   --logo-size: 40px;
   --thumail-size: 200px;
@@ -18,7 +20,17 @@
   --gap-size: 10px;
   --radius-size: 3px;
   --gauge--heigth: 10px;
+  /* Font Size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
 }
+/* Universal tags */
 * {
   box-sizing: border-box;
 }
@@ -30,8 +42,29 @@ a {
   text-decoration: none;
   color: black;
 }
+h1 {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: var(--margin-size) 0;
+}
 h2 {
-  font-size: larger;
+  font-size: var(--font-regular);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: var(--margin-half-sizesize) 0;
+}
+h3 {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular);
+  color: var(--color-black);
+  margin: var(--margin-half-sizesize) 0;
+}
+p {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: calc(var(--margin-half-sizesize) / 2) 0;
 }
 /* navbar */
 
@@ -271,4 +304,10 @@ h2 {
 }
 .Contact__links a {
   color: black;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: var(--font-medium);
+  }
 }

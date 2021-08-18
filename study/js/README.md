@@ -129,3 +129,8 @@ function myFunc() {
 - named function : 이름 있는 함수
 - Arrow function : => 화살표를 통해 만든 함수
 - IIFE(Immediately Invoked Function Expression) : (function())(), 함수를 가로로 묶고 함수실행하듯 해주면 바로 함수가 따로 선언 없이 바로 실행이 된다.
+
+#### data-\*
+
+- Node.dataset 으로 불러올 수 있다.
+- HTML에 DOM 요소가 추가 되는 것이기에, 보안이 중요한 데이터는 안쓰는게 좋다.
