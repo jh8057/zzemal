@@ -10,3 +10,14 @@
 - npm init
 - package.json 생성됨
 - npm run `scripts 내 요소` script가 실행됨
+
+#### git
+
+- 갑작스럽게 에러가 났다. 방법을 찾다가 도저히 모르겠어서 git 로컬 파일을 강제로 서버의 파일로 덮어 쓰기 하였다.
+
+```
+git fetch --all
+git reset --hard origin/master
+```
+
+[detached HEAD](https://aroma-dev.tistory.com/4)
