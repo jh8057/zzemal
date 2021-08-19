@@ -18,6 +18,7 @@
   --thumail-size: 200px;
   --icon-size: 100px;
   --project-size: 200px;
+  --section-size: 100px;
   --gap-size: 10px;
   --radius-size: 4px;
   --gauge--heigth: 10px;
@@ -70,7 +71,7 @@ p {
 }
 
 section {
-  margin: var(--margin-size) 0;
+  margin: var(--section-size) 0;
 }
 /* navbar */
 
@@ -164,8 +165,8 @@ section {
   align-items: center;
 }
 
-.about__div {
-  width: 80%;
+.about__description {
+  width: 55%;
   margin-bottom: var(--margin-size);
 }
 .major__icon {
