@@ -6,7 +6,7 @@ Link가 정리가 안된다는 형의 말을 듣고 만들기 시작한 페이�
 
 ## 결과
 
-[브라우저에서 보기!](https://jh8057.github.io/zzemal/projects/graphicLinks/)
+[브라우저에서 보기!](https://jh8057.github.io/zzemal/projects/02.graphicLinks/)
 
 <img src="result/pc.jpg"  width="80%" height="100%" alt="main"> 메인 화면
 <img src="result/pc_dark.jpg"  width="80%" height="100%" alt="main"> 다크모드

@@ -7,7 +7,7 @@ YouTube 페이지 형태의 UI를 구현해 보았습니다.
 
 ## 결과
 
-[브라우저에서 보기!](https://jh8057.github.io/zzemal/projects/02.youtube/)
+[브라우저에서 보기!](https://jh8057.github.io/zzemal/projects/03.youtube/)
 
 <img src="./result/mobile.jpg" width="300px" height="100%" title="1" alt="1"></img> Mobile 페이지
 
