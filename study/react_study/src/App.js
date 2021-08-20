@@ -22,8 +22,8 @@ function App() {
         {mypage.name}
       </a>
       <Hello />
-      <Welcome />
-      <Welcome />
+      <Welcome age={30} />
+      <Welcome age={10} />
       <div className={styles.box}>App</div>
     </div>
   );
