@@ -22,10 +22,9 @@ function App() {
         {mypage.name}
       </a>
       <Hello />
-      <Hello />
-      <Hello />
-      <div className={styles.box}>App</div>
       <Welcome />
+      <Welcome />
+      <div className={styles.box}>App</div>
     </div>
   );
 }
