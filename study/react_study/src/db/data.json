@@ -40,6 +40,13 @@
       "isDone": false
     },
     {
+      "id": 4,
+      "day": 4,
+      "eng": "cup",
+      "kor": "잔",
+      "isDone": false
+    },
+    {
       "id": 6,
       "day": 3,
       "eng": "pencil",
