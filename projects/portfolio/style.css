@@ -2,6 +2,7 @@
   /* color */
   --color-black: black;
   --color-whiteblack: #3f454d;
+  --color-whitegray: rgb(214, 214, 214);
   --color-white: #ffffff;
   --color-light-white: #dbdbdb;
   --color-blue: #3b88c3;
@@ -55,7 +56,7 @@ h1 {
   margin: var(--margin-size) 0;
 }
 h2 {
-  font-size: var(--font-regular);
+  font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
   color: var(--color-black);
   margin: var(--margin-half-sizesize) 0;
@@ -238,7 +239,8 @@ section {
   background-color: var(--color-whiteyellow);
 }
 .skills__description {
-  margin: var(--margin-size);
+  margin-top: var(--margin-size);
+  margin-bottom: var(--margin-double-size);
 }
 
 .skills__box {
@@ -257,7 +259,7 @@ section {
   background-color: rgb(73, 73, 73);
 }
 .skillgraph__title {
-  margin-bottom: 0;
+  margin: var(--margin-size);
 }
 .skillgraph__process {
   margin: calc(var(--margin-size) * 2);
@@ -309,7 +311,7 @@ section {
   outline: none;
   cursor: pointer;
   font-size: var(--font-regular);
-  padding: 4px 28px;
+  padding: 4px 20px;
   border: 1px solid var(--color-whiteblack);
   border-radius: var(--radius-size);
   margin: var(--padding-size);
@@ -337,6 +339,9 @@ section {
   left: 4px;
   opacity: 0;
   transition: all 300ms ease;
+}
+.myWork__buttons {
+  margin: var(--margin-size);
 }
 .myWork__projects {
   display: flex;
@@ -391,22 +396,38 @@ section {
   display: block;
 }
 /* testmonial */
+.testmonials {
+  background: linear-gradient(to top, var(--color-whiteyellow), white 30%);
+}
 .testmonials__talk {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 32px;
 }
 .testmonials__avatar {
-  width: calc(var(--icon-size) * 2);
+  width: calc(var(--icon-size) * 1.5);
+  border-radius: 50%;
+}
+.talk__box {
+  padding: var(--margin-size);
+  background-color: whi;
+}
+.talk__box:nth-child(odd) {
+  margin-right: var(--margin-size);
+}
+.talk__box:nth-child(even) {
+  margin-left: var(--margin-size);
 }
 
 /* contact */
 #Contact {
   padding: var(--padding-size);
-  background-color: var(--color-orange);
+  background-color: var(--color-whiteyellow);
 }
-
+.Contact__title {
+  margin: var(--margin-size) 0;
+}
 .Contact__links {
   padding: 0;
   display: flex;
@@ -414,6 +435,11 @@ section {
   gap: calc(var(--gap-size) * 4);
   font-size: 25px;
   list-style: none;
+}
+.Contact__links i:hover {
+  color: var(--color-blue);
+  transform: scale(1.2);
+  transition: all 200ms ease;
 }
 .Contact__links a {
   color: black;
