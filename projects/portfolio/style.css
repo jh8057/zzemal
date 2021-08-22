@@ -175,7 +175,6 @@ section {
 }
 
 .about__description {
-  width: 55%;
   margin-bottom: var(--margin-size);
 }
 .major__icon {
@@ -217,14 +216,12 @@ section {
   padding: calc(var(--padding-size) * 2);
   display: flex;
   flex-direction: row;
-  width: 80%;
   gap: calc(var(--gap-size) * 2);
 }
 .about__article--pv {
   margin: var(--margin-size);
   padding-left: var(--margin-size);
   display: flex;
-  width: 80%;
   flex-direction: row;
   /* justify-content: flex-start; */
   align-items: center;
@@ -234,6 +231,10 @@ section {
   width: calc(var(--logo-size) * 2);
   height: var(--logo-size);
 }
+.about__container {
+  width: 60%;
+  margin: auto;
+}
 .skills {
   padding: calc(var(--margin-size) * 2) 10%;
   background-color: var(--color-whiteyellow);
@@ -241,6 +242,10 @@ section {
 .skills__description {
   margin-top: var(--margin-size);
   margin-bottom: var(--margin-double-size);
+}
+.skills__container {
+  width: 60%;
+  margin: auto;
 }
 
 .skills__box {
@@ -344,6 +349,8 @@ section {
   margin: var(--margin-size);
 }
 .myWork__projects {
+  width: 76%;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -352,7 +359,7 @@ section {
 .project {
   position: relative;
   width: var(--project-size);
-  height: calc(var(--project-size) * 1.4);
+  height: calc(var(--project-size) * 1.6);
   margin: 2px;
   background-color: var(--color-light-white);
 }
@@ -444,6 +451,16 @@ section {
 .Contact__links a {
   color: black;
 }
+.toggle_btn {
+  position: absolute;
+  top: 15px;
+  right: 32px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  outline: none;
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
   h1 {
@@ -463,12 +480,41 @@ section {
     width: 100%;
     flex-direction: column;
   }
+  .skills__container,
+  .about__container {
+    width: 100%;
+  }
+  .thumbnail__description,
+  .about__description {
+    padding: 0 40px;
+  }
   .about__major {
     flex-direction: column;
     gap: 50px;
   }
+  .about__article--pv {
+    padding: 0;
+    margin: 0 20px;
+  }
   .major__description {
     margin: auto;
     width: 80%;
+  }
+  .skills__box {
+    flex-direction: column;
+  }
+  .talk__box {
+    padding: 0;
+  }
+  .testmonials__avatar {
+    width: 90px;
+    height: 90px;
+  }
+  .myWork__projects {
+    width: 100%;
+    flex-grow: 1;
+  }
+  .toggle_btn {
+    display: block;
   }
 }
