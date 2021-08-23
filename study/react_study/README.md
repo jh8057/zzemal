@@ -24,6 +24,42 @@ npm install -g create-react-app
 - state : component 에 들어가있는 가려져있는 블럭들 , 실제 구동에 필요한 부분들
 - key : state 지정해서 여러 값을 불러올때 앞에 key값을 넣어줘야된다.(react가 필요로 함)
 
+# props
+
+- component tag에 class="sth" 처럼 propsname = {sth} 해주면 된다.
+- 예시) `<Word word={word} />`
+
+# state
+
+- useState();
+- 각 component별로 관리된다.
+
+# rest API
+
+- Create : POST
+- Read : GET
+- Update : PUT
+- Delete : DELETE
+
+# useEffect
+
+- useEffect(함수, []/의존성배열)
+- 최초에 한번만 하려면 빈 배열 넣으면 됨
+
+# router-dom
+
+- `import { BrowserRouter, Route, Switch } from "react-router-dom";`
+
+# import react
+
+- useState
+- useEffect
+
+# json-server
+
+- `json-server ./src/db/data.json --port 3001`
+- 간단하게 테스트용 서버 API를 만드는데 유용하다
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

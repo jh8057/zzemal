@@ -232,11 +232,11 @@ section {
   height: var(--logo-size);
 }
 .about__container {
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
 .skills {
-  padding: calc(var(--margin-size) * 2) 10%;
+  padding-bottom: 80px;
   background-color: var(--color-whiteyellow);
 }
 .skills__description {
@@ -244,7 +244,7 @@ section {
   margin-bottom: var(--margin-double-size);
 }
 .skills__container {
-  width: 60%;
+  width: 70%;
   margin: auto;
 }
 
@@ -480,7 +480,9 @@ section {
     width: 100%;
     flex-direction: column;
   }
-  .skills__container,
+  .skills__container {
+    width: 85%;
+  }
   .about__container {
     width: 100%;
   }
