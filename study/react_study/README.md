@@ -52,8 +52,9 @@ npm install -g create-react-app
 
 # import react
 
-- useState
-- useEffect
+- useState : 변수 관리
+- useEffect : 렌더링,업데이트 후 동작
+- useRef : Dom 에 접근해주게 해줌
 
 # json-server
 
