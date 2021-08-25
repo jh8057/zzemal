@@ -38,6 +38,7 @@
 /* Universal tags */
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Open Sans", sans-serif;
@@ -48,12 +49,17 @@ body {
 a {
   text-decoration: none;
   color: black;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
 }
 h1 {
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
   color: var(--color-black);
   margin: var(--margin-size) 0;
+  padding-top: 52px;
 }
 h2 {
   font-size: var(--font-medium);
@@ -239,6 +245,7 @@ section {
 .about__container {
   width: 70%;
   margin: auto;
+  padding: 0;
 }
 .skills {
   padding-bottom: 80px;
@@ -251,6 +258,7 @@ section {
 .skills__container {
   width: 70%;
   margin: auto;
+  padding: 0;
 }
 
 .skills__box {

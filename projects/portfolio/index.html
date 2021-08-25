@@ -36,6 +36,7 @@
     <script src="./src/header.js" defer></script>
   </head>
   <body>
+    <a name="Home"></a>
     <header>
       <!-- navbar -->
       <nav class="navbar">
@@ -44,12 +45,12 @@
           <a href="index.html">ZZEMAL</a>
         </div>
         <ul class="navbar__menu">
-          <li class="menu active">Home</li>
-          <li class="menu">About</li>
-          <li class="menu">Skills</li>
-          <li class="menu">My work</li>
-          <li class="menu">Testimonial</li>
-          <li class="menu">Contact</li>
+          <a href="#Home"><li class="menu active">Home</li></a>
+          <a href="#About"><li class="menu">About</li></a>
+          <a href="#Skills"><li class="menu">Skills</li></a>
+          <a href="#MyWork"><li class="menu">My work</li></a>
+          <a href="#Testimonial"><li class="menu">Testimonial</li></a>
+          <a href="#Contact"><li class="menu">Contact</li></a>
         </ul>
       </nav>
       <button class="toggle_btn"><i class="fas fa-bars"></i></button>
@@ -64,10 +65,13 @@
       <h2 class="thumbnail__description">
         디자인을 좋아하면서 취미도 다양한 개발 지망생입니다.
       </h2>
-      <button class="thumbnail__contact">CONTACT ME</button>
+      <a href="#Contact"
+        ><button class="thumbnail__contact">CONTACT ME</button></a
+      >
     </section>
     <!-- about -->
     <section class="about">
+      <a name="About"></a>
       <section class="about__container">
         <h1>About Me</h1>
         <div class="about__description">
@@ -124,6 +128,7 @@
     </section>
     <!-- skills -->
     <section class="skills">
+      <a name="Skills"></a>
       <section class="skills__container">
         <h1>Skills</h1>
         <h2>Skills & Attriubutes</h2>
@@ -206,6 +211,7 @@
     </section>
     <!-- mywork -->
     <section class="myWork">
+      <a name="MyWork"></a>
       <h1>My Work</h1>
       <h3>Projects</h3>
       <div class="myWork__buttons">
@@ -319,6 +325,7 @@
     </section>
     <!-- testmonial -->
     <section class="testmonials">
+      <a name="Testimonial"></a>
       <h1>Testimonial</h1>
       <h3>See What they say about me</h3>
       <div class="testmonials__talk">
@@ -343,6 +350,7 @@
     </section>
     <!-- contact -->
     <footer id="Contact">
+      <a name="#Contact"></a>
       <h1 class="Contact__title">Let's talk</h1>
       <h2 class="Contact__email">luckysymbol13@gmail.com</h2>
       <ul class="Contact__links">
