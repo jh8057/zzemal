@@ -370,6 +370,24 @@ section {
   justify-content: center;
   gap: var(--gap-size);
 }
+.project.invisible {
+  display: none;
+}
+.myWork__projects.projectOpacity {
+  animation-duration: 0.3s;
+  animation-name: fadeout;
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(0.96) translateY(40px);
+    opacity: 0;
+  }
+}
 .project {
   position: relative;
   width: var(--project-size);
@@ -476,6 +494,7 @@ section {
   display: none;
 }
 .arrow_btn {
+  z-index: 10;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -492,7 +511,6 @@ section {
 }
 
 .ActiveFixed {
-  z-index: 10;
   background-color: var(--color-whiteyellow);
   padding: 0;
   margin: 0;

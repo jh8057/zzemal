@@ -36,6 +36,7 @@
     <script defer src="./src/header.js"></script>
     <script defer src="./src/home.js"></script>
     <script defer src="./src/arrow.js"></script>
+    <script defer src="./src/filter.js"></script>
   </head>
   <body>
     <a name="Home"></a>
@@ -220,16 +221,16 @@
       <h1>My Work</h1>
       <h3>Projects</h3>
       <div class="myWork__buttons">
-        <button class="buttons__btn active">
+        <button class="buttons__btn active" data-filter="*">
           ALL <span class="buttons__count">6</span>
         </button>
-        <button class="buttons__btn">
-          VanillaJS <span class="buttons__count">5</span>
+        <button class="buttons__btn" data-filter="vanillaJs">
+          VanillaJS <span class="buttons__count">3</span>
         </button>
-        <button class="buttons__btn">
+        <button class="buttons__btn" data-filter="responsive">
           Responsive <span class="buttons__count">3</span>
         </button>
-        <button class="buttons__btn">
+        <button class="buttons__btn" data-filter="basic">
           HTML&CSS <span class="buttons__count">2</span>
         </button>
       </div>
@@ -238,6 +239,7 @@
           href="https://jh8057.github.io/zzemal/projects/01.gallery/"
           class="project"
           target="blank"
+          data-type="vanillaJs responsive"
         >
           <img
             src="img/projects/gallery.jpg"
@@ -254,6 +256,7 @@
           href="https://jh8057.github.io/zzemal/projects/02.graphic/"
           class="project"
           target="blank"
+          data-type="vanillaJs responsive"
         >
           <img
             src="img/projects/graphic.jpg"
@@ -270,6 +273,7 @@
           href="https://jh8057.github.io/zzemal/projects/03.youtube/"
           class="project"
           target="blank"
+          data-type="responsive"
         >
           <img
             src="img/projects/youtube.jpg"
@@ -286,10 +290,11 @@
           href="https://jh8057.github.io/zzemal/projects/04.shopping/"
           class="project"
           target="blank"
+          data-type="vanillaJs"
         >
           <img
             src="img/projects/shopping.jpg"
-            alt="gallery"
+            alt="shopping"
             class="project__img"
           />
           <div class="project__description">
@@ -302,10 +307,11 @@
           href="https://jh8057.github.io/zzemal/projects/05.monentumClone/"
           class="project"
           target="blank"
+          data-type="basic"
         >
           <img
             src="img/projects/monentum.jpg"
-            alt="gallery"
+            alt="monentum"
             class="project__img"
           />
           <div class="project__description">
@@ -318,8 +324,9 @@
           href="https://jh8057.github.io/zzemal/projects/06.eventPizza/"
           class="project"
           target="blank"
+          data-type="basic"
         >
-          <img src="img/projects/menu.jpg" alt="gallery" class="project__img" />
+          <img src="img/projects/menu.jpg" alt="menu" class="project__img" />
           <div class="project__description">
             <h3>Select Site</h3>
             <p>Select pizza store Site</p>
