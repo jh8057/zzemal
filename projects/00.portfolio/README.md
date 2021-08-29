@@ -7,7 +7,7 @@
 
 # 결과
 
-[브라우저에서 보기!](https://jh8057.github.io/zzemal/projects/portfolio/)
+[브라우저에서 보기!](https://jh8057.github.io/zzemal/projects/00.portfolio/)
 
 <img src="result/pc.jpg"  width="43%" height="100%" alt="main">
 <img src="result/pc2.jpg"  width="43%" height="100%" alt="main"> 메인 화면
