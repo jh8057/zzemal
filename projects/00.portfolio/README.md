@@ -9,8 +9,8 @@
 
 [브라우저에서 보기!](https://jh8057.github.io/zzemal/projects/00.portfolio/)
 
-<img src="result/pc.jpg"  width="43%" height="100%" alt="main">
-<img src="result/pc2.jpg"  width="43%" height="100%" alt="main"> 메인 화면
+<img src="result/pc.jpg"  width="40%" height="100%" alt="main">
+<img src="result/pc2.jpg"  width="40%" height="100%" alt="main"> 메인 화면
 <img src="result/mobile.jpg"  width="30%" height="100%" alt="main"> 모바일 화면
 
 # 내용
