@@ -22,7 +22,7 @@
   --thumail-size: 250px;
   --icon-size: 100px;
   --project-size: 280px;
-  --section-size: 40px;
+  --section-size: 48px;
   --gap-size: 10px;
   --radius-size: 4px;
   --gauge--heigth: 5px;
@@ -54,13 +54,13 @@ a {
 }
 button {
   cursor: pointer;
+  background-color: transparent;
 }
 h1 {
   font-size: var(--font-large);
   font-weight: var(--weight-bold);
   color: var(--color-black);
   margin: var(--margin-size) 0;
-  padding-top: 52px;
 }
 h2 {
   font-size: var(--font-medium);
@@ -159,6 +159,7 @@ section {
 }
 .thumbnail__title {
   width: 80%;
+  font-size: var(--font-large);
 }
 
 .thumbnail__description {
@@ -176,6 +177,10 @@ section {
   outline: none;
   font-weight: var(--weight-semi-bold);
 }
+.thumbnail__contact:hover {
+  background-color: var(--color-whiteyellow);
+  transition: all 300ms ease-in-out;
+}
 
 /* about */
 .about {
@@ -188,6 +193,7 @@ section {
 
 .about__description {
   margin-bottom: var(--margin-size);
+  font-size: var(--font-regular);
 }
 .major__icon {
   display: flex;
@@ -213,7 +219,8 @@ section {
 }
 
 .major__title {
-  font-size: 28px;
+  font-size: var(--font-medium);
+  padding: 0;
 }
 .major__description {
   padding: var(--padding-size);
@@ -330,10 +337,11 @@ section {
   outline: none;
   cursor: pointer;
   font-size: var(--font-regular);
-  padding: 4px 20px;
+  padding: 4px 30px;
   border: 1px solid var(--color-whiteblack);
   border-radius: var(--radius-size);
   margin: var(--padding-size);
+  position: relative;
 }
 .buttons__btn.active,
 .buttons__btn:hover {
@@ -343,19 +351,19 @@ section {
 .buttons__btn.active .buttons__count,
 .buttons__btn:hover .buttons__count {
   opacity: 1;
-  top: 0;
+  top: 3px;
 }
 .buttons__count {
   background-color: var(--color-yellow);
   border-radius: 50%;
   color: white;
-  width: 24px;
-  height: 24px;
-  line-height: 24px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
   display: inline-block;
-  position: relative;
+  position: absolute;
   top: -20px;
-  left: 4px;
+  right: 4px;
   opacity: 0;
   transition: all 300ms ease;
 }
@@ -453,7 +461,6 @@ section {
 }
 .talk__box {
   padding: var(--margin-size);
-  background-color: whi;
 }
 .talk__box:nth-child(odd) {
   margin-right: var(--margin-size);
@@ -500,6 +507,9 @@ section {
 .arrow_btn {
   z-index: 10;
   position: fixed;
+  width: calc(var(--font-large) * 1.2);
+  height: calc(var(--font-large) * 1.2);
+  padding: 0;
   bottom: 20px;
   right: 20px;
   border: none;
@@ -525,17 +535,19 @@ section {
   pointer-events: auto;
 }
 @media screen and (max-width: 768px) {
-  h1 {
-    font-size: var(--font-medium);
+  :root {
+    --font-large: 25px;
+    --font-medium: 16px;
+    --font-regular: 14px;
+    --font-small: 12px;
+    --thumail-size: 200px;
   }
   .navbar {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
   }
-  .thumbnail__title {
-    font-size: var(--font-medium);
-  }
+
   .navbar__menu {
     display: none;
     padding: 40px;
@@ -562,29 +574,48 @@ section {
   }
   .about__major {
     flex-direction: column;
+    padding: 16px;
     gap: 50px;
   }
   .about__article--pv {
     padding: 0;
-    margin: 0 20px;
+    margin: 0 8px;
+    font-size: var(--font-small);
   }
   .major__description {
     margin: auto;
     width: 80%;
   }
+  .about__article--pv img {
+    width: calc(var(--logo-size));
+    height: clac(var(--logo-size) / 2);
+  }
   .skills__box {
     flex-direction: column;
   }
-  .talk__box {
-    padding: 0;
-  }
-  .testmonials__avatar {
-    width: 90px;
-    height: 90px;
+  .buttons__btn.active .buttons__count,
+  .buttons__btn:hover .buttons__count {
+    top: 0px;
   }
   .myWork__projects {
     width: 100%;
     flex-grow: 1;
+  }
+  .talk__box {
+    padding: 0;
+  }
+  .testmonials__talk {
+    display: flex;
+    flex-direction: column;
+  }
+  .talk__box:nth-child(odd) {
+    margin-right: 0;
+  }
+  .talk__box:nth-child(even) {
+    margin-left: 0;
+  }
+  .talk__box {
+    order: 1;
   }
   .toggle_btn {
     position: fixed;
