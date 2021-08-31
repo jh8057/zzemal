@@ -109,6 +109,7 @@ section {
   align-items: center;
   gap: var(--gap-size);
   padding: var(--margin-half-size);
+  margin-left: 8px;
   font-size: calc(var(--font-regular) * 1.2);
 }
 .navbar__logo img {
