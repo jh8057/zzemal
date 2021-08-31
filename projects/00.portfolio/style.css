@@ -497,7 +497,7 @@ section {
   z-index: 11;
   position: absolute;
   top: 15px;
-  right: 32px;
+  right: 15px;
   font-size: 24px;
   background: none;
   border: none;
@@ -593,10 +593,6 @@ section {
   }
   .skills__box {
     flex-direction: column;
-  }
-  .buttons__btn.active .buttons__count,
-  .buttons__btn:hover .buttons__count {
-    top: 0px;
   }
   .myWork__projects {
     width: 100%;
