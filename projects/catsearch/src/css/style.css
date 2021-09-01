@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  font-family: "Nanum Gothic", sans-serif;
+}
+:root {
+  --color-mode: "light";
+  --color-dark: black;
+  --color-light: white;
+  --background: white;
+  --text-color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-mode: "dark";
+    --background: var(--color-dark);
+    --text-color: var(--color-light);
+  }
+}
+
+.dark {
+  --color-mode: "dark";
+  --background: var(--color-dark);
+  --text-color: var(--color-light);
+}
+
+body {
+  background: var(--background);
+  color: var(--text-color);
+  transition: background 500ms ease-in-out, color 200ms ease;
+}
+.dark-mode-btn {
+  font-size: 30px;
+  cursor: pointer;
+}
+.search-section {
+  display: flex;
+  justify-content: center;
+}
