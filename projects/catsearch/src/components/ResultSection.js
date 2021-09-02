@@ -1,5 +1,9 @@
 import Card from "./Card.js";
 
+export const findInfoById = (data, id) => {
+  return data.find((cat) => cat.id === id);
+};
+
 export const getLastIdx = (data, lastIdx, offset) => {
   if (data.length < offset || lastIdx > data.length - offset) {
     return data.length;
@@ -42,37 +46,37 @@ export default class ResultSection {
     lazyImages.forEach((image) => {
       io.observe(image);
     });
-    console.log("LAZY", lazyImages);
+    // console.log("LAZY", lazyImages);
   }
 
-  setScrollPagingObserver(data, lastIdx) {
-    const options = { threshold: 0, rootMargin: "10px 0px" };
-    const callback = (entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const newLastIdx = getLastIdx(this.data, lastIdx, 15);
-          if (newLastIdx === lastIdx) {
-            observer.unobserve(entry.target);
-          } else {
-            observer.unobserve(entry.target);
-            const fetchData = this.data.slice(lastIdx + 1, newLastIdx + 1);
-            lastIdx = newLastIdx;
-            fetchData.forEach((cat) => {
-              new Card(document.querySelector(".card-contianer"), cat);
-            });
-            observer.observe(
-              document.querySelector(".card-container").lastChild
-            );
-            this.lazyLoadObserver();
-          }
-          entry.target.src = entry.target.dataset.src;
-        }
-      });
-    };
-    const io = new IntersectionObserver(callback, options);
-    const lastData = document.querySelector(".card-container").lastChild;
-    io.observe(lastData);
-  }
+  // setScrollPagingObserver(data, lastIdx) {
+  //   const options = { threshold: 0, rootMargin: "10px 0px" };
+  //   const callback = (entries, observer) => {
+  //     entries.forEach((entry) => {
+  //       if (entry.isIntersecting) {
+  //         awconst newLastIdx = getLastIdx(this.data, lastIdx, 15);
+  //         if (newLastIdx === lastIdx) {
+  //           observer.unobserve(entry.target);
+  //         } else {
+  //           observer.unobserve(entry.target);
+  //           const fetchData = this.data.slice(lastIdx + 1, newLastIdx + 1);
+  //           lastIdx = newLastIdx;
+  //           fetchData.forEach((cat) => {
+  //             new Card(document.querySelector(".card-contianer"), cat);
+  //           });
+  //           observer.observe(
+  //             document.querySelector(".card-container").lastChild
+  //           );
+  //           this.lazyLoadObserver();
+  //         }
+  //         entry.target.src = entry.target.dataset.src;
+  //       }
+  //     });
+  //   };
+  //   const io = new IntersectionObserver(callback, options);
+  //   const lastData = document.querySelector(".card-container").lastChild;
+  //   io.observe(lastData);
+  // }
 
   render() {
     this.section.innerHTML = "";
@@ -96,11 +100,32 @@ export default class ResultSection {
           });
         }
 
+        cardContainer.addEventListener("click", (e) => {
+          const clickedCard1 = e.path;
+          const clickedCard2 = e.path.find((p) => p.className == "card");
+          console.log(clickedCard1);
+          if (clickedCard2) {
+            const id = clickedCard2.dataset.id;
+            const info = findInfoById(this.data, id);
+            console.log("INFO", info);
+            // const cardModal = new cardModal(info)
+          }
+        });
+
+        //   document.addEventListener("keydown", (e) => {
+        //     if (
+        //         e.key === "Escape" &&
+        //         document.querySelector(".modal-wrapper")
+        //     ) {
+        //         this.closeModal();
+        //     }
+        // });
+
         console.log("데이터가 있을 경우1");
         this.section.appendChild(cardContainer);
-        if (lastIdx != this.data.length) {
-          this.setScrollPagingObserver(this.data, lastIdx);
-        }
+        // if (lastIdx != this.data.length) {
+        //   this.setScrollPagingObserver(this.data, lastIdx);
+        // }
       } else {
         const noResult = document.createElement("div");
         noResult.className = "no-result";

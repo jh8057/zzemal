@@ -37,7 +37,9 @@ body {
   display: flex;
   justify-content: center;
 }
-
+.random-btn {
+  cursor: pointer;
+}
 .card-image {
   width: 200px;
   height: 200px;
