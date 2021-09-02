@@ -37,3 +37,29 @@ body {
   display: flex;
   justify-content: center;
 }
+
+.card-image {
+  width: 200px;
+  height: 200px;
+}
+.card {
+  margin-left: calc((100% - (20% * 4)) / 4);
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.delete-keyword {
+  padding: 4px;
+  cursor: pointer;
+}
+
+.keyword {
+  cursor: pointer;
+  background-color: tan;
+  display: inline;
+  border-radius: 8px;
+  margin-top: 8px;
+}

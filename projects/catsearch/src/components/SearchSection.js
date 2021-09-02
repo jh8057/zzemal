@@ -10,7 +10,20 @@ export default class SearchSection {
     this.render();
   }
 
-  addKeyword(keyword) {}
+  addKeyword(keyword) {
+    if (this.keywords.length > 4) this.keywords.shift();
+    if (this.keywords.indexOf(keyword) == -1) {
+      this.keywords = this.keywords.concat([keyword]);
+      setItem("keywords", this.keywords);
+      this.render();
+    }
+  }
+
+  removeKeyword(kword) {
+    this.keywords = this.keywords.filter((word) => word !== kword);
+    setItem("keywords", this.keywords);
+    this.render();
+  }
 
   render() {
     this.section.innerHTML = "";
@@ -18,16 +31,45 @@ export default class SearchSection {
     const wrapper = document.createElement("div");
     wrapper.className = "wrapper";
 
+    const randomButton = document.createElement("span");
+    randomButton.innerText = "🐱";
+    randomButton.className = "random-btn";
+    randomButton.addEventListener("click", (e) => {
+      this.onSearch(null, false);
+    });
+
     const searchBox = document.createElement("input");
     searchBox.className = "search-box";
     searchBox.autofocus = true; //마우스 클릭 없이 바로 text를 넣을 수 있게 focus해주는 기능
     searchBox.placeholder = "고양이를 검색하세요";
 
+    const keywords = document.createElement("div");
+    keywords.className = "keywords";
+    if (this.keywords) {
+      this.keywords.map((word) => {
+        const kword = document.createElement("div");
+        kword.className = "keyword";
+        kword.innerText = word;
+        kword.addEventListener("click", (e) => {
+          if (e.target.className === "keyword") {
+            this.onSearch(word, true);
+          } else if (e.target.className === "delete-keyword") {
+            this.removeKeyword(word);
+          }
+        });
+        const deleteWord = document.createElement("span");
+        deleteWord.innerText = "X";
+        deleteWord.className = "delete-keyword";
+        keywords.appendChild(kword);
+        kword.appendChild(deleteWord);
+      });
+    }
+
     searchBox.addEventListener("keypress", (e) => {
       if (e.key == "Enter") {
-        const keywrod = searchBox.value;
-        this.onSearch(keywrod, true);
-        // this.addKeyword(keyword)
+        const keyword = searchBox.value;
+        this.onSearch(keyword, true);
+        this.addKeyword(keyword);
       }
     });
 
@@ -35,7 +77,9 @@ export default class SearchSection {
       searchBox.value = "";
     });
 
+    wrapper.appendChild(randomButton);
     wrapper.appendChild(searchBox);
+    wrapper.appendChild(keywords);
     this.section.appendChild(wrapper);
   }
 }

@@ -1,13 +1,14 @@
-import api from "./api/catApi.js";
-import DarkMode from "./components/DarkMode.js";
-import Loader from "./components/Loader.js";
 import SearchSection from "./components/SearchSection.js";
+import ResultSection from "./components/ResultSection.js";
+import Loader from "./components/Loader.js";
+import DarkMode from "./components/DarkMode.js";
+import api from "./api/catApi.js";
 import { getItem, setItem } from "./util/localStorage.js";
 
 export default class App {
   constructor($target) {
     let keywords = getItem("keywords");
-    let initalData = null;
+    let initialData = null;
     if (keywords) {
       keywords = keywords.split(",");
     } else {
@@ -16,7 +17,7 @@ export default class App {
 
     const getInitialData = async (keywords) => {
       if (keywords) {
-        initalData = JSON.parse(getItem("recent"));
+        initialData = JSON.parse(getItem("recent"));
       } else {
         return null;
       }
@@ -27,15 +28,17 @@ export default class App {
       let response = null;
       if (isRandom) {
         response = await api.fetchCats(keyword);
-        console.log(response);
       } else {
         response = await api.fetchRandomCats();
         console.log(response);
       }
+      resultSection.setState(response);
       const recent = JSON.stringify(response);
       setItem("recent", recent);
       loader.closeLoader();
     };
+
+    const darkMode = new DarkMode($target);
 
     const searchSection = new SearchSection({
       $target,
@@ -43,8 +46,7 @@ export default class App {
       keywords,
     });
 
-    const darkMode = new DarkMode($target);
-
     getInitialData(keywords);
+    const resultSection = new ResultSection($target, initialData);
   }
 }
