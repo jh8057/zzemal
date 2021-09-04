@@ -45,7 +45,6 @@ const api = {
       return e;
     }
   },
-
   fetchRandomCats: async () => {
     try {
       const result = await request(`${API_ENDPOINT}/images/search?limit=20`);

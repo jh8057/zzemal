@@ -54,7 +54,7 @@ export default class ResultSection {
   //   const callback = (entries, observer) => {
   //     entries.forEach((entry) => {
   //       if (entry.isIntersecting) {
-  //         awconst newLastIdx = getLastIdx(this.data, lastIdx, 15);
+  //         const newLastIdx = getLastIdx(this.data, lastIdx, 15);
   //         if (newLastIdx === lastIdx) {
   //           observer.unobserve(entry.target);
   //         } else {
@@ -100,6 +100,7 @@ export default class ResultSection {
           });
         }
 
+        // event bundle
         cardContainer.addEventListener("click", (e) => {
           const clickedCard1 = e.path;
           const clickedCard2 = e.path.find((p) => p.className == "card");
