@@ -16,12 +16,12 @@
     // print2(2) //error
 
     // number와 number가 더해졌으니 number가 유추됨.
-    function add(x:number,y:number){
+    function add1(x:number,y:number){
         return x+y
     }
 
     // add에서 return 된 값이 number 이므로 result도 result가 된다.
-    const result = add (1,2);
+    const result = add1 (1,2);
 
     // 그러나 최대한 타입추론을 생각하지말고, 적어주는 습관을 들이자!
 }

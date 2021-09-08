@@ -54,7 +54,7 @@
     
         }
     
-        function printLoginState(state:LoginState){
+        function printLogin(state:LoginState){
             if(state.result === "success"){
                 console.log(`success! ${state.response.body}`)
             } else{
