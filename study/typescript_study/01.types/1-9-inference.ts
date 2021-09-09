@@ -9,7 +9,7 @@
     }
 
     // 이렇게 기본값을 할당해줘도 알아서 유추한다.
-    function print2(message='hellp'){
+    function print2(message='hello'){
         console.log(message)
     }
 
