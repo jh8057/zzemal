@@ -4,15 +4,20 @@
         hasMilk:boolean;
     }
 
-
     interface CoffeMaker{
         makeCoffee(shots:number):CoffeeCup;
+    }
+
+    interface CommercialCoffeMaker{
+        makeCoffee(shots:number):CoffeeCup;
+        fillCoffeeBeans(beans:number):void;
+        clean():void;
     }
 
     // public
     // private
     // protected
-    class CoffeMachine implements CoffeMaker{
+    class CoffeMachine implements CoffeMaker,CommercialCoffeMaker{
         private static BEANS_GRAMM_PER_SHOT:number = 7 // class level
         private coffeeBeans:number = 0; // instance(object) level
 
@@ -20,7 +25,7 @@
             this.coffeeBeans = coffeeBeans;
         }
 
-        static makeMachine(coffeeBeans:number): CoffeMaker{
+        static makeMachine(coffeeBeans:number): CoffeMachine{
             return new CoffeMachine(coffeeBeans)
         }
 
@@ -52,9 +57,37 @@
             this.preheat();
             return this.extract(shots)
         }
+        clean(){
+            console.log('cleaning the machine')
+        }
 
     }
-    const maker:CoffeMaker = CoffeMachine.makeMachine(32);
-    maker.makeCoffee(2)
+
+    // const maker2:CommercialCoffeMaker = CoffeMachine.makeMachine(32);
+    // maker2.clean();
     // maker.fillCoffeeBeans(32);
+
+    class AmateurUser{
+        constructor(private machine:CoffeMaker){}
+        makeCoffee(){
+            const coffee = this.machine.makeCoffee(2);
+            console.log(coffee)
+        }
+    }
+    class ProBarista{
+        constructor(private machine: CommercialCoffeMaker){}
+        makeCoffee(){
+            const coffee = this.machine.makeCoffee(2);
+            console.log(coffee)
+            this.machine.fillCoffeeBeans(45);
+            this.machine.clean();
+        }
+    }
+
+    const maker : CoffeMachine = CoffeMachine.makeMachine(32);
+    const amateur = new AmateurUser(maker);
+    const pro = new ProBarista(maker);
+    amateur.makeCoffee()
+    console.log("/////////////////")
+    pro.makeCoffee()
 }
