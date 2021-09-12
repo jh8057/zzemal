@@ -10,16 +10,12 @@
   }
 
   // public // private // protected
-  class CoffeMachine implements CoffeMaker {
+  abstract class CoffeMachine implements CoffeMaker {
     private static BEANS_GRAMM_PER_SHOT: number = 7; // class level
     private coffeeBeans: number = 0; // instance(object) level
 
     constructor(coffeeBeans: number) {
       this.coffeeBeans = coffeeBeans;
-    }
-
-    static makeMachine(coffeeBeans: number): CoffeMachine {
-      return new CoffeMachine(coffeeBeans);
     }
 
     fillCoffeeBeans(beans: number) {
@@ -38,12 +34,8 @@
     private preheat(): void {
       console.log("heat");
     }
-    private extract(shots: number): CoffeeCup {
-      console.log(`pulling ${shots}`);
-      return {
-        shots,
-      };
-    }
+    protected abstract extract(shots: number): CoffeeCup;
+
     makeCoffee(shots: number): CoffeeCup {
       this.grindBeans(shots);
       this.preheat();
@@ -60,11 +52,10 @@
     private steamMike(): void {
       console.log("STEAM MILK!!");
     }
-    makeCoffee(shots: number): CoffeeCup {
-      const coffee = super.makeCoffee(shots);
+    protected extract(shots: number): CoffeeCup {
       this.steamMike();
       return {
-        ...coffee,
+        shots,
         hasMilk: true,
       };
     }
@@ -73,17 +64,14 @@
     private makeSweet() {
       console.log("Make SWEEEEEET~~!");
     }
-    makeCoffee(shot: number): CoffeeCup {
-      const coffee = super.makeCoffee(shot);
+    protected extract(shots: number): CoffeeCup {
       this.makeSweet();
       return {
-        ...coffee,
+        shots,
         hasSugar: true,
       };
     }
   }
-
-  const machine = new CoffeMachine(23);
 
   const lattemachine = new CaffeLatteMachine(23, "SSS");
   const coffee = lattemachine.makeCoffee(1);
@@ -95,13 +83,14 @@
   // console.log(sweetcoffee)
 
   console.log("///////////////////////");
-  console.log(machine.makeCoffee(1));
   console.log(lattemachine.makeCoffee(1));
   console.log(sweetMachine.makeCoffee(1));
 
+  console.log("///////////////////////");
   // 다형성 사용 장점 - 공통된 API를 사용
   const machines: CoffeMaker[] = [
-    new CoffeMachine(16),
+    new CaffeLatteMachine(16, "A GRADE"),
+    new SweetCoffeMaker(16),
     new CaffeLatteMachine(16, "A GRADE"),
     new SweetCoffeMaker(16),
   ];
