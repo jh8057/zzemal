@@ -14,3 +14,6 @@ async function printlog() {
   console.log(result.statusText);
 }
 printlog();
+
+let test = [1, 2, 3, 4];
+console.log(test.pop());
