@@ -1,4 +1,6 @@
 const axios = require("axios");
+
+console.log(response);
 const BASE_URL =
   "https://kox947ka1a.execute-api.ap-northeast-2.amazonaws.com/prod/users";
 const TOKEN = "75c9aa74e9011c5ff1091c5fd783004b";
@@ -83,19 +85,19 @@ class KAKAOAPI {
 
 const problem1 = new KAKAOAPI();
 
-async function simulation() {
-  let sToken = await problem1.startAPI();
-  console.log(sToken);
+// async function simulation() {
+//   let sToken = await problem1.startAPI();
+//   console.log(sToken);
 
-  let status = "ready";
-  while (status === "ready") {
-    let result = await problem1.simulationAPI(sToken);
-    status = result.status;
-  }
+//   let status = "ready";
+//   while (status === "ready") {
+//     let result = await problem1.simulationAPI(sToken);
+//     status = result.status;
+//   }
 
-  problem1.scoreAPI(sToken);
-}
-simulation();
+//   problem1.scoreAPI(sToken);
+// }
+// simulation();
 // problem1.simulationAPI();
 // problem1.simulationAPI();
 // problem1.simulationAPI();

@@ -21,3 +21,12 @@ git reset --hard origin/master
 ```
 
 [detached HEAD](https://aroma-dev.tistory.com/4)
+
+# node-fetch 사용법(nodejs fetch)
+
+JSON은 node에 포함되어 설치되어있는 반면, fetch는 포함되어 있지 않아서, 따로 설치해주어 사용해야된다
+
+1. npm init -> package.json 파일 생성
+2. package.json 파일에 "type" : "module" 추가
+3. npm install node-fetch
+4. `import fetch from "node-fetch";` 을 js파일에 삽입

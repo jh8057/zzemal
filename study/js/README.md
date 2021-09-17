@@ -134,3 +134,12 @@ function myFunc() {
 
 - Node.dataset 으로 불러올 수 있다.
 - HTML에 DOM 요소가 추가 되는 것이기에, 보안이 중요한 데이터는 안쓰는게 좋다.
+
+# node-fetch 사용법(nodejs fetch)
+
+JSON은 node에 포함되어 설치되어있는 반면, fetch는 포함되어 있지 않아서, 따로 설치해주어 사용해야된다
+
+1. npm init -> package.json 파일 생성
+2. package.json 파일에 "type" : "module" 추가
+3. npm install node-fetch
+4. `import fetch from "node-fetch";` 을 js파일에 삽입
