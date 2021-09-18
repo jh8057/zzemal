@@ -28,3 +28,15 @@
 - 따라서 관계가 꼬일 수 있고,
 - 부모 클래스에 변경을 했을때 아래 상속받은 부분에서 문제가 될 수 있다.
 - 타입스크립트에서는 하나 이상의 클라스를 상속 받을 수 없다.
+
+# Error vs Exception
+
+- Error는 어느정도 예측된 오류
+- Exception은 예상치 못한 오류 느낌이다.
+
+# try & catch & finally
+
+- 정말 에러가 나올것 같은 부분만 try로 감싼다
+- catch 나 try에 return 을 쓰더라도 finally는 실행 되므로 관련된건 finally에 넣어주는 것이 좋다
+- error를 catch했을때 의미있는 처리가 가능한 부분에서 잡아주는 것이 좋다
+- error를 너무 난발하는것은 안좋으니 state로 관리하는 것을 추천
