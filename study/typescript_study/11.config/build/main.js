@@ -6,10 +6,12 @@
         }
         myCar.prototype.move = function () {
             var engine = this.engine + 1;
+            console.log("engine bug!!!");
             console.log(engine);
         };
         return myCar;
     }());
-    var mycar1 = new myCar();
-    mycar1.move();
+    var car = new myCar();
+    car.move();
 }
+//# sourceMappingURL=main.js.map
