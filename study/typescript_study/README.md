@@ -40,3 +40,8 @@
 - catch 나 try에 return 을 쓰더라도 finally는 실행 되므로 관련된건 finally에 넣어주는 것이 좋다
 - error를 catch했을때 의미있는 처리가 가능한 부분에서 잡아주는 것이 좋다
 - error를 너무 난발하는것은 안좋으니 state로 관리하는 것을 추천
+
+# tsc
+
+- 파일 내 ts파일을 변환해줌
+- tsc --init 하면 tsconfig.json 파일이 나옴
