@@ -25,3 +25,9 @@
 - 이런식으로 조건을 줄 수 있다.
 - SET @hour := -1 과 같이 변수를 선언 할 수 있다.
 - SELECT (@hour := @hour+1) AS HOUR - 1씩 증가하면서 표시해준다.
+
+## IS NULL
+
+- IS NULL - NULL 인 부분을 찾는다.
+- IS NOT NULL - NULL이 아닌 부분을 찾는다.
+- IFNULL - NULL 인 경우를 처리한다.
