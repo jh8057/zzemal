@@ -31,3 +31,11 @@
 - IS NULL - NULL 인 부분을 찾는다.
 - IS NOT NULL - NULL이 아닌 부분을 찾는다.
 - IFNULL - NULL 인 경우를 처리한다.
+
+## String,Date
+
+- IN - 특정값 여러개를 선택하여 추출할 수 있다.
+- WHERE (column) LIKE "%something%" - 문자열 안에 원하는 문자가 들어있는 데이터를 얻을 수 있다.
+- CASE WHEN (조건) THEN (표시하고자 하는 결과1) ELSE (표시하고자 하는 결과2)END AS (컬럼이름) - 컬럼을 만들때 조건을 가지고 판별하여 새로운 표시를 하고 싶을때 사용
+- 테이블을 2개 사용하고 싶으면 위 처럼 A ,B 이름을 나눠주고 객체처럼 불러오면 된다.
+- DATE_FORMAT - 날짜를 지정한 형식으로 출력 가능하다.
