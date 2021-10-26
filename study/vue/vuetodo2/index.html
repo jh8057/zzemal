@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VUE</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Hello World</h1>
+
+      {{person.name}} {{person.age}} is me!<br />
+      {{nextYear('안녕하세요')}} <br />
+      {{othermethod()}}
+      <input
+        type="text"
+        :placeholder="placeholderData"
+        v-bind:value="inputData"
+      />
+      <a :href="link" target="_blank">naver</a>
+      <a :href="getLinks()" target="_blank">naver2</a> <br />
+      <button v-on:click="alert">Click me</button>
+      <form v-on:submit.prevent="submit">
+        <input type="text" />
+        <button type="submit">submit</button>
+      </form>
+    </div>
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          person: {
+            name: "zzemal",
+            age: 34,
+          },
+          inputData: "hello!!",
+          placeholderData: "START!",
+          link: "https://www.naver.com",
+        },
+        methods: {
+          submit() {
+            alert("submit");
+          },
+          alert() {
+            alert("HELLLLLO");
+          },
+          nextYear(greeting) {
+            return (
+              greeting +
+              this.person.name +
+              "는 내년에" +
+              (this.person.age + 1) +
+              "입니다"
+            );
+          },
+          othermethod: function () {
+            return this.nextYear("heeee");
+          },
+          getLinks() {
+            return this.link;
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
