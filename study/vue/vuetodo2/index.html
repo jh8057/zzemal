@@ -6,14 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VUE</title>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <style>
+      .red {
+        color: red;
+      }
+      .bold {
+        font: bold;
+      }
+    </style>
   </head>
   <body>
     <div id="app">
-      <h1>Hello World</h1>
-
+      <!--  {{ }} 을 통해 데이터를 불러온다. 객체,함수 등 다양하게 사용 가능 -->
       {{person.name}} {{person.age}} is me!<br />
       {{nextYear('안녕하세요')}} <br />
       {{othermethod()}}
+
+      <!-- v-bind를 통해 data에서 가져온 값을 사용할 수 있다. -->
       <input
         type="text"
         :placeholder="placeholderData"
@@ -21,16 +30,75 @@
       />
       <a :href="link" target="_blank">naver</a>
       <a :href="getLinks()" target="_blank">naver2</a> <br />
+
+      <!-- v-on = @, 이벤트 처리 함수이다. -->
       <button v-on:click="alert">Click me</button>
+      <button @click="alert">Click me</button>
       <form v-on:submit.prevent="submit">
-        <input type="text" />
+        <!-- v-model, 양방향 바인딩 -->
+        <!-- <input type="text" :value="textData" @keyup="updateText" /> -->
+        <input type="text" v-model="textData" />
+        <br />{{textData}}<br />
         <button type="submit">submit</button>
       </form>
+
+      <br />
+      {{number +1}} <br />
+      {{reverseMessage}}<br />
+      <button @click="changeMesaage">Click</button>
+      {{message}} {{updated}}
+
+      <!-- class -->
+      <div :class="{red : isRed,bold : isBold}">Hello</div>
+      <button @click="redUpdate">RED</button>
+
+      <!-- v-if -->
+      <div v-if="show">YES</div>
+      <div v-else>NO</div>
+      <button @click="showUpdate">SHOW</button>
+      <br />
+      <template v-if="number ===1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </template>
+      <div v-else-if="number ===2">NO</div>
+      <div v-else>NO</div>
+      <button @click="increaseNumber">number</button>
+      <button @click="resetNumber">reset</button>
+      {{number}}
+      <br />
+
+      <!-- v-show -->
+      <div v-show="show">YES</div>
+      <button @click="showUpdate">SHOW</button>
+
+      <!-- v-for -->
+      <div v-for="(person,index) in people" :key="person.name">
+        {{ person.name}} {{ person.age}} {{index}}
+      </div>
+
+      <hr />
+      <!-- component -->
+      <zzemalC></zzemalC>
     </div>
     <script>
-      new Vue({
+      const app = new Vue({
         el: "#app",
         data: {
+          people: [
+            { name: "a", age: 20 },
+            { name: "b", age: 21 },
+            { name: "c", age: 22 },
+            { name: "d", age: 23 },
+          ],
+          show: true,
+          isRed: false,
+          isBold: false,
+          updated: "NO",
+          message: "hellllo",
+          number: 1,
+          textData: "WOW",
           person: {
             name: "zzemal",
             age: 34,
@@ -40,6 +108,21 @@
           link: "https://www.naver.com",
         },
         methods: {
+          increaseNumber() {
+            this.number++;
+          },
+          resetNumber() {
+            this.number = 1;
+          },
+          showUpdate() {
+            this.show = !this.show;
+          },
+          redUpdate() {
+            this.isRed = !this.isRed;
+          },
+          // updateText(event) {
+          //   this.textData = event.target.value;
+          // },
           submit() {
             alert("submit");
           },
@@ -60,6 +143,20 @@
           },
           getLinks() {
             return this.link;
+          },
+          changeMesaage() {
+            this.message = "zzemal";
+          },
+        },
+        computed: {
+          reverseMessage() {
+            return this.message.split("").reverse().join("");
+          },
+        },
+        watch: {
+          message(newVal, oldVal) {
+            console.log(newVal, oldVal);
+            this.updated = "YES";
           },
         },
       });
