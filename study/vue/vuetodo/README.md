@@ -12,7 +12,7 @@ npm run serve
 
 # Vue.js
 
-- 버전 : Vue 3
+- 버전 : Vue 2
 - 확장프로그램
   - vetur : 하이라이트(색)
   - vue VSCode Snippets : 초기 구성을 자동 완성
@@ -102,11 +102,13 @@ npm run serve
 
 ## vue - Router
 
+- 라우팅 기능을 구현할 수 있도록 지원하는 라이브러리이다.
+- 라우팅이란 웹페이지간의 이동방법을 말한다.
 - 설치할때 따로 해줘야된다.
 - 처음 프로젝트 생성될때 router 폴더가 생성된다.
-- path 경로 참조
-- SPA에서 페이지 이동
-- router-link , router-view 태그 사용
+- router 폴더 내에 자바스크립트에서 페이지 수에 따라 path,name,component를 설정해주면 된다. => router-view 태그 부분을 바뀌면서 SPA에서 페이지 이동
+- router-link to => a태그 역할, 페이지 이동 링크
+- router-view 태그 사용
 - router-view부분이 component로 바뀌는 매커니즘
 - view 폴더에 페이지 작성 부분이 있고, component는 또 폴더가 따로 있다.
 
