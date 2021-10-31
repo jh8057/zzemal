@@ -1,18 +1,35 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <h1>Zzemal</h1>
+    <zzemal title="title2"></zzemal>
+    <form action="">
+      <inputField v-mdoel="name"></inputField>
+      <button>submit</button>
+    </form>
+    {{ name }}
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import zzemal from "@/components/zzemal.vue";
+import inputField from "@/components/inputField.vue";
 export default {
-  name: 'Home',
   components: {
-    HelloWorld
-  }
-}
+    zzemal,
+    inputField,
+  },
+  data() {
+    return {
+      name: "",
+    };
+  },
+  methods: {},
+};
 </script>
+
+<style scoped>
+h1 {
+  font-size: 20px;
+  color: red;
+}
+</style>
