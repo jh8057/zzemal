@@ -178,6 +178,7 @@ npm run serve
 
 - 데이터 베이스에 비동기적으로 요청을 보내는 작업을 한다.
 - addTodo(context, payload) 형태로 들어간다.
+- dispatch를 사용한다
 
 ```
 this.$store.dispatch('addTodo', e.target.value) 형태로 받는다.
