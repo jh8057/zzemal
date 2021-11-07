@@ -1,4 +1,20 @@
-# NuxtTest
+# NuxtProject
+
+## express
+
+1. api 폴더를 만들고, 안에 routes폴더와 index.js파일을 생성한다.
+2. nuxt.config.js에 아래 내용을 넣어준다.
+
+```
+ serverMiddleware: [
+    // <project root>/api/index.js 모듈을 미들웨어로 추가
+    '~/api/index.js',
+  ],
+```
+
+3. 뒤의 주소에 따라 동작하는것을 확인
+
+<hr>
 
 ## Build Setup
 
@@ -40,7 +56,6 @@ More information about the usage of this directory in [the documentation](https:
 Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
 
 ### `pages`
 
