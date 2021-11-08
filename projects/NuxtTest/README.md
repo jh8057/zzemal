@@ -16,6 +16,27 @@
 
 <hr>
 
+## 참조
+
+mutation - commit
+action - dispatch
+
+mutation(state,payload)
+action(context,payload) = action({commit, ...}},payload)
+
+<hr>
+- vuex에서 작업
+- actions => 비동기 함수 작성(데이터 받아오는 axios 같은 작업 실행) => commit('mutation 함수' , payload)
+- mutation에 알맞는 함수 작성(받아온 데이터를 가공하거나, state를 수정)
+- state에 mutation에서 변화시키고 싶은 변수 데이터 작성
+- vue에서 작업
+- create()나 mount()를 통해 method함수 등록
+- method함수에서 dispatch로 action 함수 실행
+- computed를 통해 위에 선언한 변수 가져옴 - users(){ return this.$store.state.변수명}
+
+<hr>
+getter는 state값을 통해 계산하는 것을 미리 store에서 처리하고 저장해놓는것
+
 ## Build Setup
 
 ```bash
