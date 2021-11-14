@@ -1,46 +1,46 @@
-const msgList = document.querySelector("ul");
-const msgformNick = document.querySelector("#Nick");
-const msgformCont = document.querySelector("#Contents");
-const socket = new WebSocket(`ws://${window.location.host}`);
+const socket = io();
 
-socket.addEventListener("open", () => {
-  console.log("Connected to Server✅");
-});
+const welcome = document.querySelector("#welcome");
+const form = welcome.querySelector("form");
+const room = document.querySelector("#room");
 
-socket.addEventListener("message", (msg) => {
-  console.log("Msg from Server this :", msg.data);
+room.hidden = true;
+
+let roomName = "";
+
+function finishEmit(msg) {
+  console.log("Finish emit message!");
+  console.log("Backend Say : ", msg);
+}
+
+function addMessage(msg) {
+  const ul = room.querySelector("ul");
   const li = document.createElement("li");
-  li.innerText = msg.data;
-  msgList.appendChild(li);
-});
+  li.innerText = msg;
+  ul.appendChild(li);
+}
 
-socket.addEventListener("close", () => {
-  console.log("Disconnected to Server❌");
-});
+function showRoom() {
+  welcome.hidden = true;
+  room.hidden = false;
+  const h3 = room.querySelector("h3");
+  h3.innerText = `Room ${roomName}`;
+}
 
-function handleSubmitNick(event) {
+function handleRoomSubmit(event) {
   event.preventDefault();
-  const input = msgformNick.querySelector("input");
-  socket.send(
-    JSON.stringify({
-      type: "Nickname",
-      text: `${input.value}`,
-    })
+  const input = form.querySelector("input");
+  socket.emit(
+    "room",
+    { room: input.value, id: socket.id.substring(0, 5) },
+    showRoom
   );
+  roomName = input.value;
   input.value = "";
 }
 
-function handleSubmitCont(event) {
-  event.preventDefault();
-  const input = msgformCont.querySelector("input");
-  socket.send(
-    JSON.stringify({
-      type: "contents",
-      text: `${input.value}`,
-    })
-  );
-  input.value = "";
-}
+form.addEventListener("submit", handleRoomSubmit);
 
-msgformNick.addEventListener("submit", handleSubmitNick);
-msgformCont.addEventListener("submit", handleSubmitCont);
+socket.on("welcome", (payload) => {
+  addMessage(`"${payload.id}" JOIN OUR ROOM`);
+});

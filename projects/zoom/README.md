@@ -31,3 +31,10 @@ Zoom Clone using NodeJS, WebRTC and Websockets
 ## window.location.host
 
 - 접속한 주소를 받아올 수 있다.
+
+## Socket.io
+
+- 실시간 통신이 가능하게 해주는 라이브러리
+- websocket의 일부가 아니라, 별도의 라이브러리임
+- Socket.io에서 websocket을 많이 이용할 뿐, 없어도 동작한다.
+- 사실상 기능은 비슷하나, 조금 더 변하게 해주는 거임
