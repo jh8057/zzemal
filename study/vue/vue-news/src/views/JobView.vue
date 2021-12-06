@@ -1,9 +1,15 @@
 <template>
-  <div>Jobs</div>
+  <div>
+    Jobs
+    <get-jobs />
+  </div>
 </template>
 
 <script>
-export default {};
+import getJobs from "../components/getJobs.vue";
+export default {
+  components: { getJobs },
+};
 </script>
 
 <style>

@@ -1,9 +1,17 @@
 <template>
-  <div>ASK</div>
+  <div>
+    ASK
+    <get-ask />
+  </div>
 </template>
 
 <script>
-export default {};
+import GetAsk from "../components/getAsk.vue";
+export default {
+  components: {
+    GetAsk,
+  },
+};
 </script>
 
 <style>

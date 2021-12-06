@@ -8,6 +8,7 @@ import JobView from "../views/JobView.vue";
 Vue.use(VueRouter);
 
 export const router = new VueRouter({
+  mode: "history", // 경로에 '#' 없애주는것
   routes: [
     {
       path: "/news",

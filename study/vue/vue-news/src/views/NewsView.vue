@@ -1,9 +1,18 @@
 <template>
-  <div>NEWS</div>
+  <div>
+    NEWS
+
+    <get-news />
+  </div>
 </template>
 
 <script>
-export default {};
+import getNews from "../components/getNews.vue";
+export default {
+  components: {
+    getNews,
+  },
+};
 </script>
 
 <style>
