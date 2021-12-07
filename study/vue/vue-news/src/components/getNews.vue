@@ -1,8 +1,8 @@
 <template>
   <div class="axiosBtns">
-    <button @click="getNews">news</button>
-    <div>
-      <ul v-for="user in AXIOSDATA">
+    <button @click="showNews">news</button>
+    <div v-show="show">
+      <ul v-for="user in this.$store.state.news">
         UNSER_INFO
         <li>ID : {{ user.id }}</li>
         <li>TITIL :{{ user.title }}</li>
@@ -15,17 +15,24 @@
 <script>
 import { fetchNewsList } from "../api/index";
 export default {
+  created() {
+    this.$store.dispatch("FETCH_NEWS");
+  },
   data() {
     return {
-      AXIOSDATA: [],
+      //   AXIOSDATA: [],
+      show: false,
     };
   },
   methods: {
-    async getNews() {
-      let data = await fetchNewsList()
-        .then((res) => res.data)
-        .catch((e) => console.log(e));
-      this.AXIOSDATA = data;
+    // async getNews() {
+    //   let data = await fetchNewsList()
+    //     .then((res) => res.data)
+    //     .catch((e) => console.log(e));
+    //   this.AXIOSDATA = data;
+    // },
+    showNews() {
+      this.show = !this.show;
     },
   },
 };
