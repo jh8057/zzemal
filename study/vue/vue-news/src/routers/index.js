@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import NewsView from "../views/NewsView.vue";
 import AskView from "../views/AskView.vue";
 import JobView from "../views/JobView.vue";
+import StockView from "../views/StockView.vue";
 // import MainPage from "../views/MainPage.vue";
 
 Vue.use(VueRouter);
@@ -21,6 +22,10 @@ export const router = new VueRouter({
     {
       path: "/job",
       component: JobView,
+    },
+    {
+      path: "/stock",
+      component: StockView,
     },
   ],
 });

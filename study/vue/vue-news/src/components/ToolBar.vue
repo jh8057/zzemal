@@ -2,7 +2,8 @@
   <div class="header">
     <router-link to="/ask">ASK</router-link> |
     <router-link to="/job">JOB</router-link> |
-    <router-link to="/news">NEWS</router-link>
+    <router-link to="/news">NEWS</router-link>|
+    <router-link to="/stock">STOCK</router-link>
   </div>
 </template>
 
