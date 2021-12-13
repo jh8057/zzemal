@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import { fetchNewsList } from "../api/index";
+import { fetchAskList } from "../api/index";
 export default {
   data() {
     return {
@@ -22,7 +22,7 @@ export default {
   },
   methods: {
     async getNews() {
-      let data = await fetchNewsList()
+      let data = await fetchAskList()
         .then((res) => res.data)
         .catch((e) => console.log(e));
       this.AXIOSDATA = data;
