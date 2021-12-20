@@ -51,12 +51,17 @@
         <li>{{ data.price }}</li>
       </ul>
     </div>
+    <template>
+      <chart :price="Rprice.price / 1"></chart>
+    </template>
   </div>
 </template>
 
 <script>
 import { mapActions } from "vuex";
+import Chart from "../components/Chart.vue";
 export default {
+  components: { Chart },
   data() {
     return {
       COMPANY: "",
