@@ -1,9 +1,11 @@
 <template>
   <div>
     <h1>나는 자식 컴포넌트</h1>
-    <slot name="one"></slot>{{ user.Number }}<br />
+    <slot name="one" :user="user"></slot>{{ user.Number }}<br />
     ///////////구분선////////////<br />
-    <slot name="two"></slot>
+    <slot name="two" :wow="wow"></slot><br />
+    ///////////구분선////////////<br />
+    <slot name="three" :wow="wow"></slot>
   </div>
 </template>
 
@@ -15,6 +17,7 @@ export default {
         Number: 10,
         Name: "zzemal",
       },
+      wow: 120,
     };
   },
 };

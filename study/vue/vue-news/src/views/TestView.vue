@@ -2,8 +2,11 @@
   <div>
     <h1>테스트 페이지</h1>
     <slotcomp>
-      <template v-slot:one> I am One </template>
-      <template v-slot:two> I am Two </template>
+      <template v-slot:one="slotProps">
+        I am One {{ slotProps.user.Name }}
+      </template>
+      <template #two="wow"> I am Two {{ wow }}</template>
+      <template #three="{ wow }"> I am Three {{ wow }}</template>
     </slotcomp>
   </div>
 </template>
