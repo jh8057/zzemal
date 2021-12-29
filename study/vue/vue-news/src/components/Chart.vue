@@ -30,8 +30,7 @@ export default {
   },
   watch: {
     chartData() {
-      console.log("t", this.price);
-      chartdata.datasets.data.push(this.price);
+      this.$data._chart.update();
     },
   },
 };
