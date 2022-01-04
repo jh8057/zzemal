@@ -1,0 +1,17 @@
+{
+  "name": "jest_study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "add.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.4.5"
+  },
+  "dependencies": {
+    "@types/jest": "^27.4.0"
+  }
+}
