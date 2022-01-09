@@ -4,7 +4,9 @@
   "description": "",
   "main": "add.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "testwatch": "jest --watch",
+    "testwatchall": "jest --watchAll"
   },
   "author": "",
   "license": "ISC",
