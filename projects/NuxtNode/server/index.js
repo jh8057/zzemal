@@ -12,10 +12,10 @@ const http = require("http");
 const server = http.createServer(app);
 app.use(nuxt.render);
 
-if (config.dev) {
-  const builder = new Builder(nuxt);
-  builder.build();
-}
+// if (config.dev) {
+const builder = new Builder(nuxt);
+builder.build();
+// }
 
 server.listen(port, () => {
   console.log(`Server is listening on port: ${port}`);
