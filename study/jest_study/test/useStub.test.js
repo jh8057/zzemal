@@ -3,7 +3,7 @@ const StubProductClient = require("./stub.js");
 
 describe("productService - STub", () => {
   let Service;
-
+  console.log(new StubProductClient());
   beforeEach(() => {
     Service = new productService(new StubProductClient());
   });
